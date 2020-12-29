@@ -1,0 +1,48 @@
+{
+    "type": "template",
+    "name": "picdesc",
+    "close": true,
+    "content": [
+        {
+            "name": "div",
+            "attr": {
+                "style": {
+                    "width": "$_pdesc_template_width$",
+                    "height": "$_pdesc_template_height$"
+                }
+            },
+            "content": [
+                {
+                    "name": "p",
+                    "content": [
+                        {
+                            "name": "pic",
+                            "attr": {
+                                "style": {
+                                    "width": "$_pdesc_template_picwidth$",
+                                    "height": "$_pdesc_template_picheight$",
+                                    "max-width": "100%"
+                                }
+                            },
+                            "vars": {
+                                "src": "$_pdesc_template_src$"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "h5",
+                    "content": ["$_pdesc_template_label$"]
+                }
+            ]
+        }
+    ],
+    "vars": {
+        "_pdesc_template_width": "",
+        "_pdesc_template_height": "",
+        "_pdesc_template_picwidth": "",
+        "_pdesc_template_picheight": "",
+        "_pdesc_template_src": "/img/test.png",
+        "_pdesc_template_label": "This is a label."
+    }
+}

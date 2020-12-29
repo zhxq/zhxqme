@@ -1,0 +1,36 @@
+{
+    "name": "jsoncode",
+    "type": "template",
+    "css": ["https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"],
+    "js": ["https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"],
+    "content": [
+        {
+            "name": "pre",
+            "content": [
+                {
+                    "name": "code",
+                    "attr": {
+                        "class": ["json", "code_snippet"],
+                        "id": "$_jc_template_json_id$",
+                        "style": {
+                            "text-align": "left"
+                        }
+                    },
+                    "content": [""]
+                }
+            ]
+        },
+        {
+            "name": "script",
+            "content": [
+                "var ", "$_jc_template_json_id$", "=", "$_jc_template_json$", ";", 
+                "$('#", "$_jc_template_json_id$", "').html(JSON.stringify(", "$_jc_template_json_id$" , ", undefined, 4));", 
+                "document.querySelectorAll('#", "$_jc_template_json_id$", "').forEach((block) => {hljs.highlightBlock(block);});"
+            ]
+        }
+    ],
+    "vars": {
+        "_jc_template_json_id": "",
+        "_jc_template_json": "{}"
+    }
+}

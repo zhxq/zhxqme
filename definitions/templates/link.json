@@ -1,0 +1,17 @@
+{
+    "name": "link",
+    "type": "template",
+    "content": [
+        {
+            "name": "a",
+            "attr":{
+                "href": "$_lnk_template_link$"
+            },
+            "content": ["$_lnk_template_description$"]
+        }
+    ],
+    "vars": {
+        "_lnk_template_link": "https://example.com/",
+        "_lnk_template_description": "An example link."
+    }
+}

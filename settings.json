@@ -1,0 +1,27 @@
+{
+    "type": "settings",
+    "theme": "default",
+    "title": "$xiangqunzhang$",
+    "keywords": "Xiangqun Zhang",
+    "description": "Xiangqun Zhang at Syracuse University",
+    "content": "About Xiangqun Zhang",
+    "index": "about",
+    "menutitle": "$xiangqunzhang$",
+    "menu": {
+        "about": {
+            "readable": "$aboutmetitle$",
+            "right": false
+        }
+    },
+    "defaultlang": "zh-cn",
+    "lang": {
+        "en": {
+            "name": "English",
+            "file": "en.json"
+        },
+        "zh-cn": {
+            "name": "中文",
+            "file": "zhcn.json"
+        }
+    }
+}

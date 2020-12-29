@@ -1,0 +1,57 @@
+{
+    "name": "about",
+    "type": "page",
+    "content":[
+        {
+            "name": "infobox",
+            "vars":{
+                "_ib_template_title": "$xiangqunzhang$",
+                "_ib_template_line1": "$phdstudent$",
+                "_ib_template_line2": "$syracuseuniversity$",
+                "_ib_template_line3": [
+                    {
+                        "name": "reverseemail",
+                        "vars": {
+                            "_re_template_email": "ude.rys@48gnahzx"
+                        }
+                    }
+                ],
+                "_ib_template_src": "/imgs/avatar.jpg"
+            }
+        },
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "$personalinformation$",
+                "_twp_template_paragraph": "$personalinformationline$"
+            }
+        },
+        {
+            "name": "education",
+            "vars": {
+                "_edu_template_title": "$educationexp$",
+                "_edu_template_phd": [
+                    "$educationphdstart$", 
+                    {
+                        "name": "a",
+                        "attr": {
+                            "href": "https://sites.google.com/view/bryansjkim"
+                        },
+                        "content": ["$bsk$"]
+                    }, 
+                    "$educationphdend$"
+                ],
+                "_edu_template_master": "$educationms$",
+                "_edu_template_bachelor": "$educationbachelor$",
+                "_edu_template_comment": "$educationdescription$"
+            }
+        },
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "$publicationstitle$",
+                "_twp_template_paragraph": "$publicationsline$"
+            }
+        }
+    ]
+}

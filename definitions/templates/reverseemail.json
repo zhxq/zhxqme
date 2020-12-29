@@ -1,0 +1,19 @@
+{
+    "name": "reverseemail",
+    "type": "template",
+    "content": [
+        {
+            "name": "span",
+            "content": ["$_re_template_email$"],
+            "attr":{
+                "style": {
+                    "unicode-bidi": "bidi-override",
+                    "direction": "rtl"
+                }
+            }
+        }
+    ],
+    "vars": {
+        "_re_template_email": "moc.elpmaxe@elpmaxe"
+    }
+}

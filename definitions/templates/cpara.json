@@ -1,0 +1,26 @@
+{
+    "type": "template",
+    "name": "cpara",
+    "content": [
+        {
+            "name": "p",
+            "attr": {
+                "style": {
+                    "width": "$_cpara_template_width$",
+                    "height": "$_cpara_template_height$",
+                    "padding": "$_cpara_template_padding$",
+                    "margin": "0 auto",
+                    "max-width": "$_cpara_template_maxwidth$"
+                }
+            },
+            "content": ["$_cpara_template_content$"]
+        }
+    ],
+    "vars": {
+        "_cpara_template_maxwidth": "700px",
+        "_cpara_template_width": "",
+        "_cpara_template_height": "",
+        "_cpara_template_padding": "",
+        "_cpara_template_content": ""
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "templateintro",
+    "type": "template",
+    "content": [
+        {
+            "name": "h4",
+            "content": ["<code>", "$_ti_template_title$", "</code>"]
+        },
+        {
+            "name": "p",
+            "content": "$_ti_template_intro$"
+        },
+        {
+            "name": "ul",
+            "content": "$_ti_template_macros$"
+        }
+    ],
+    "vars": {
+        "_ti_template_title": "templatename",
+        "_ti_template_intro": "One liner introduction.",
+        "_ti_template_macros": [
+            ["<code>_template_macro_1</code>: ", "Something to show."],
+            ["<code>_template_macro_2</code>: ", "Something else to show."]
+        ]
+    }
+}

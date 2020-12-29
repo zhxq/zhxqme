@@ -1,0 +1,22 @@
+{
+    "name": "en",
+    "type": "lang",
+    "vars":{
+        "aboutmetitle": "About Me",
+        "factstitle": "Facts",
+        "xiangqunzhang": "Xiangqun Zhang",
+        "phdstudent": "Ph.D. Student",
+        "syracuseuniversity": "Syracuse University",
+        "personalinformation": "Personal Information",
+        "personalinformationline": "Welcome to my personal page! I am a Computer Science major Ph.D. Student at Syracuse University. My main research area is Solid State Drive (SSD) optimization, but I am also interested in Computer Networking, Network Security, Social Engineering and et cetera.",
+        "educationexp": "Education",
+        "educationphdstart": "Ph.D. Student (Supervisor: ",
+        "bsk": "Bryan S. Kim",
+        "educationphdend": ") in Computer Science at Syracuse University (2020-)",
+        "educationms": "M.S. in Computer Science at New York University Tandon School of Engineering (2018-2019)",
+        "educationbachelor": "B.A. in German Studies (w. Honors)/B.S. in Mathematics Computer Science at University of California, San Diego (2014-2018)",
+        "educationdescription": "Due to this reason, my research interest is not limited in Computer Science field as well. I am also interested in history (modern German/Chinese history), linguistics (especially Comparison Linguistics between Indo-European and Germantic langauges, and Chinese/Japanese/Korean comparison), and history-related politics (as an objective, third-party observer). I speak Chinese, English and German.",
+        "publicationstitle": "Publications",
+        "publicationsline": "As a new Ph.D. Student, I have no publicated papers as for now. Stay tuned!"
+    }
+}
