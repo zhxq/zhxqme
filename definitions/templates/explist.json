@@ -1,6 +1,7 @@
 {
     "name": "explist",
     "type": "template",
+    "css": ["./css/explist.css"],
     "content": [
         {
             "name": "h3",
@@ -8,7 +9,13 @@
         },
         {
             "name": "ul",
-            "content": "$_explist_template_macros$"
+            "content": "$_explist_template_macros$",
+            "style": {
+                "text-align": "0 auto"
+            },
+            "attr": {
+                "class": ["explist_ul"]
+            }
         }
     ],
     "vars": {
