@@ -52,6 +52,13 @@
                 "_twp_template_title": "$publicationstitle$",
                 "_twp_template_paragraph": "$publicationsline$"
             }
+        },
+        {
+            "name": "explist",
+            "vars": {
+                "_explist_template_title": "$teachingtitle$",
+                "_explist_template_macros": ["$teachingline1$"]
+            }
         }
     ]
 }
