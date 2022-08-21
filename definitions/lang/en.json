@@ -19,6 +19,16 @@
         "publicationstitle": "Publications",
         "publicationsline": "As a new Ph.D. Student, I have no publicated papers as for now. Stay tuned!",
         "teachingtitle": "Teaching",
-        "teachingline1": "Fall 2022: Teaching Assistant for Course TBA, Syracuse University"
+        "teachingline1": [
+            "Fall 2022: Teaching Assistant for ", 
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://web.ecs.syr.edu/~bkim01/cis341_fa22.html"
+                },
+                "content": ["CIS 341"]
+            }, 
+            ", Syracuse University"
+        ]
     }
 }
