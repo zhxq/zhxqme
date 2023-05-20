@@ -47,12 +47,10 @@
             }
         },
         {
-            "name": "titlewpara",
+            "name": "explist",
             "vars": {
-                "_twp_template_title": "$publicationstitle$",
-                "_twp_template_paragraph": [
-                    "$excessiveparallelism$"
-                ]
+                "_explist_template_title": "$publicationstitle$",
+                "_explist_template_macros": ["$excessiveparallelism$"]
             }
         },
         {
