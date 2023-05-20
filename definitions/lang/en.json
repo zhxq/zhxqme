@@ -29,18 +29,18 @@
                 "content": ["CIS 341"]
             }, 
             ", Syracuse University"
-        ]
-    },
-    "excessiveparallelism": [
-        {
-            "name": "publications",
-            "vars": {
-                "_pub_template_authors": "<i>Xiangqun Zhang</i>, Shuyi Pei, Jongmoo Choi, Bryan S. Kim",
-                "_pub_template_title": "Excessive SSD Internal Parallelism Considered Harmful",
-                "_pub_template_pubon": "HotStorage",
-                "_pub_template_year": "2023",
-                "_pub_template_align": "center"
+        ],
+        "excessiveparallelism": [
+            {
+                "name": "publications",
+                "vars": {
+                    "_pub_template_authors": "<i>Xiangqun Zhang</i>, Shuyi Pei, Jongmoo Choi, Bryan S. Kim",
+                    "_pub_template_title": "Excessive SSD Internal Parallelism Considered Harmful",
+                    "_pub_template_pubon": "HotStorage",
+                    "_pub_template_year": "2023",
+                    "_pub_template_align": "center"
+                }
             }
-        }
-    ]
+        ]
+    }
 }
