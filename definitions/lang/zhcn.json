@@ -29,6 +29,16 @@
                 "content": ["CIS 341"]
             }, 
             " 助教"
-        ]
+        ],
+        "excessiveparallelism": {
+            "name": "publications",
+            "vars": {
+                "_pub_template_authors": "Xiangqun Zhang, Shuyi Pei, Jongmoo Choi, and Bryan S. Kim",
+                "_pub_template_title": "Excessive SSD Internal Parallelism Considered Harmful",
+                "_pub_template_pubon": "HotStorage",
+                "_pub_template_year": "2023",
+                "_pub_template_align": "left"
+            }
+        }
     }
 }

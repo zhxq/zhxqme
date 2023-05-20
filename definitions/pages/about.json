@@ -50,7 +50,9 @@
             "name": "titlewpara",
             "vars": {
                 "_twp_template_title": "$publicationstitle$",
-                "_twp_template_paragraph": "$publicationsline$"
+                "_twp_template_paragraph": [
+                    "$excessiveparallelism$"
+                ]
             }
         },
         {
