@@ -5,13 +5,6 @@
         {
             "name": "titlewpara",
             "vars": {
-                "_twp_template_title": "$personalinformation$",
-                "_twp_template_paragraph": "$personalinformationline$"
-            }
-        },
-        {
-            "name": "titlewpara",
-            "vars": {
                 "_twp_template_title": "$photographyworks$",
                 "_twp_template_paragraph": [
                     "$photoscopyright$"
