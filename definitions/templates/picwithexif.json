@@ -1,6 +1,6 @@
 {
     "type": "template",
-    "js": ["https://cdn.jsdelivr.net/npm/exif-js", "./templates/js/picwithexif.js"],
+    "js": ["https://cdn.jsdelivr.net/npm/exif-js", "./js/picwithexif.js"],
     "name": "picwithexif",
     "close": true,
     "content": [
