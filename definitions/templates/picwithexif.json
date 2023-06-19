@@ -23,7 +23,7 @@
                             "margin": "20px 0px 0px 0px"
                         },
                         "id": ["$_pwexif_template_id$", "_pic"],
-                        "onload": ["picwithexif_call('", "$_pwexif_template_id$", "');"]
+                        "onload": ["picwithexif_call('", "$_pwexif_template_id$", "_pic", "');"]
                     },
                     "vars": {
                         "src": "$_pwexif_template_src$"
