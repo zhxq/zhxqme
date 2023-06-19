@@ -11,10 +11,7 @@
                 ]
             }
         },
-        {
-            "name": "h3",
-            "content": "$planespotting"
-        },
+        
         {
             "name": "cdiv",
             "vars": {
