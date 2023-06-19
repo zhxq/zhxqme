@@ -1,0 +1,39 @@
+{
+    "name": "photos",
+    "type": "page",
+    "content":[
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "$personalinformation$",
+                "_twp_template_paragraph": "$personalinformationline$"
+            }
+        },
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "$photographyworks$",
+                "_twp_template_paragraph": [
+                    "$photoscopyright$"
+                ]
+            }
+        },
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "$planespotting$",
+                "_twp_template_paragraph": [
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "N24927-1",
+                            "_pwexif_template_src": "/img/photos/N24927-1.jpg",
+                            "_pwexif_template_title": "N24927",
+                            "_pwexif_template_description": "A B-24A Liberator low passing Syracuse Airport."
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -41,16 +41,12 @@
                     "_pub_template_align": "center"
                 }
             }
-        ]
-    },
-    "excessiveparallelism": {
-        "name": "publications",
-        "vars": {
-            "_pub_template_authors": "Xiangqun Zhang, Shuyi Pei, Jongmoo Choi, and Bryan S. Kim",
-            "_pub_template_title": "Excessive SSD Internal Parallelism Considered Harmful",
-            "_pub_template_pubon": "HotStorage",
-            "_pub_template_year": "2023",
-            "_pub_template_align": "left"
-        }
+        ],
+        "hobbies": "Hobbies",
+        "photographyworks": "Photography Works",
+        "urbanlifeandlandscape": "Urban Life & Landscape",
+        "foodphotos": "Food",
+        "planespotting": "Planespotting",
+        "photoscopyright": "© Xiangqun Zhang, all rights reserved. No commercial use allowed without written approval."
     }
 }

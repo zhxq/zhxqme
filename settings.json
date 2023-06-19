@@ -11,7 +11,16 @@
         "about": {
             "readable": "$aboutmetitle$",
             "right": false
-        }
+        },
+        "hobbies": {
+            "readable": "$hobbies$",
+            "right": false,
+            "dropdown": {
+                "photos": {
+                    "readable": "$photographyworks$"
+                }
+            }
+        },
     },
     "defaultlang": "zh-cn",
     "lang": {
