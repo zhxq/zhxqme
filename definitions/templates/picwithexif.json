@@ -37,7 +37,9 @@
                     "vars": {
                         "src": "$_pwexif_template_src$"
                     },
-                    "id": ["$_pwexif_template_id$", "_exif"],
+                    "attr":{
+                        "id": ["$_pwexif_template_id$", "_exif"]
+                    },
                     "content": ""
                     
                 },
