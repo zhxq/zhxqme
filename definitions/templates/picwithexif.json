@@ -20,12 +20,12 @@
                             "width": "$_pwexif_template_picwidth$",
                             "height": "$_pwexif_template_picheight$",
                             "max-width": "100%",
-                            "margin": "20px 0px 0px 0px"
+                            "margin": "20px 0px 0px 0px",
+                            "id": ["$_pwexif_template_id$", "_pic"]
                         }
                     },
                     "vars": {
                         "src": "$_pwexif_template_src$",
-                        "id": ["$_pwexif_template_id$", "_pic"]
                     }
                 },
                 {
