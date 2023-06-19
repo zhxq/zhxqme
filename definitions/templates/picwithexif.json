@@ -14,9 +14,6 @@
             },
             "content": [
                 {
-                    "name": "div"
-                },
-                {
                     "name": "h5",
                     "content": ["$_pwexif_template_title$"]
                 },
