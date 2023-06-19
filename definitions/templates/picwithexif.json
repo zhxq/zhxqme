@@ -50,7 +50,7 @@
                 {
                     "name": "script",
                     "content": [
-                        "$('#", "$_pwexif_template_id$", "_exif').html('", "EXIF.getTag(this, \"Make\")", " EXIF.getTag(this, \"Model\")", " EXIF.getTag(this, \"FocalLength\")", " EXIF.getTag(this, \"ShutterSpeedValue\")", " EXIF.getTag(this, \"FNumber\")", " EXIF.getTag(this, \"ApertureValue\")", "');"
+                        "$('#", "$_pwexif_template_id$", "_exif').html(EXIF.getTag(this, \"Make\") + EXIF.getTag(this, \"Model\")+ EXIF.getTag(this, \"FocalLength\") + EXIF.getTag(this, \"ShutterSpeedValue\") + EXIF.getTag(this, \"FNumber\") + EXIF.getTag(this, \"ApertureValue\"));"
                     ]
                 }
             ]
