@@ -31,6 +31,15 @@
                             "_pwexif_template_title": "N24927",
                             "_pwexif_template_description": "A B-24A Liberator low passing Syracuse Airport."
                         }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "N24927-1",
+                            "_pwexif_template_src": "./imgs/photos/N24927-1.jpg",
+                            "_pwexif_template_title": "N24927",
+                            "_pwexif_template_description": "A B-24A Liberator low passing Syracuse Airport."
+                        }
                     }
                 ]
             }
