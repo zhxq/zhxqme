@@ -428,6 +428,9 @@ function parse_def($payload, $attrenv, $varenv){
             //echo("\n=====================END====================\n");
         }
     }
+    if (!$def['close']){
+        return $start;
+    }
     return $start . $return . $end;
 }
 function parse_template($payload, $attrenv, $varenv){
