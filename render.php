@@ -275,6 +275,9 @@ function resolve_attrenv($default, $defattr, $attr, $attrenv, $varenv){
                 }elseif (array_key_exists($keyname, $default)){
                     $attrenv[$ak] = $default[$keyname];
                 }
+                if (gettype($attrenv[$ak]) == gettype([])){
+                    $attrenv[$ak] = implode('', $attrenv[$ak]);
+                }
             }
         }
     }
