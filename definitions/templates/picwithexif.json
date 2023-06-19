@@ -14,6 +14,14 @@
             },
             "content": [
                 {
+                    "name": "script",
+                    "content": [
+                        "function ", "$_pwexif_template_id$", "_call(){",
+                        "EXIF.getData(document.getElementById('N24927-1_pic'), function(){var tags=EXIF.getTag(this, \"Make\") + EXIF.getTag(this, \"Model\") + EXIF.getTag(this, \"FocalLength\") + EXIF.getTag(this, \"ShutterSpeedValue\") + EXIF.getTag(this, \"FNumber\") + EXIF.getTag(this, \"ApertureValue\");$('#", "$_pwexif_template_id$", "_exif').html(tags);});",
+                        "};"
+                    ]
+                },
+                {
                     "name": "pic",
                     "attr": {
                         "style": {
@@ -22,7 +30,8 @@
                             "max-width": "100%",
                             "margin": "20px 0px 0px 0px"
                         },
-                        "id": ["$_pwexif_template_id$", "_pic"]
+                        "id": ["$_pwexif_template_id$", "_pic"],
+                        "onload": ["$_pwexif_template_id$", "_call()"]
                     },
                     "vars": {
                         "src": "$_pwexif_template_src$"
@@ -46,13 +55,6 @@
                 {
                     "name": "p",
                     "content": ["$_pwexif_template_description$"]
-                },
-                {
-                    "name": "script",
-                    "content": [
-                        "var exifData = '';",
-                        "EXIF.getData(document.getElementById('N24927-1_pic'), function(){var tags=EXIF.getTag(this, \"Make\") + EXIF.getTag(this, \"Model\")+ EXIF.getTag(this, \"FocalLength\") + EXIF.getTag(this, \"ShutterSpeedValue\") + EXIF.getTag(this, \"FNumber\") + EXIF.getTag(this, \"ApertureValue\");$('#", "$_pwexif_template_id$", "_exif').html(tags);});"
-                    ]
                 }
             ]
         }
