@@ -35,9 +35,9 @@
                 {
                     "name": "h6",
                     "vars": {
-                        "src": "$_pwexif_template_src$",
-                        "id": ["$_pwexif_template_id$", "_exif"]
+                        "src": "$_pwexif_template_src$"
                     },
+                    "id": ["$_pwexif_template_id$", "_exif"],
                     "content": ""
                     
                 },
@@ -48,7 +48,6 @@
                 {
                     "name": "script",
                     "content": [
-                        "var ", "$_jc_template_json_id$", "=", "$_jc_template_json$", ";", 
                         "$('#", "$_pwexif_template_id$", "_exif').html('", "EXIF.getTag(this, \"Make\")", " EXIF.getTag(this, \"Model\")", " EXIF.getTag(this, \"FocalLength\")", " EXIF.getTag(this, \"ShutterSpeedValue\")", " EXIF.getTag(this, \"FNumber\")", " EXIF.getTag(this, \"ApertureValue\")", "');"
                     ]
                 }
