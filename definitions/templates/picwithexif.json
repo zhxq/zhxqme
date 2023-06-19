@@ -25,7 +25,7 @@
                         }
                     },
                     "vars": {
-                        "src": "$_pwexif_template_src$",
+                        "src": "$_pwexif_template_src$"
                     }
                 },
                 {
