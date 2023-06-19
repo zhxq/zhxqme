@@ -275,9 +275,6 @@ function resolve_attrenv($default, $defattr, $attr, $attrenv, $varenv){
                 }elseif (array_key_exists($keyname, $default)){
                     $attrenv[$ak] = $default[$keyname];
                 }
-                if (gettype($attrenv[$ak]) == gettype([])){
-                    $attrenv[$ak] = implode('', $attrenv[$ak]);
-                }
             }
         }
     }
@@ -377,6 +374,9 @@ function parse_def($payload, $attrenv, $varenv){
                         $v = $varenv[$keyname];
                     }
                 }
+            }
+            if (gettype($v) == gettype([])){
+                $v = implode('', $v);
             }
             $attrStr .= " $k=\"$v\"";
         }
