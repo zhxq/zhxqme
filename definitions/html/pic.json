@@ -20,5 +20,6 @@
             "padding": "$padding$"
         },
         "class": "$class$"
-    }
+    },
+    "content": [""]
 }
