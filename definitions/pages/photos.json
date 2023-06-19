@@ -12,10 +12,13 @@
             }
         },
         {
-            "name": "titlewdiv",
+            "name": "h3",
+            "content": "$planespotting"
+        },
+        {
+            "name": "cdiv",
             "vars": {
-                "_twd_template_title": "$planespotting$",
-                "_twd_template_paragraph": [
+                "_cdiv_template_content": [
                     {
                         "name": "picwithexif", 
                         "vars": {
