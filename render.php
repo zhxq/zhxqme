@@ -369,7 +369,7 @@ function parse_def($payload, $attrenv, $varenv){
             if (gettype($v) == gettype('')){
                 $varr = [$v];
             }
-            foreach ($varr as $ve){
+            foreach ($varr as &$ve){
                 if ($ve[0] == '$' && $ve[-1] == '$'){
                     $keyname = substr($ve, 1, -1);
                     $ve = $varenv[$keyname];
