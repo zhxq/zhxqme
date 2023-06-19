@@ -14,6 +14,20 @@
             },
             "content": [
                 {
+                    "name": "pic",
+                    "attr": {
+                        "style": {
+                            "width": "$_pwexif_template_picwidth$",
+                            "height": "$_pwexif_template_picheight$",
+                            "max-width": "100%"
+                        }
+                    },
+                    "vars": {
+                        "src": "$_pwexif_template_src$",
+                        "id": ["$_pwexif_template_id$", "_pic"]
+                    }
+                },
+                {
                     "name": "h5",
                     "content": ["$_pwexif_template_title$"]
                 },
