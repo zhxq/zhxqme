@@ -19,10 +19,10 @@
             }
         },
         {
-            "name": "titlewpara",
+            "name": "titlewdiv",
             "vars": {
-                "_twp_template_title": "$planespotting$",
-                "_twp_template_paragraph": [
+                "_twd_template_title": "$planespotting$",
+                "_twd_template_paragraph": [
                     {
                         "name": "picwithexif", 
                         "vars": {
