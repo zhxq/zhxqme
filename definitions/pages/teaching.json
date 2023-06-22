@@ -1,0 +1,20 @@
+{
+    "name": "photos",
+    "type": "teaching",
+    "content":[
+        {
+            "name": "h3",
+            "content": "$teaching$"
+        },
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "$foreword$",
+                "_twp_template_paragraph": [
+                    "$teachingforewordcontent$"
+                ],
+                "_twp_template_titletype": "h4"
+            }
+        }
+    ]
+}

@@ -19,7 +19,7 @@
         "publicationstitle": "出品论文",
         "publicationsline": "作为新入学的博士生，我目前没有已发布的论文。敬请持续关注！",
         "teachingtitle": "教学有关",
-        "teachingline1": [
+        "fall2022teaching": [
             "Fall 2022: 雪城大学 ", 
             {
                 "name": "a",
@@ -29,6 +29,9 @@
                 "content": ["CIS 341"]
             }, 
             " 助教"
+        ],
+        "spring2023teaching": [
+            "Spring 2023: 雪城大学 CIS 600 (Social Media and Data Mining) 助教"
         ],
         "excessiveparallelism": [
             {
@@ -49,6 +52,9 @@
         "planespotting": "飞机",
         "photoscopyright": "© 张祥群，保留所有权利。禁止未经授权的商业使用。",
         "N24927-1description": "一架B-24A“解放者”型轰炸机在雪城机场低空通场飞行。",
-        "N174UP-1description": "一架UPS的空客A300型货机执行SDF-SYR的5X1054航班。"
+        "N174UP-1description": "一架UPS的空客A300型货机执行SDF-SYR的5X1054航班。",
+        "teaching": "教学",
+        "foreword": "前言",
+        "teachingforewordcontent": "当我还是一个初中生的时候，我就很喜欢讲课。年级举办的学生主讲的公开课大赛也好，我老师们专门给我留出来的课堂教学时间也罢，我总是有很多机会来进行我的教学试验。这种爱好持续到了高中乃至大学。若问我读博最大的动力是什么，那我一定会回答“是为了以后有资格做一名教授”。我希望我能够通过我的教学帮助到他人，乃至最后也成为我一样愿意将激情奉献给教学的人。"
     }
 }

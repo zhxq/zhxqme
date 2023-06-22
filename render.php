@@ -74,6 +74,23 @@ function parse_all($payload, $attrenv, $varenv){
         }
         return $return;
     }elseif ($payload['name'] != null){
+        if (gettype($payload['name']) == gettype('')){
+            $payload['name'] = [$payload['name']];
+        }
+        foreach ($payload['name'] as &$ve){
+            if ($ve[0] == '$' && $ve[-1] == '$'){
+                $keyname = substr($ve, 1, -1);
+                $ve = $varenv[$keyname];
+                if ($ve == null){
+                    $ve = $def['default']['attr'][$keyname];
+                    if ($ve[0] == '$' && $ve[-1] == '$'){
+                        $ve = $varenv[$keyname];
+                    }
+                }
+            }
+        }
+        $payload['name'] = implode('', $payload['name']);
+
         if (!array_key_exists($payload['name'], $definition)){
             //load definition from JSON file
             $defFromDir = '';

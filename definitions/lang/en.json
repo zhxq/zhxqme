@@ -19,7 +19,7 @@
         "publicationstitle": "Publications",
         "publicationsline": "As a new Ph.D. Student, I have no publicated papers as for now. Stay tuned!",
         "teachingtitle": "Teaching",
-        "teachingline1": [
+        "fall2022teaching": [
             "Fall 2022: Teaching Assistant for ", 
             {
                 "name": "a",
@@ -29,6 +29,9 @@
                 "content": ["CIS 341"]
             }, 
             ", Syracuse University"
+        ],
+        "spring2023teaching": [
+            "Spring 2023: Teaching Assistant for CIS 600 Social Media and Data Mining, Syracuse University"
         ],
         "excessiveparallelism": [
             {
@@ -49,6 +52,9 @@
         "planespotting": "Planespotting",
         "photoscopyright": "© Xiangqun Zhang, all rights reserved. No commercial use allowed without written approval.",
         "N24927-1description": "A B-24A Liberator low passing Syracuse Airport.",
-        "N174UP-1description": "An Airbus A300 owned by UPS serving flight 5X1054 from SDF to SYR."
+        "N174UP-1description": "An Airbus A300 owned by UPS serving flight 5X1054 from SDF to SYR.",
+        "teaching": "Teaching",
+        "foreword": "Foreword",
+        "teachingforewordcontent": "I enjoyed teaching when I was still in middle school. There were plenty of chances for me to teach: grade-wide student teaching contest, or just some accommodation between me and my teachers who were glad to lend me some time to teach. My interests in teaching lasted beyond my high school and undergrad years, and I am still very interested in teaching today. If I were asked the reason for me to be a Ph.D. student, I will definitely answer \"To be qualified to be a professor.\" I hope I can help others using my ability to teach, and I hope more people will be devoting themselves into teaching just like I do."
     }
 }
