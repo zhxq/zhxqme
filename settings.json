@@ -12,6 +12,10 @@
             "readable": "$aboutmetitle$",
             "right": false
         },
+        "teaching": {
+            "readable": "$teaching$",
+            "right": false
+        },
         "photos": {
             "readable": "$photographyworks$",
             "right": false
