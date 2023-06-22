@@ -11,6 +11,10 @@
         "about": {
             "readable": "$aboutmetitle$",
             "right": false
+        },
+        "photos": {
+            "readable": "$photographyworks$",
+            "right": false
         }
     },
     "defaultlang": "zh-cn",

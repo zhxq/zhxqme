@@ -365,16 +365,23 @@ function parse_def($payload, $attrenv, $varenv){
             $tmp = 'class="' . $d . '"';
             if ($d != '') $attrStr .= " $tmp";
         }else{
-            if ($v[0] == '$' && $v[-1] == '$'){
-                $keyname = substr($v, 1, -1);
-                $v = $varenv[$keyname];
-                if ($v == null){
-                    $v = $def['default']['attr'][$keyname];
-                    if ($v[0] == '$' && $v[-1] == '$'){
-                        $v = $varenv[$keyname];
+            $varr = $v;
+            if (gettype($v) == gettype('')){
+                $varr = [$v];
+            }
+            foreach ($varr as &$ve){
+                if ($ve[0] == '$' && $ve[-1] == '$'){
+                    $keyname = substr($ve, 1, -1);
+                    $ve = $varenv[$keyname];
+                    if ($ve == null){
+                        $ve = $def['default']['attr'][$keyname];
+                        if ($ve[0] == '$' && $ve[-1] == '$'){
+                            $ve = $varenv[$keyname];
+                        }
                     }
                 }
             }
+            $v = implode('', $varr);
             $attrStr .= " $k=\"$v\"";
         }
     }
@@ -427,6 +434,9 @@ function parse_def($payload, $attrenv, $varenv){
             }
             //echo("\n=====================END====================\n");
         }
+    }
+    if (!$def['close']){
+        return $start;
     }
     return $start . $return . $end;
 }

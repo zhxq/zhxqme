@@ -1,0 +1,41 @@
+{
+    "name": "photos",
+    "type": "page",
+    "content":[
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "$photographyworks$",
+                "_twp_template_paragraph": [
+                    "$photoscopyright$"
+                ]
+            }
+        },
+        {
+            "name": "titlewdiv",
+            "vars": {
+                "_twd_template_title": ["$planespotting$"],
+                "_twd_template_paragraph": [
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "N24927-1",
+                            "_pwexif_template_src": "./imgs/photos/N24927-1.jpg",
+                            "_pwexif_template_title": "N24927",
+                            "_pwexif_template_description": "$N24927-1description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "N174UP-1",
+                            "_pwexif_template_src": "./imgs/photos/N174UP-1.jpg",
+                            "_pwexif_template_title": "N174UP",
+                            "_pwexif_template_description": "$N174UP-1description$"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
