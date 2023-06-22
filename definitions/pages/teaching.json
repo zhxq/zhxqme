@@ -3,17 +3,23 @@
     "type": "page",
     "content":[
         {
-            "name": "h3",
-            "content": "$teaching$"
-        },
-        {
-            "name": "titlewpara",
+            "name": "titlewdiv",
             "vars": {
-                "_twp_template_title": "$foreword$",
-                "_twp_template_paragraph": [
-                    "$teachingforewordcontent$"
+                "_twd_template_title": "$teaching$",
+                "_twd_template_paragraph": [
+                    {
+                        "name": "titlewpara",
+                        "vars": {
+                            "_twp_template_title": "$foreword$",
+                            "_twp_template_paragraph": [
+                                "$teachingforewordcontent$"
+                            ],
+                            "_twp_template_titletype": "h4",
+                            "_twd_template_align": "left"
+                        }
+                    }
                 ],
-                "_twp_template_titletype": "h4"
+                "_twd_template_align": "left"
             }
         }
     ]
