@@ -16,17 +16,12 @@
                             ],
                             "_twp_template_titletype": "h4",
                             "_twp_template_align": "left",
-                            "_twp_template_maxwidth": "80%"
-                        },
-                        "attr": {
-                            "style":{
-                                "margin": "0px"
-                            }
+                            "_twp_template_maxwidth": "100%"
                         }
                     }
                 ],
                 "_twd_template_align": "left",
-                "_twd_template_maxwidth": "80%"
+                "_twd_template_maxwidth": "100%"
             }
         }
     ]
