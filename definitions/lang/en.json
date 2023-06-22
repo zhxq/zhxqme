@@ -55,6 +55,10 @@
         "N174UP-1description": "An Airbus A300 owned by UPS serving flight 5X1054 from SDF to SYR.",
         "teaching": "Teaching",
         "foreword": "Foreword",
-        "teachingforewordcontent": "I enjoyed teaching when I was still in middle school. There were plenty of chances for me to teach: grade-wide student teaching contest, or just some accommodation between me and my teachers who were glad to lend me some time to teach. My interests in teaching lasted beyond my high school and undergrad years, and I am still very interested in teaching today. If I were asked the reason for me to be a Ph.D. student, I will definitely answer \"To be qualified to be a professor.\" I hope I can help others using my ability to teach, and I hope more people will be devoting themselves into teaching just like I do."
+        "teachingforewordcontent": [
+            "I enjoyed teaching when I was still in middle school. There were plenty of chances for me to teach: grade-wide student teaching contest, or just some accommodation between me and my teachers who were glad to lend me some time to teach. My interests in teaching lasted beyond my high school and undergrad years, and I am still very interested in teaching today. If I were asked the reason for me to be a Ph.D. student, I will definitely answer \"To be qualified to be a professor.\" I hope I can help others using my ability to teach, and I hope more people will be devoting themselves into teaching just like I do.",
+            "<br>",
+            "Of course, just like I would like to set an example in teaching, there were several professors I would like to specially thank. It was them who inspired me on my path to become a Ph.D. student and a future Ph.D.. "
+    ]
     }
 }
