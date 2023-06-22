@@ -11,7 +11,7 @@
             },
             "content": [
                 {
-                    "name": "$_twp_template_titletype$",
+                    "name": "$_twd_template_titletype$",
                     "content": ["$_twd_template_title$"]
                 },
                 {
