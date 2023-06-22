@@ -1,6 +1,6 @@
 {
-    "name": "photos",
-    "type": "teaching",
+    "name": "teaching",
+    "type": "page",
     "content":[
         {
             "name": "h3",
