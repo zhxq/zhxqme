@@ -18,8 +18,10 @@
                             "_twp_template_align": "left",
                             "_twp_template_maxwidth": "80%"
                         },
-                        "style":{
-                            "margin": "0px"
+                        "attr": {
+                            "style":{
+                                "margin": "0px"
+                            }
                         }
                     }
                 ],
