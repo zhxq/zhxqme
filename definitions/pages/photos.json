@@ -37,6 +37,41 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "titlewdiv",
+            "vars": {
+                "_twd_template_title": ["$travelphotos$"],
+                "_twd_template_paragraph": [
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "greenlakebonfire",
+                            "_pwexif_template_src": "./imgs/photos/greenlakebonfire.jpg",
+                            "_pwexif_template_title": "Bonfire at Green Lake",
+                            "_pwexif_template_description": "$greenlakebonfiredescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "greenlakestars1",
+                            "_pwexif_template_src": "./imgs/photos/greenlakestars1.jpg",
+                            "_pwexif_template_title": "greenlakestars1",
+                            "_pwexif_template_description": "$greenlakestars1description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "greenlakestars2",
+                            "_pwexif_template_src": "./imgs/photos/greenlakestars2.jpg",
+                            "_pwexif_template_title": "greenlakestars2",
+                            "_pwexif_template_description": "$greenlakestars2description$"
+                        }
+                    }
+                ]
+            }
         }
     ]
 }
