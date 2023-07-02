@@ -18,7 +18,8 @@
                 {
                     "name": "a",
                     "attr": {
-                        "href": "$_pwexif_template_src$"
+                        "href": "$_pwexif_template_src$",
+                        "target": "_blank"
                     },
                     "content": [
                         {
