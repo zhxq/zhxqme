@@ -61,6 +61,24 @@
             "正如我希望能够成为教学的榜样并用我的力量去启发别人，我也想要感谢一些对我而言来说是榜样的教授。是他们启发了我，让我走向了成为博士生和未来博士的道路。我很荣幸能够有机会上他们的课——我也希望在此能够略微介绍一下他们是如何在过去、现在和未来持续地启发我。",
             "<br>",
             "未完待续。"
-        ]
+        ],
+        "jamesmckernan": "James McKernan",
+        "jmckcontent": [
+            "我曾经上过McKernan教授的抽象代数课。他对我最大的启发是他提供的课本质量的PDF格式笔记——是他引导了我到LaTeX的奇妙世界中。我衷心希望我的读者能够读一读他提供的笔记：",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://mathweb.ucsd.edu/~jmckerna/Teaching/16-17/Autumn/100A/lectures.html"
+                },
+                "content": ["这里"]
+            },
+            "是我当时上的课的笔记。每当我要准备教学材料时，我都会尽可能以他的笔记作为我的标准。" 
+        ],
+        "yuanyuanzhou": "Yuanyuan (YY) Zhou",
+        "yyzhoucontent": "",
+        "litiencheng": "Li-Tien Cheng",
+        "ltccontent": "",
+        "gregaloupis": "Greg Aloupis",
+        "gacontent": ""
     }
 }

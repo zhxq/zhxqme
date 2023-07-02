@@ -60,7 +60,25 @@
             "<br>",
             "Of course, just like I would like to set an example in teaching and inspire others, there were several inspirational professors I would like to specially thank. It was them who inspired me on my path to become a PhD student and a future PhD. It was my honor to take their courses, and I would like to briefly summarize how they have inspired me before, now, and beyond.",
             "<br>",
-            "...to be continued."
-    ]
+            "...to be finished."
+        ],
+        "jamesmckernan": "James McKernan",
+        "jmckcontent": [
+            "I took Professor McKernan's abstract algebra course. The biggest inspiration of his course is his class notes. He would provide a textbook-quality note in PDF for every single class session, from which I've learned the magic of LaTeX. I strongly recommend everyone who is reading this page to take a look on his class notes - for example, here is the ",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://mathweb.ucsd.edu/~jmckerna/Teaching/16-17/Autumn/100A/lectures.html"
+                },
+                "content": ["link"]
+            },
+            " for the course I've taken. Whenever I am trying to provide course materials to my students, I set Professor McKernan's notes as the standard." 
+        ],
+        "yuanyuanzhou": "Yuanyuan (YY) Zhou",
+        "yyzhoucontent": "",
+        "litiencheng": "Li-Tien Cheng",
+        "ltccontent": "",
+        "gregaloupis": "Greg Aloupis",
+        "gacontent": ""
     }
 }
