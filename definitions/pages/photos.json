@@ -73,8 +73,5 @@
                 ]
             }
         }
-    ],
-    "vars": {
-        "_twd_template_maxwidth": "1024px"
-    }
+    ]
 }
