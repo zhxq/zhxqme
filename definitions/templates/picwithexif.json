@@ -12,7 +12,7 @@
                     "display": "$_pwexif_template_divdisplay$",
                     "margin": "$_pwexif_template_divmargin$"
                 },
-                "class": ["picwithexifdiv"]
+                "class": ["picwithexifsinglecontainer"]
             },
             "content": [
                 {
