@@ -7,9 +7,10 @@
             "name": "div",
             "attr": {
                 "style": {
-                    "width": "$_pwexif_template_width$",
-                    "height": "$_pwexif_template_height$",
-                    "display": "$_pwexif_template_divdisplay$"
+                    "width": "$_pwexif_template_divwidth$",
+                    "height": "$_pwexif_template_divheight$",
+                    "display": "$_pwexif_template_divdisplay$",
+                    "margin": "$_pwexif_template_divmargin$"
                 }
             },
             "content": [
@@ -20,7 +21,7 @@
                             "width": "$_pwexif_template_picwidth$",
                             "height": "$_pwexif_template_picheight$",
                             "max-width": "100%",
-                            "margin": "10px 10px 10px 10px"
+                            "margin": "20px 0px 0px 0px"
                         },
                         "id": ["$_pwexif_template_id$", "_pic"],
                         "onload": ["picwithexif_call('", "$_pwexif_template_id$", "');"]
@@ -53,9 +54,10 @@
     ],
     "vars": {
         "_pwexif_template_id": "",
-        "_pwexif_template_width": "",
-        "_pwexif_template_height": "",
+        "_pwexif_template_divwidth": "",
+        "_pwexif_template_divheight": "",
         "_pwexif_template_divdisplay": "inline-block",
+        "_pwexif_template_divmargin": "10px 10px 10px 10px",
         "_pwexif_template_picwidth": "",
         "_pwexif_template_picheight": "",
         "_pwexif_template_src": "/img/test.png",
