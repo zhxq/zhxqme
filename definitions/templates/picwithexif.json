@@ -8,7 +8,8 @@
             "attr": {
                 "style": {
                     "width": "$_pwexif_template_width$",
-                    "height": "$_pwexif_template_height$"
+                    "height": "$_pwexif_template_height$",
+                    "display": "$_pwexif_template_divdisplay$"
                 }
             },
             "content": [
@@ -19,7 +20,7 @@
                             "width": "$_pwexif_template_picwidth$",
                             "height": "$_pwexif_template_picheight$",
                             "max-width": "100%",
-                            "margin": "20px 0px 0px 0px"
+                            "margin": "10px 10px 10px 10px"
                         },
                         "id": ["$_pwexif_template_id$", "_pic"],
                         "onload": ["picwithexif_call('", "$_pwexif_template_id$", "');"]
@@ -54,6 +55,7 @@
         "_pwexif_template_id": "",
         "_pwexif_template_width": "",
         "_pwexif_template_height": "",
+        "_pwexif_template_divdisplay": "inline-block",
         "_pwexif_template_picwidth": "",
         "_pwexif_template_picheight": "",
         "_pwexif_template_src": "/img/test.png",
