@@ -22,7 +22,8 @@
                             "_pwexif_template_id": "N24927-1",
                             "_pwexif_template_src": "./imgs/photos/N24927-1.jpg",
                             "_pwexif_template_title": "N24927",
-                            "_pwexif_template_description": "$N24927-1description$"
+                            "_pwexif_template_description": "$N24927-1description$",
+                            "_pwexif_template_width": "30%"
                         }
                     },
                     {
@@ -31,7 +32,8 @@
                             "_pwexif_template_id": "N174UP-1",
                             "_pwexif_template_src": "./imgs/photos/N174UP-1.jpg",
                             "_pwexif_template_title": "N174UP",
-                            "_pwexif_template_description": "$N174UP-1description$"
+                            "_pwexif_template_description": "$N174UP-1description$",
+                            "_pwexif_template_width": "30%"
                         }
                     }
                 ]
