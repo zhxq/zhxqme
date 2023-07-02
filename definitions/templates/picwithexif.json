@@ -11,7 +11,8 @@
                     "height": "$_pwexif_template_divheight$",
                     "display": "$_pwexif_template_divdisplay$",
                     "margin": "$_pwexif_template_divmargin$"
-                }
+                },
+                "class": ["picwithexifdiv"]
             },
             "content": [
                 {
