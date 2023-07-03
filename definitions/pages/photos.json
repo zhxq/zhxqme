@@ -114,6 +114,16 @@
                             "_pwexif_template_description": "$xiansouthwalldescription$"
                         }
                     }
+                    ,
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "shenglisquare",
+                            "_pwexif_template_src": "./imgs/photos/shenglisquare.jpg",
+                            "_pwexif_template_title": "$shenglisquaretitle$",
+                            "_pwexif_template_description": "$shenglisquaredescription$"
+                        }
+                    }
                 ]
             }
         },
