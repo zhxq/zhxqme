@@ -453,6 +453,7 @@ function parse_def($payload, $attrenv, $varenv){
                     }else{
                         $return .= implode('', $d);
                     }
+                    echo($return);
                 }else{
                     //echo("Error");
                 }
