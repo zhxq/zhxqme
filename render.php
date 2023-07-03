@@ -423,10 +423,10 @@ function parse_def($payload, $attrenv, $varenv){
     
     if (gettype($payload['content']) == gettype([])){
         foreach ($payload['content'] as $c){
-            //echo("\n====================START===================\n");
-            //var_dump($c);
+            echo("\n====================START===================\n");
+            var_dump($c);
             $varenv['content'] = parse_all($c, $c['attr'], $varenv);
-            //echo("\n=================tempresult=================\n");
+            echo("\n=================tempresult=================\n");
             //var_dump($tempresult);
             
             foreach ($def['content'] as $kd=>$d){
