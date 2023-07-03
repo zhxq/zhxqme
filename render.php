@@ -451,7 +451,7 @@ function parse_def($payload, $attrenv, $varenv){
                         $content = parse_all($content, $content['attr'], $varenv);
                         $return .= $content;
                     }else{
-                        $return .= $d;
+                        $return .= implode('', $d);
                     }
                 }else{
                     //echo("Error");
