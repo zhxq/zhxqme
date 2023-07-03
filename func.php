@@ -1,4 +1,13 @@
 <?php
+//For Debug
+ini_set('display_errors', 'On');
+
+#设置成0的原因是为了抑制一切错误输出，尤其是php notice
+#大量php notice会导致cgi header输出过长
+#nginx处理不了 就会出现502 error
+#这个问题首先出现在maintainstationinfomodal里
+error_reporting(1);
+
 $resumate_version = "0.0.1";
 $currentLang = currentLang();
 
