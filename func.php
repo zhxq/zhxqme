@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 0);
 //error_reporting(E_ALL);
 
 
-$resumate_version = "0.0.1";
+$resumate_version = "0.0.2";
 $currentLang = currentLang();
 
 function dieVars($confirmed, $success, $message, $extra=null){
