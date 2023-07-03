@@ -433,7 +433,6 @@ function parse_def($payload, $attrenv, $varenv){
             if (gettype($c) == gettype('')){
                 $c = [$c];
             }
-            var_dump($c);
             $varenv['content'] = parse_all($c, $c['attr'], $varenv);
             echo("\n=================tempresult=================\n");
             //var_dump($tempresult);
@@ -447,7 +446,6 @@ function parse_def($payload, $attrenv, $varenv){
                         while (($keyname = check_var($content)) !== false){
                             $content = $varenv[$keyname];
                         }
-                        var_dump($content);
                         $content = parse_all($content, [], $varenv);
                         $return .= $content;
                     }else{
