@@ -253,12 +253,6 @@ function resolve_attrenv($default, $defattr, $attr, $attrenv, $varenv){
                 }
             }
         }elseif($dk == 'class'){
-            if (gettype($attrenv['class']) == gettype('')){
-                $attrenv['class'] = [$attrenv['class']];
-            }
-            if (gettype($defattr['class']) == gettype('')){
-                $defattr['class'] = [$defattr['class']];
-            }
             $attrenv['class'] = array_merge($attrenv['class'], $defattr['class']);
         }else{
             if (!array_key_exists($dk, $attrenv)){
@@ -438,11 +432,10 @@ function parse_def($payload, $attrenv, $varenv){
             echo("\n=================tempresult=================\n");
             //var_dump($tempresult);
             
-            foreach ($def['content'] as $kd=>&$d){
+            foreach ($def['content'] as $kd=>$d){
                 if (gettype($d) == gettype('')){
                     //echo("\n======================d======================\n");
                     //echo($d);
-                    $d = [$d];
                     if (($dkeyname = check_var($d)) !== false){
                         $content = $varenv[$dkeyname];
                         while (($keyname = check_var($content)) !== false){
@@ -451,9 +444,8 @@ function parse_def($payload, $attrenv, $varenv){
                         $content = parse_all($content, $content['attr'], $varenv);
                         $return .= $content;
                     }else{
-                        $return .= implode('', $d);
+                        $return .= $d;
                     }
-                    echo($return);
                 }else{
                     //echo("Error");
                 }
