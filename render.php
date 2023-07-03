@@ -442,7 +442,7 @@ function parse_def($payload, $attrenv, $varenv){
                             $content = $varenv[$keyname];
                         }
                         var_dump($content);
-                        $content = parse_all($content, $content['attr'], $varenv);
+                        $content = parse_all($content, [], $varenv);
                         $return .= $content;
                     }else{
                         $return .= $d;
