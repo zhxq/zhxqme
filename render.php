@@ -432,10 +432,11 @@ function parse_def($payload, $attrenv, $varenv){
             echo("\n=================tempresult=================\n");
             //var_dump($tempresult);
             
-            foreach ($def['content'] as $kd=>$d){
+            foreach ($def['content'] as $kd=>&$d){
                 if (gettype($d) == gettype('')){
                     //echo("\n======================d======================\n");
                     //echo($d);
+                    $d = [$d];
                     if (($dkeyname = check_var($d)) !== false){
                         $content = $varenv[$dkeyname];
                         while (($keyname = check_var($content)) !== false){
