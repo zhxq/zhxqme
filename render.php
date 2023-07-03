@@ -414,7 +414,7 @@ function parse_def($payload, $attrenv, $varenv){
     
     $return = '';
     if (!array_key_exists('content', $payload) || (gettype($payload['content']) == gettype([]) && count($payload['content']) == 0) || $payload['content'] == ''){
-        $payload['content'] = json_decode(json_encode($varenv['content']), true);
+        //$payload['content'] = json_decode(json_encode($varenv['content']), true);
     }
     
     
