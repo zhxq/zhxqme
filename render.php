@@ -253,6 +253,12 @@ function resolve_attrenv($default, $defattr, $attr, $attrenv, $varenv){
                 }
             }
         }elseif($dk == 'class'){
+            if (gettype($attrenv['class']) == gettype('')){
+                $attrenv['class'] = [$attrenv['class']];
+            }
+            if (gettype($defattr['class']) == gettype('')){
+                $defattr['class'] = [$defattr['class']];
+            }
             $attrenv['class'] = array_merge($attrenv['class'], $defattr['class']);
         }else{
             if (!array_key_exists($dk, $attrenv)){
