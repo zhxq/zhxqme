@@ -81,10 +81,10 @@
                     {
                         "name": "picwithexif", 
                         "vars": {
-                            "_pwexif_template_id": "timesquare",
-                            "_pwexif_template_src": "./imgs/photos/timesquare.jpg",
-                            "_pwexif_template_title": "$timesquaretitle$",
-                            "_pwexif_template_description": "$timesquaredescription$"
+                            "_pwexif_template_id": "timessquare",
+                            "_pwexif_template_src": "./imgs/photos/timessquare.jpg",
+                            "_pwexif_template_title": "$timessquaretitle$",
+                            "_pwexif_template_description": "$timessquaredescription$"
                         }
                     },
                     {
