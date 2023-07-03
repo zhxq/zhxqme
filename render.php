@@ -441,6 +441,7 @@ function parse_def($payload, $attrenv, $varenv){
                         while (($keyname = check_var($content)) !== false){
                             $content = $varenv[$keyname];
                         }
+                        var_dump($content);
                         $content = parse_all($content, $content['attr'], $varenv);
                         $return .= $content;
                     }else{
