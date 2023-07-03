@@ -2,8 +2,6 @@
 require_once('func.php');
 header("X-Parsed-By: Resumate $resumate_version - Build your page using JSON. https://resumate.io/");
 
-error_reporting(0);
-
 $file = $_POST['filename'];
 $theme = getSetting('theme');
 $payload = file_get_contents('./definitions/pages/' . $file);
