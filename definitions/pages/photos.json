@@ -131,6 +131,15 @@
                             "_pwexif_template_title": "$ewrsunrisetitle$",
                             "_pwexif_template_description": "$ewrsunrisedescription$"
                         }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "zurzukunft",
+                            "_pwexif_template_src": "./imgs/photos/zurzukunft.jpg",
+                            "_pwexif_template_title": "$zurzukunfttitle$",
+                            "_pwexif_template_description": "$zurzukunftdescription$"
+                        }
                     }
                 ]
             }
