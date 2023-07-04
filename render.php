@@ -385,7 +385,7 @@ function parse_def($payload, $attrenv, $varenv){
             $tmp = substr($tmp, 0, -1);
             if ($tmp != '') $attrStr .= " style=\"$tmp\"";
         }elseif ($k == "class"){
-            $d = implode(' ', $v);
+            $d = trim(implode(' ', $v));
             $tmp = 'class="' . $d . '"';
             if ($d != '') $attrStr .= " $tmp";
         }else{
