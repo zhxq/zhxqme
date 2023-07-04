@@ -19,7 +19,7 @@
             "margin": "$margin$", 
             "padding": "$padding$"
         },
-        "class": "$class$"
+        "class": ["$class$"]
     },
     "content": [""]
 }
