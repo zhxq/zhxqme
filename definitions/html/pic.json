@@ -9,7 +9,8 @@
                 "margin": "20px",
                 "padding": "0px"
             }
-        }
+        },
+        "class": []
     },
     "attr": {
         "src": "$src$", 

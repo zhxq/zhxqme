@@ -283,10 +283,13 @@ function resolve_attrenv($default, $defattr, $attr, $attrenv, $varenv){
                 if (($ckeyname = check_var($class)) !== false){
                     if (array_key_exists($ckeyname, $varenv)){
                         $class = $varenv[$ckeyname];
-                    }elseif (count($default['class']) > 0){
+                    }elseif (gettype($default['class']) == gettype([]) && count($default['class']) > 0){
                         $class = $default['class'];
+                    }elseif (gettype($default['class']) == gettype('')){
+                        $class = [$default['class']];
+                    }else{
+                        $class = [''];
                     }
-                    
                 }
             }
         }else{
