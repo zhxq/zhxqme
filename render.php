@@ -284,11 +284,11 @@ function resolve_attrenv($default, $defattr, $attr, $attrenv, $varenv){
                     if (array_key_exists($ckeyname, $varenv)){
                         $class = $varenv[$ckeyname];
                     }elseif (gettype($default['class']) == gettype([]) && count($default['class']) > 0){
-                        $class = $default['class'];
+                        $class = implode(" ", $default['class']);
                     }elseif (gettype($default['class']) == gettype('')){
-                        $class = [$default['class']];
+                        $class = $default['class'];
                     }else{
-                        $class = [''];
+                        $class = '';
                     }
                 }
             }
