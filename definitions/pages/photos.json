@@ -69,6 +69,15 @@
                             "_pwexif_template_title": "$greenlakestars2title$",
                             "_pwexif_template_description": "$greenlakestars2description$"
                         }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "fireworkflower",
+                            "_pwexif_template_src": "./imgs/photos/fireworkflower.jpg",
+                            "_pwexif_template_title": "$fireworkflowertitle$",
+                            "_pwexif_template_description": "$fireworkflowerdescription$"
+                        }
                     }
                 ]
             }
