@@ -1,4 +1,5 @@
 async function copyBibTeX(elmt){
+    console.log($(elmt).data('bib'));
     var data = $(elmt).data('bib');
     if (data == ''){
         alert('BibTeX information is not available yet.');
