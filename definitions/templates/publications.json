@@ -10,7 +10,20 @@
                 }
             },
             "content": [
-                ["$_pub_template_authors$", ".<b> ", "$_pub_template_title$", "</b>. <i>", "$_pub_template_pubon$", "</i> ", "$_pub_template_year$", "."]
+                ["$_pub_template_authors$", 
+                ".<b> ", 
+                "$_pub_template_title$", 
+                "</b>. <i>", 
+                "$_pub_template_pubon$", 
+                "</i> ", 
+                "$_pub_template_year$", 
+                ".", 
+                "<a href=\"",
+                "$_pub_template_link$",
+                "\" target=\"_blank\">DOI</a>", 
+                "<a href=\"javascript: copyBibTeX(this)\" data-bib=",
+                "$_pub_template_bibtex$",
+                ">BibTeX</a>"]
             ]
         }
     ],
@@ -19,6 +32,8 @@
         "_pub_template_title": "Baby on Board",
         "_pub_template_pubon": "Bigger than Jesus",
         "_pub_template_year": "1990",
+        "_pub_template_link": "javascript: alert('DOI not yet available.')",
+        "_pub_template_bibtex": "",
         "_pub_template_align": "left"
     }
 }
