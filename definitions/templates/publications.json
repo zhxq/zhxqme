@@ -1,6 +1,7 @@
 {
     "name": "publications",
     "type": "template",
+    "js": ["./js/publications.js"],
     "content": [
         {
             "name": "div",
