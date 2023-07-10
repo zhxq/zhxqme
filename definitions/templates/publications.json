@@ -18,12 +18,12 @@
                 "</i> ", 
                 "$_pub_template_year$", 
                 ".", 
-                "<a href=\"",
+                "&nbsp;<a href=\"",
                 "$_pub_template_link$",
                 "\" target=\"_blank\">DOI</a>", 
-                "<a href=\"javascript: copyBibTeX(this)\" data-bib=",
+                "&nbsp;<a href=\"javascript: copyBibTeX(this)\" data-bib=",
                 "$_pub_template_bibtex$",
-                ">BibTeX</a>"]
+                ">Bib</a>"]
             ]
         }
     ],
