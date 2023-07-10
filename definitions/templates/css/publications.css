@@ -1,3 +1,9 @@
+@keyframes publications-copied {
+    0%   {background-color:red; left:0px; top:0px;}
+    100% {background-color:red; left:0px; top:-20px;}
+}
+
 .publications-copying {
+    animation-name: publications-copied;
     animation: floatup .5s ease-in-out
 }
