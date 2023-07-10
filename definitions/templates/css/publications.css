@@ -1,9 +1,15 @@
-@keyframes publications-copied {
-    0%   {background-color:red; left:0px; top:0px;}
-    100% {background-color:red; left:0px; top:-20px;}
+@keyframes publicationbibcopied {
+    0%   {top:0px;}
+    100% {top:-20px; opacity: 0;}
 }
 
-.publications-copying {
-    animation-name: publications-copied;
-    animation: floatup .5s ease-in-out
+.publications-copied-label{
+    position: relative;
+    display: none;
+}
+
+.publications-copied-label .publications-copying {
+    animation-name: publicationbibcopied;
+    animation: floatup .5s ease-in-out;
+    display: inline;
 }

@@ -1,13 +1,15 @@
-async function copyBibTeX(elmt){
-    console.log($(elmt).data('bib'));
+function copyBibTeX(elmt){
     var data = $(elmt).data('bib');
+    var lastElmt = $('.publications-copied-label', elmt);
     if (data == ''){
         alert('BibTeX information is not available yet.');
         return;
     }
     try {
-        await navigator.clipboard.writeText(data);
+        navigator.clipboard.writeText(data);
+        lastElmt.removeClass('publications-copying').addClass('publications-copying');
     } catch (err) {
         console.error('Failed! ', err);
+        return false;
     }
 }
