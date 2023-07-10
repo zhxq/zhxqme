@@ -2,6 +2,7 @@
     "name": "publications",
     "type": "template",
     "js": ["./js/publications.js"],
+    "css": ["./css/publications.css"],
     "content": [
         {
             "name": "div",
@@ -24,7 +25,7 @@
                 "\" target=\"_blank\" onclick=\"if ($(this).attr('href') == '' || $(this).attr('href') == undefined){alert('DOI is not yet available.');event.preventDefault();return false;}\"><h5 style=\"display: inline;\">doi</h5></a>", 
                 "&nbsp;<a style=\"cursor: pointer\" onclick=\"copyBibTeX(this)\" data-bib=\"",
                 "$_pub_template_bibtex$",
-                "\"><h5 style=\"display: inline;\">bib</h5></a>"]
+                "\"><h5 style=\"display: inline;\">bib</h5><span class=\"publications-copying\" style=\"display: none\">✓</span></a>"]
             ]
         }
     ],
