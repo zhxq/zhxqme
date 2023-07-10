@@ -1,7 +1,7 @@
 async function copyBibTeX(elmt){
-    var data = $(elmt).attr('data-bib');
+    var data = $(elmt).data('bib');
     if (data == ''){
-        alert('BibTeX is not available yet.');
+        alert('BibTeX information is not available yet.');
         return;
     }
     try {

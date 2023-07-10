@@ -21,10 +21,10 @@
                 ".", 
                 "&nbsp;<a href=\"",
                 "$_pub_template_link$",
-                "\" target=\"_blank\">DOI</a>", 
+                "\" target=\"_blank\"><h5>doi<h5></a>", 
                 "&nbsp;<a href=\"javascript: copyBibTeX(this)\" data-bib=",
                 "$_pub_template_bibtex$",
-                ">Bib</a>"]
+                "><h5>bib</h5></a>"]
             ]
         }
     ],
