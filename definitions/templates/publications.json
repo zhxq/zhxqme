@@ -21,7 +21,7 @@
                 ".", 
                 "&nbsp;<a href=\"",
                 "$_pub_template_link$",
-                "\" target=\"_blank\"><h5 style=\"display: inline;\">doi<h5></a>", 
+                "\" target=\"_blank\"><h5 style=\"display: inline;\">doi</h5></a>", 
                 "&nbsp;<a href=\"javascript: copyBibTeX(this)\" data-bib=",
                 "$_pub_template_bibtex$",
                 "><h5 style=\"display: inline;\">bib</h5></a>"]
