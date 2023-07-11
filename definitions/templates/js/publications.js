@@ -19,7 +19,8 @@ function copyBibTeX(elmt){
 }
 
 
-$(document).on('load', '.presentation-slides-button', function(){
+$("body").on('load', '.presentation-slides-button', function(){
+    console.log(this);
     var href = $(this).attr('href');
     console.log(href);
     if (href == '' || href == undefined){
