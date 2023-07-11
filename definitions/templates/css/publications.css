@@ -1,6 +1,6 @@
 @keyframes publicationbibcopied {
-    20% {opacity: .999}
-    100% {transform: translate3d(-50%,-17px,0)}
+    0%   {left: 0px; top: 0px;}
+    100% {left: 0px; top: -20px; opacity: 0;}
 }
 
 .publications-copied-label{
