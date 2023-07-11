@@ -19,13 +19,10 @@ function copyBibTeX(elmt){
 }
 
 
-
-$(function(){
-    $('.presentation-slides-button').on('load', function(){
-        var href = $(this).attr('href');
-        console.log(href);
-        if (href == '' || href == undefined){
-            $(this).css('display', 'none');
-        }
-    });
+$('.presentation-slides-button').on('load', function(){
+    var href = $(this).attr('href');
+    console.log(href);
+    if (href == '' || href == undefined){
+        $(this).css('display', 'none');
+    }
 });
