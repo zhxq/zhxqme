@@ -8,7 +8,7 @@
     display: none;
 }
 
-.publications-copied-label.publications-copying {
+.publications-copying {
     animation: publicationbibcopied .5s ease-in-out;
     display: inline;
 }
