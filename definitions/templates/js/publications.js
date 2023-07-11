@@ -21,7 +21,7 @@ function copyBibTeX(elmt){
 
 
 $(function(){
-    $('.presentation-slides-button').trigger('load', function(){
+    $('.presentation-slides-button').on('load', function(){
         for (var i = 0; i < prsslidesbutton.length; i++){
             var href = $(prsslidesbutton[i]).attr('href');
             console.log(href);
