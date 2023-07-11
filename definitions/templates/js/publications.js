@@ -7,7 +7,14 @@ function copyBibTeX(elmt){
     }
     try {
         navigator.clipboard.writeText(data);
-        lastElmt.removeClass('publications-copying').addClass('publications-copying');
+        
+
+        
+        lastElmt.addClass('publications-copying');
+        const animated = document.querySelector(".publications-copying");
+        animated.addEventListener("animationend", () => {
+            lastElmt.removeClass('publications-copying');
+        });
     } catch (err) {
         console.error('Failed! ', err);
         return false;
