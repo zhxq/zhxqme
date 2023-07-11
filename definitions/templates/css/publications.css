@@ -9,7 +9,6 @@
 }
 
 .publications-copied-label .publications-copying {
-    animation-name: publicationbibcopied;
-    animation: floatup .5s ease-in-out;
+    animation: publicationbibcopied .5s ease-in-out;
     display: inline;
 }
