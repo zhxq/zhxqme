@@ -59,6 +59,13 @@
                 "_explist_template_title": "$teachingtitle$",
                 "_explist_template_macros": ["$fall2022teaching$", "$spring2023teaching$"]
             }
+        },
+        {
+            "name": "titlewpara",
+            "vars": {
+                "_twp_template_title": "",
+                "_twp_template_paragraph": "$resumateack$"
+            }
         }
     ]
 }

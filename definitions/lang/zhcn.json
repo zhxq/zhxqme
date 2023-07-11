@@ -110,6 +110,25 @@
         "litiencheng": "Li-Tien Cheng",
         "ltccontent": "",
         "gregaloupis": "Greg Aloupis",
-        "gacontent": ""
+        "gacontent": "",
+        "resumateack": [
+            "本页面使用",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://resumate.io/"
+                },
+                "content": ["Resumate"]
+            },
+            "生成。这是我制作的一个可以通过JSON定义的网页组件模板生成网页的模板引擎。<br>您也可以通过这个",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://github.com/zhxq/zhxqme"
+                },
+                "content": ["链接"]
+            },
+            "来查看本站的源码。"
+        ]
     }
 }
