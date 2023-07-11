@@ -1,11 +1,15 @@
 @keyframes publicationbibcopied {
-    0%   {top:0px;}
-    100% {top:-20px; opacity: 0;}
+    20% {opacity: .999}
+    100% {transform: translate3d(-50%,-17px,0)}
 }
 
 .publications-copied-label{
     position: relative;
     display: none;
+}
+
+@keyframes floatup {
+    
 }
 
 .publications-copying {
