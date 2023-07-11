@@ -12,20 +12,25 @@
                 }
             },
             "content": [
-                ["$_pub_template_authors$", 
-                ".<b> ", 
-                "$_pub_template_title$", 
-                "</b>. <i>", 
-                "$_pub_template_pubon$", 
-                "</i> ", 
-                "$_pub_template_year$", 
-                ".", 
-                "<div style=\"width: 0.75em;display: inline-block;\"></div><a href=\"",
-                "$_pub_template_paperlink$",
-                "\" target=\"_blank\" onclick=\"if ($(this).attr('href') == '' || $(this).attr('href') == undefined){alert('DOI is not yet available.');event.preventDefault();return false;}\"><h5 style=\"display: inline;\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"1em\" height=\"1em\" style=\"top: 0.125em; position: relative;\"><path fill=\"currentColor\" d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z\"></path></svg></h5></a>", 
-                "<div style=\"width: 0.5em;display: inline-block;\"></div><div style=\"display: inline-block; position: relative\"><a style=\"cursor: pointer\" onclick=\"copyBibTeX(this)\" data-bib=\"",
-                "$_pub_template_bibtex$",
-                "\"><h5 style=\"display: inline;\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"1em\" height=\"1em\"  style=\"top: 0.125em; position: relative;\"><path  fill=\"currentColor\" d=\"M11 7h1v6c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v2h-1V1H2v9h9Zm2 1V6H7V4h6V2l3 3Zm-2 3H1v2h2v-1h3v1h5ZM4 2v1H3V2Zm0 2v1H3V4Zm0 2v1H3V6ZM3 9V8h1v1Z\"></path></svg></h5><span class=\"publications-copied-label\">✓</span></a></div>"]
+                [
+                    "$_pub_template_authors$", 
+                    ".<b> ", 
+                    "$_pub_template_title$", 
+                    "</b>. <i>", 
+                    "$_pub_template_pubon$", 
+                    "</i> ", 
+                    "$_pub_template_year$", 
+                    ".", 
+                    "<div style=\"width: 0.75em;display: inline-block;\"></div><a href=\"",
+                    "$_pub_template_paper_link$",
+                    "\" target=\"_blank\" onclick=\"if ($(this).attr('href') == '' || $(this).attr('href') == undefined){alert('DOI is not yet available.');event.preventDefault();return false;}\"><h5 style=\"display: inline;\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"1em\" height=\"1em\" style=\"top: 0.125em; position: relative;\"><path fill=\"currentColor\" d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z\"></path></svg></h5></a>", 
+                    "<div style=\"width: 0.5em;display: inline-block;\"></div><div style=\"display: inline-block; position: relative\"><a style=\"cursor: pointer\" onclick=\"copyBibTeX(this)\" data-bib=\"",
+                    "$_pub_template_bibtex$",
+                    "\"><h5 style=\"display: inline;\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"1em\" height=\"1em\"  style=\"top: 0.125em; position: relative;\"><path  fill=\"currentColor\" d=\"M11 7h1v6c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v2h-1V1H2v9h9Zm2 1V6H7V4h6V2l3 3Zm-2 3H1v2h2v-1h3v1h5ZM4 2v1H3V2Zm0 2v1H3V4Zm0 2v1H3V6ZM3 9V8h1v1Z\"></path></svg></h5><span class=\"publications-copied-label\">✓</span></a></div>",
+                    "<div style=\"width: 0.5em;display: inline-block;\"><a href=\"",
+                    "_pub_template_presentation_link",
+                    "\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" width=\"1em\" height=\"1em\" style=\"top: 0.125em; position: relative;\"><path d=\"M16 3.75v8.5a.75.75 0 0 1-1.136.643L11 10.575v.675A1.75 1.75 0 0 1 9.25 13h-7.5A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3h7.5c.966 0 1.75.784 1.75 1.75v.675l3.864-2.318A.75.75 0 0 1 16 3.75Zm-6.5 1a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-6.5ZM11 8.825l3.5 2.1v-5.85l-3.5 2.1Z\"></path></svg></a>"
+                ]
             ]
         }
     ],
@@ -34,8 +39,9 @@
         "_pub_template_title": "Baby on Board",
         "_pub_template_pubon": "Bigger than Jesus",
         "_pub_template_year": "1990",
-        "_pub_template_paperlink": "",
+        "_pub_template_paper_link": "",
         "_pub_template_bibtex": "",
+        "_pub_template_presentation_link": "",
         "_pub_template_align": "left"
     }
 }
