@@ -18,11 +18,16 @@ function copyBibTeX(elmt){
     }
 }
 
-var prsslidesbutton = $('.presentation-slides-button');
-for (var i = 0; i < prsslidesbutton.length; i++){
-    var href = $(prsslidesbutton[i]).attr('href');
-    console.log(href);
-    if (href == '' || href == undefined){
-        $(prsslidesbutton[i]).css('display', 'none');
-    }
-}
+
+
+$(function(){
+    $('.presentation-slides-button[onload]').trigger('onload', function(){
+        for (var i = 0; i < prsslidesbutton.length; i++){
+            var href = $(prsslidesbutton[i]).attr('href');
+            console.log(href);
+            if (href == '' || href == undefined){
+                $(prsslidesbutton[i]).css('display', 'none');
+            }
+        }
+    });
+});
