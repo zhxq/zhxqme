@@ -20,15 +20,7 @@
         "publicationsline": "作为新入学的博士生，我目前没有已发布的论文。敬请持续关注！",
         "teachingtitle": "教学有关",
         "fall2022teaching": [
-            "Fall 2022: 雪城大学 ", 
-            {
-                "name": "a",
-                "attr": {
-                    "href": "https://web.ecs.syr.edu/~bkim01/cis341_fa22.html"
-                },
-                "content": ["CIS 341"]
-            }, 
-            " 助教"
+            "Fall 2022: 雪城大学 CIS 341 助教"
         ],
         "spring2023teaching": [
             "Spring 2023: 雪城大学 CIS 600 (Social Media and Data Mining) 助教"
