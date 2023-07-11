@@ -22,6 +22,6 @@ var prsslidesbutton = $('.presentation-slides-button');
 for (var i = 0; i < prsslidesbutton.length; i++){
     var href = $(prsslidesbutton[i]).attr('href');
     if (href == '' || href == undefined){
-        $($('.presentation-slides-button')[i]).css('visibility', 'hidden');
+        $(prsslidesbutton[i]).css('visibility', 'hidden');
     }
 }
