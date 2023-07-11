@@ -3,6 +3,7 @@
     "type": "template",
     "js": ["./js/publications.js"],
     "css": ["./css/publications.css"],
+    "acknowledgement": "This template uses glyphs from Octicons, available at https://octicons.github.com/, released under MIT license: https://github.com/primer/octicons/blob/main/LICENSE",
     "content": [
         {
             "name": "div",
