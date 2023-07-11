@@ -23,6 +23,6 @@ for (var i = 0; i < prsslidesbutton.length; i++){
     var href = $(prsslidesbutton[i]).attr('href');
     console.log(href);
     if (href == '' || href == undefined){
-        $(prsslidesbutton[i]).css('visibility', 'hidden');
+        $(prsslidesbutton[i]).css('display', 'none');
     }
 }
