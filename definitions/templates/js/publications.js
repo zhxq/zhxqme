@@ -18,6 +18,10 @@ function copyBibTeX(elmt){
     }
 }
 
-$('.presentation-slides-button').forEach(element => {
-    if ($(this).attr('href') == '' || $(this).attr('href') == undefined){$(this).css('display', 'none');}
-});
+var prsslidesbutton = $('.presentation-slides-button');
+for (var i = 0; i < prsslidesbutton; i++){
+    var href = $($('.presentation-slides-button')[i]).attr('href');
+    if (href == '' || href == undefined){
+        $($('.presentation-slides-button')[i]).css('display', 'none');
+    }
+}
