@@ -7,9 +7,6 @@ function copyBibTeX(elmt){
     }
     try {
         navigator.clipboard.writeText(data);
-        
-
-        
         lastElmt.addClass('publications-copying');
         const animated = document.querySelector(".publications-copying");
         animated.addEventListener("animationend", () => {

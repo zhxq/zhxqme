@@ -23,9 +23,9 @@
                 "&nbsp;<a href=\"",
                 "$_pub_template_paperlink$",
                 "\" target=\"_blank\" onclick=\"if ($(this).attr('href') == '' || $(this).attr('href') == undefined){alert('DOI is not yet available.');event.preventDefault();return false;}\"><h5 style=\"display: inline;\">doi</h5></a>", 
-                "&nbsp;<a style=\"cursor: pointer\" onclick=\"copyBibTeX(this)\" data-bib=\"",
+                "&nbsp;<div style=\"display: inline-block; position: relative\"><a style=\"cursor: pointer\" onclick=\"copyBibTeX(this)\" data-bib=\"",
                 "$_pub_template_bibtex$",
-                "\"><h5 style=\"display: inline;\">bib</h5><span class=\"publications-copied-label\">✓</span></a>"]
+                "\"><h5 style=\"display: inline;\">bib</h5><span class=\"publications-copied-label\">✓</span></a></div>"]
             ]
         }
     ],
