@@ -7,7 +7,7 @@ function copyBibTeX(elmt){
     }
     try {
         navigator.clipboard.writeText(data);
-        lastElmt.removeClass('publications-copying').addClass('publications-copying').removeClass('publications-copying');
+        lastElmt.removeClass('publications-copying').addClass('publications-copying');
     } catch (err) {
         console.error('Failed! ', err);
         return false;
