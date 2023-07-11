@@ -19,9 +19,9 @@ function copyBibTeX(elmt){
 }
 
 var prsslidesbutton = $('.presentation-slides-button');
-for (var i = 0; i < prsslidesbutton; i++){
-    var href = $($('.presentation-slides-button')[i]).attr('href');
+for (var i = 0; i < prsslidesbutton.length; i++){
+    var href = $(prsslidesbutton[i]).attr('href');
     if (href == '' || href == undefined){
-        $($('.presentation-slides-button')[i]).css('display', 'none');
+        $($('.presentation-slides-button')[i]).css('visibility', 'hidden');
     }
 }
