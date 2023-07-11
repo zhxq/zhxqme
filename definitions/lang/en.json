@@ -19,36 +19,116 @@
         "publicationstitle": "Publications",
         "publicationsline": "As a new Ph.D. Student, I have no publicated papers as for now. Stay tuned!",
         "teachingtitle": "Teaching",
-        "teachingline1": [
-            "Fall 2022: Teaching Assistant for ", 
-            {
-                "name": "a",
-                "attr": {
-                    "href": "https://web.ecs.syr.edu/~bkim01/cis341_fa22.html"
-                },
-                "content": ["CIS 341"]
-            }, 
-            ", Syracuse University"
+        "fall2022teaching": [
+            "Fall 2022: Teaching Assistant for CIS 341 Computer Organization & Programming Systems, Syracuse University"
+        ],
+        "spring2023teaching": [
+            "Spring 2023: Teaching Assistant for CIS 600 Social Media and Data Mining, Syracuse University"
         ],
         "excessiveparallelism": [
             {
                 "name": "publications",
                 "vars": {
-                    "_pub_template_authors": "<i>Xiangqun Zhang</i>, Shuyi Pei, Jongmoo Choi, and Bryan S. Kim",
-                    "_pub_template_title": "Excessive SSD Internal Parallelism Considered Harmful",
+                    "_pub_template_authors": "<i>Xiangqun Zhang</i>, Shuyi Pei, Jongmoo Choi, Bryan S. Kim",
+                    "_pub_template_title": "Excessive SSD-Internal Parallelism Considered Harmful",
                     "_pub_template_pubon": "HotStorage",
                     "_pub_template_year": "2023",
-                    "_pub_template_align": "center"
+                    "_pub_template_align": "center",
+                    "_pub_template_paper_link": "https://dl.acm.org/doi/10.1145/3599691.3603412",
+                    "_pub_template_bibtex": "@inproceedings{10.1145/3599691.3603412,\nauthor = {Zhang, Xiangqun and Pei, Shuyi and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Excessive SSD-Internal Parallelism Considered Harmful},\nyear = {2023},\nisbn = {9798400702242},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3599691.3603412},\ndoi = {10.1145/3599691.3603412},\nabstract = {Modern SSDs achieve high throughput by utilizing multiple independent channels and chips in parallel. However, we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation. Based on this observation, we design PLAN, a novel SSD parallelism management and data placement scheme that allocates different levels of parallelism to different workloads with different needs to minimize the GC overhead. We demonstrate the effectiveness of PLAN by evaluating it against other state-of-the-art designs across various real-world workloads. PLAN reduces write amplification with comparable or better performance to the other designs that are always at full parallelism.},\nbooktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Storage and File Systems},\npages = {65–72},\nnumpages = {8},\nkeywords = {write amplification, solid state drive, garbage collection},\nlocation = {Boston, MA, USA},\nseries = {HotStorage '23}\n}"
                 }
             }
         ],
         "hobbies": "Hobbies",
         "photographyworks": "Photography Works",
-        "urbanlifeandlandscape": "Urban Life & Landscape",
-        "foodphotos": "Food",
+        "urbanlifeandlandscape": "Beauty of City",
+        "foodphotos": "Tastings",
+        "travelphotos": "Travel",
         "planespotting": "Planespotting",
         "photoscopyright": "© Xiangqun Zhang, all rights reserved. No commercial use allowed without written approval.",
         "N24927-1description": "A B-24A Liberator low passing Syracuse Airport.",
-        "N174UP-1description": "An Airbus A300 owned by UPS serving flight 5X1054 from SDF to SYR."
+        "N174UP-1description": "An Airbus A300 owned by UPS serving flight 5X1054 from SDF to SYR.",
+        "greenlakebonfiretitle": "Green Lakes Bonfire",
+        "greenlakebonfiredescription": "Just some calming bonfire when camping at the Green Lakes State Park.",
+        "greenlakestars1title": "Green Lakes Stars - 1",
+        "greenlakestars1description": "A glance at the stars when camping at the Green Lakes State Park.",
+        "greenlakestars2title": "Green Lakes Stars - 2",
+        "greenlakestars2description": "Another glance at the stars at the Green Lakes when a heli bumped into my shot.",
+        "unaginigirititle": "Unagi Nigiri",
+        "unaginigiridescription": "A pair of unagi nigiris at Ise, NYC.",
+        "scallopcaviartitle": "Scallop Caviar",
+        "scallopcaviardescription": "Warm scallop \"Tartare\", Osetra caviar; Sauce Marinière. @ Le Bernardin, NYC.",
+        "langoustinetitle": "Langoustine",
+        "langoustinedescription": "Sautéed Langoustine, Petite Mâche Salad; Wild Mushroom Truffled Mousseline, Aged Balsamic Vinaigrette. @ Le Bernardin, NYC.",
+        "doversoletitle": "Dover Sole",
+        "doversoledescription": "Pan Roasted Dover Sole, Green Olives; Toasted Almonds, Aged Sherry Wine Emulsion. @ Le Bernardin, NYC.",
+        "zhajiangmiantitle": "Zhajiang Mian",
+        "zhajiangmiandescription": "Beijing-style Zhajiang Mian (Noodles with fried bean sauce with pork). @ Chai (柴院), NYC.",
+        "boiledslicedbeeftitle": "Sichuan-style Boiled Beef",
+        "boiledslicedbeefdescription": "Water-boiled beef with hot chili oil and garlic, a famous Sichuan-style delicacy. @ Chai (柴院), NYC.",
+        "shaanshisantitle": "Shaan Shi San Ice Cream",
+        "shaanshisandescription": "Ice cream at Shaan Shi San, Xi'an. They even have a red chili oil-flavored ice cream!",
+        "timessquaretitle": "Times Square",
+        "timessquaredescription": "Just another regular day at one of the busiest places in the world.",
+        "cortlandtstmtatitle": "\"Still\" Waiting to Move",
+        "cortlandtstmtadescription": "A person standing still, waiting for his people-mover to come.",
+        "xiansoutheastcornerbuildingtitle": "Xi'an City Wall - SE Corner",
+        "xiansoutheastcornerbuildingdescription": "The SE corner building of Xi'an city wall. An old building showing its beauty with modern lumination.",
+        "xiansouthwalltitle": "Xi'an City Wall - Lanterns",
+        "xiansouthwalldescription": "Lanterns hanging, people walking, and me photo taking.",
+        "shenglisquaretitle": "Shengli Square",
+        "shenglisquaredescription": "Shengli (Victory/胜利) Square in Anshan, China. The unique octa-directional road design was first created by Japanese settlers, when the square was named \"Taishō Square\" after then Japanese Emperor Taishō.",
+        "ewrsunrisetitle": "Sunrise at EWR",
+        "ewrsunrisedescription": "Encountered a sunrise at EWR; it really excited me after a long trip. The NYC skyline can be seen in the background.",
+        "zurzukunfttitle": "Zur Zukunft",
+        "zurzukunftdescription": "\"To the Future\". A modern tram running in downtown Dresden in front of the Stadtmuseum (City Museum).",
+        "fireworkflowertitle": "Firework Flower",
+        "fireworkflowerdescription": "A bunch of fireworks rendering a flower. Photoed at Taughannock Falls State Park, New York.",
+        "teaching": "Teaching",
+        "foreword": "Foreword",
+        "teachingforewordcontent": [
+            "I enjoyed teaching when I was still in middle school. There were plenty of chances for me to teach: grade-wide student teaching contest, or just some accommodation between me and my teachers who were glad to lend me some time to teach. My interests in teaching lasted beyond my high school and undergrad years, and I am still very interested in teaching today. If I were asked the reason for me to be a PhD student, I will definitely answer \"to be qualified to be a professor.\" I hope I can help others using my ability to teach, and I hope I can inspire others in the future.",
+            "<br>",
+            "Of course, just like I would like to set an example in teaching and inspire others, there were several inspirational professors I would like to specially thank. It was them who inspired me on my path to become a PhD student and a future PhD. It was my honor to take their courses, and I would like to briefly summarize how they have inspired me before, now, and beyond.",
+            "<br>",
+            "...to be finished."
+        ],
+        "jamesmckernan": "James McKernan",
+        "jmckcontent": [
+            "I took Professor McKernan's abstract algebra course. The biggest inspiration of his course is his class notes. He would provide a textbook-quality note in PDF for every single class session, from which I've learned the magic of LaTeX. I strongly recommend everyone who is reading this page to take a look on his class notes - for example, here is the ",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://mathweb.ucsd.edu/~jmckerna/Teaching/16-17/Autumn/100A/lectures.html"
+                },
+                "content": ["link"]
+            },
+            " to the notes for the course I've taken. Whenever I am trying to provide course materials to my students, I set Professor McKernan's notes as the standard." 
+        ],
+        "yuanyuanzhou": "Yuanyuan (YY) Zhou",
+        "yyzhoucontent": "",
+        "litiencheng": "Li-Tien Cheng",
+        "ltccontent": "",
+        "gregaloupis": "Greg Aloupis",
+        "gacontent": "",
+        "resumateack": [
+            "This page is generated by ",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://resumate.io/"
+                },
+                "content": ["Resumate"]
+            },
+            ", a tool I wrote to generate webpages using predefined page component templates written in JSON. <br>You can find the GitHub repository for this site ",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://github.com/zhxq/zhxqme"
+                },
+                "content": ["here"]
+            },
+            "."
+        ]
     }
 }

@@ -10,7 +10,12 @@ function picwithexif_getInvert(num){
 
 function picwithexif_call(id){
     EXIF.getData(document.getElementById(id + '_pic'), function(){
-        var tags = EXIF.getTag(this, "Make") + ' ' + EXIF.getTag(this, "Model") + ' ' + EXIF.getTag(this, "FocalLength") + "mm " + picwithexif_getInvert(EXIF.getTag(this, "ExposureTime")) + 's f/' + EXIF.getTag(this, "FNumber");
+        var make = EXIF.getTag(this, "Make");
+        var model = EXIF.getTag(this, "Model");
+        if (model.startsWith(make)){
+            make = '';
+        }
+        var tags = make + ' ' + model + ' ' + EXIF.getTag(this, "FocalLength") + "mm " + picwithexif_getInvert(EXIF.getTag(this, "ExposureTime")) + 's f/' + EXIF.getTag(this, "FNumber");
         $('#' + id + '_exif').html(tags);
     });
 }

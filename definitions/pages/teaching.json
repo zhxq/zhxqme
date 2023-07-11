@@ -1,0 +1,48 @@
+{
+    "name": "teaching",
+    "type": "page",
+    "content":[
+        {
+            "name": "titlewdiv",
+            "vars": {
+                "_twd_template_title": "$teaching$",
+                "_twd_template_paragraph": [
+                    {
+                        "name": "titlewpara",
+                        "vars": {
+                            "_twp_template_title": "$foreword$",
+                            "_twp_template_paragraph": [
+                                "$teachingforewordcontent$"
+                            ],
+                            "_twp_template_titletype": "h4",
+                            "_twp_template_align": "left",
+                            "_twp_template_maxwidth": "100%"
+                        }
+                    },
+                    {
+                        "name": "titlewpara",
+                        "vars": {
+                            "_twp_template_title": [
+                                {
+                                    "name": "a",
+                                    "attr": {
+                                        "href": "https://mathweb.ucsd.edu/~jmckerna/"
+                                    },
+                                    "content": ["$jamesmckernan$"]
+                                }
+                            ],
+                            "_twp_template_paragraph": [
+                                "$jmckcontent$"
+                            ],
+                            "_twp_template_titletype": "h5",
+                            "_twp_template_align": "left",
+                            "_twp_template_maxwidth": "100%"
+                        }
+                    }
+                ],
+                "_twd_template_align": "left",
+                "_twd_template_maxwidth": "100%"
+            }
+        }
+    ]
+}

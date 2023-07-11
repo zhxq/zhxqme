@@ -19,36 +19,116 @@
         "publicationstitle": "出品论文",
         "publicationsline": "作为新入学的博士生，我目前没有已发布的论文。敬请持续关注！",
         "teachingtitle": "教学有关",
-        "teachingline1": [
-            "Fall 2022: 雪城大学 ", 
-            {
-                "name": "a",
-                "attr": {
-                    "href": "https://web.ecs.syr.edu/~bkim01/cis341_fa22.html"
-                },
-                "content": ["CIS 341"]
-            }, 
-            " 助教"
+        "fall2022teaching": [
+            "Fall 2022: 雪城大学 CIS 341 (Computer Organization & Programming Systems) 助教"
+        ],
+        "spring2023teaching": [
+            "Spring 2023: 雪城大学 CIS 600 (Social Media and Data Mining) 助教"
         ],
         "excessiveparallelism": [
             {
                 "name": "publications",
                 "vars": {
                     "_pub_template_authors": "<i>Xiangqun Zhang</i>, Shuyi Pei, Jongmoo Choi, Bryan S. Kim",
-                    "_pub_template_title": "Excessive SSD Internal Parallelism Considered Harmful",
+                    "_pub_template_title": "Excessive SSD-Internal Parallelism Considered Harmful",
                     "_pub_template_pubon": "HotStorage",
                     "_pub_template_year": "2023",
-                    "_pub_template_align": "center"
+                    "_pub_template_align": "center",
+                    "_pub_template_paper_link": "https://dl.acm.org/doi/10.1145/3599691.3603412",
+                    "_pub_template_bibtex": "@inproceedings{10.1145/3599691.3603412,\nauthor = {Zhang, Xiangqun and Pei, Shuyi and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Excessive SSD-Internal Parallelism Considered Harmful},\nyear = {2023},\nisbn = {9798400702242},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3599691.3603412},\ndoi = {10.1145/3599691.3603412},\nabstract = {Modern SSDs achieve high throughput by utilizing multiple independent channels and chips in parallel. However, we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation. Based on this observation, we design PLAN, a novel SSD parallelism management and data placement scheme that allocates different levels of parallelism to different workloads with different needs to minimize the GC overhead. We demonstrate the effectiveness of PLAN by evaluating it against other state-of-the-art designs across various real-world workloads. PLAN reduces write amplification with comparable or better performance to the other designs that are always at full parallelism.},\nbooktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Storage and File Systems},\npages = {65–72},\nnumpages = {8},\nkeywords = {write amplification, solid state drive, garbage collection},\nlocation = {Boston, MA, USA},\nseries = {HotStorage '23}\n}"
                 }
             }
         ],
         "hobbies": "兴趣",
         "photographyworks": "摄影作品",
-        "urbanlifeandlandscape": "城市生活&天际线",
+        "urbanlifeandlandscape": "城市之美",
         "foodphotos": "美食",
+        "travelphotos": "旅行",
         "planespotting": "飞机",
         "photoscopyright": "© 张祥群，保留所有权利。禁止未经授权的商业使用。",
         "N24927-1description": "一架B-24A“解放者”型轰炸机在雪城机场低空通场飞行。",
-        "N174UP-1description": "一架UPS的空客A300型货机执行SDF-SYR的5X1054航班。"
+        "N174UP-1description": "一架UPS的空客A300型货机执行SDF-SYR的5X1054航班。",
+        "greenlakebonfiretitle": "绿湖篝火",
+        "greenlakebonfiredescription": "雪城绿湖(Green Lakes)野营时，那令人放松的那一束篝火。",
+        "greenlakestars1title": "绿湖星空 - 1",
+        "greenlakestars1description": "雪城绿湖(Green Lakes)野营时拍摄的星空一瞥。",
+        "greenlakestars2title": "绿湖星空 - 2",
+        "greenlakestars2description": "雪城绿湖(Green Lakes)野营时拍摄星空，恰逢一直升机飞过。",
+        "unaginigirititle": "手握鳗鱼寿司",
+        "unaginigiridescription": "纽约伊势(Ise)饭店的一对手握鳗鱼寿司。",
+        "scallopcaviartitle": "扇贝鱼籽酱",
+        "scallopcaviardescription": "热扇贝塔塔配奥塞特拉鱼籽酱，以Marinière酱调味。@ Le Bernardin, NYC.",
+        "langoustinetitle": "海螯虾",
+        "langoustinedescription": "煎炒海螯虾配Petite Mâche沙拉，以松露荷兰酱和陈年意大利油醋汁调味。@ Le Bernardin, NYC.",
+        "doversoletitle": "多佛龙利鱼",
+        "doversoledescription": "平底锅煎多佛龙利鱼，上配绿橄榄核烤杏仁，以雪莉酒酱膏调味。@ Le Bernardin, NYC.",
+        "zhajiangmiantitle": "炸酱面",
+        "zhajiangmiandescription": "搅拌中的北京风味炸酱面，上下翻飞。@ Chai (柴院), NYC.",
+        "boiledslicedbeeftitle": "水煮肉片",
+        "boiledslicedbeefdescription": "四川风味水煮肉片，热油与蒜的交融提供了那独特的味道。 @ Chai (柴院), NYC.",
+        "shaanshisantitle": "陕十三冰淇淋",
+        "shaanshisandescription": "西安市的陕十三冰淇淋。他们最著名的应该莫过于红油冰淇淋吧。",
+        "timessquaretitle": "时代广场",
+        "timessquaredescription": "世界上最繁忙地方之一的普通一天。",
+        "cortlandtstmtatitle": "静以待动",
+        "cortlandtstmtadescription": "一位乘客安静地看着手机，等待他的列车到来后开动。",
+        "xiansoutheastcornerbuildingtitle": "西安城墙东南角楼",
+        "xiansoutheastcornerbuildingdescription": "西安城墙的东南角楼。一栋百千年历史的楼在流光中闪耀出它的魅力。",
+        "xiansouthwalltitle": "西安城墙南",
+        "xiansouthwalldescription": "悬挂的灯笼、走动的人群、拍摄中的我。",
+        "shenglisquaretitle": "鸟瞰鞍山胜利广场",
+        "shenglisquaredescription": "胜利广场，位于鞍山市中心。其特别的八方向路网设计是由日本殖民者建立的，广场时名“大正广场”，以大正天皇命名。",
+        "ewrsunrisetitle": "纽瓦克日出",
+        "ewrsunrisedescription": "在纽瓦克机场偶然见到的日出，一扫长途旅行的疲惫。远处可见纽约市的天际线。",
+        "zurzukunfttitle": "Zur Zukunft",
+        "zurzukunftdescription": "\"向未来\"。一辆德累斯顿公交公司的电车在市博物馆前行驶。",
+        "fireworkflowertitle": "火树银花",
+        "fireworkflowerdescription": "连续几发焰火共同渲染出了一朵花。于纽约州Taughannock瀑布州立公园拍摄。",
+        "teaching": "教学",
+        "foreword": "前言",
+        "teachingforewordcontent": [
+            "当我还是一个初中生的时候，我就很喜欢讲课。年级举办的学生主讲的公开课大赛也好，我老师们专门给我留出来的课堂教学时间也罢，我总是有很多机会来进行我的教学试验。这种爱好持续到了高中乃至大学。若问我读博最大的动力是什么，那我一定会回答“是为了以后有资格做一名教授”。我希望我能够通过我的教学帮助并启发他人。",
+            "<br>",
+            "正如我希望能够成为教学的榜样并用我的力量去启发别人，我也想要感谢一些对我而言来说是榜样的教授。是他们启发了我，让我走向了成为博士生和未来博士的道路。我很荣幸能够有机会上他们的课——我也希望在此能够略微介绍一下他们是如何在过去、现在和未来持续地启发我。",
+            "<br>",
+            "未完待续。"
+        ],
+        "jamesmckernan": "James McKernan",
+        "jmckcontent": [
+            "我曾经上过McKernan教授的抽象代数课。他对我最大的启发是他提供的课本质量的PDF格式笔记——是他引导了我到LaTeX的奇妙世界中。我衷心希望我的读者能够读一读他提供的笔记：",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://mathweb.ucsd.edu/~jmckerna/Teaching/16-17/Autumn/100A/lectures.html"
+                },
+                "content": ["这里"]
+            },
+            "是我当时上的课的笔记。每当我要准备教学材料时，我都会尽可能以他的笔记作为我的标准。" 
+        ],
+        "yuanyuanzhou": "Yuanyuan (YY) Zhou",
+        "yyzhoucontent": "",
+        "litiencheng": "Li-Tien Cheng",
+        "ltccontent": "",
+        "gregaloupis": "Greg Aloupis",
+        "gacontent": "",
+        "resumateack": [
+            "本页面使用",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://resumate.io/"
+                },
+                "content": ["Resumate"]
+            },
+            "生成。这是我制作的一个可以通过JSON定义的网页组件模板生成网页的模板引擎。<br>您也可以通过这个",
+            {
+                "name": "a",
+                "attr": {
+                    "href": "https://github.com/zhxq/zhxqme"
+                },
+                "content": ["链接"]
+            },
+            "来查看本站的源码。"
+        ]
     }
 }

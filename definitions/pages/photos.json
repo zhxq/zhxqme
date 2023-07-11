@@ -1,6 +1,7 @@
 {
     "name": "photos",
     "type": "page",
+    "css": ["./css/photos.css"],
     "content":[
         {
             "name": "titlewpara",
@@ -32,6 +33,192 @@
                             "_pwexif_template_src": "./imgs/photos/N174UP-1.jpg",
                             "_pwexif_template_title": "N174UP",
                             "_pwexif_template_description": "$N174UP-1description$"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "titlewdiv",
+            "vars": {
+                "_twd_template_title": ["$travelphotos$"],
+                "_twd_template_paragraph": [
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "greenlakebonfire",
+                            "_pwexif_template_src": "./imgs/photos/greenlakebonfire.jpg",
+                            "_pwexif_template_title": "$greenlakebonfiretitle$",
+                            "_pwexif_template_description": "$greenlakebonfiredescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "greenlakestars1",
+                            "_pwexif_template_src": "./imgs/photos/greenlakestars1.jpg",
+                            "_pwexif_template_title": "$greenlakestars1title$",
+                            "_pwexif_template_description": "$greenlakestars1description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "greenlakestars2",
+                            "_pwexif_template_src": "./imgs/photos/greenlakestars2.jpg",
+                            "_pwexif_template_title": "$greenlakestars2title$",
+                            "_pwexif_template_description": "$greenlakestars2description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "fireworkflower",
+                            "_pwexif_template_src": "./imgs/photos/fireworkflower.jpg",
+                            "_pwexif_template_title": "$fireworkflowertitle$",
+                            "_pwexif_template_description": "$fireworkflowerdescription$"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "titlewdiv",
+            "vars": {
+                "_twd_template_title": ["$urbanlifeandlandscape$"],
+                "_twd_template_paragraph": [
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "timessquare",
+                            "_pwexif_template_src": "./imgs/photos/timessquare.jpg",
+                            "_pwexif_template_title": "$timessquaretitle$",
+                            "_pwexif_template_description": "$timessquaredescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "cortlandtstmta",
+                            "_pwexif_template_src": "./imgs/photos/cortlandtstmta.jpg",
+                            "_pwexif_template_title": "$cortlandtstmtatitle$",
+                            "_pwexif_template_description": "$cortlandtstmtadescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "xiansoutheastcornerbuilding",
+                            "_pwexif_template_src": "./imgs/photos/xiansoutheastcornerbuilding.jpg",
+                            "_pwexif_template_title": "$xiansoutheastcornerbuildingtitle$",
+                            "_pwexif_template_description": "$xiansoutheastcornerbuildingdescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "xiansouthwall",
+                            "_pwexif_template_src": "./imgs/photos/xiansouthwall.jpg",
+                            "_pwexif_template_title": "$xiansouthwalltitle$",
+                            "_pwexif_template_description": "$xiansouthwalldescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "shenglisquare",
+                            "_pwexif_template_src": "./imgs/photos/shenglisquare.jpg",
+                            "_pwexif_template_title": "$shenglisquaretitle$",
+                            "_pwexif_template_description": "$shenglisquaredescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "ewrsunrise",
+                            "_pwexif_template_src": "./imgs/photos/ewrsunrise.jpg",
+                            "_pwexif_template_title": "$ewrsunrisetitle$",
+                            "_pwexif_template_description": "$ewrsunrisedescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "zurzukunft",
+                            "_pwexif_template_src": "./imgs/photos/zurzukunft.jpg",
+                            "_pwexif_template_title": "$zurzukunfttitle$",
+                            "_pwexif_template_description": "$zurzukunftdescription$"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "titlewdiv",
+            "vars": {
+                "_twd_template_title": ["$foodphotos$"],
+                "_twd_template_paragraph": [
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "unaginigiri",
+                            "_pwexif_template_src": "./imgs/photos/unaginigiri.jpg",
+                            "_pwexif_template_title": "$unaginigirititle$",
+                            "_pwexif_template_description": "$unaginigiridescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "scallopcaviar",
+                            "_pwexif_template_src": "./imgs/photos/scallopcaviar.jpg",
+                            "_pwexif_template_title": "$scallopcaviartitle$",
+                            "_pwexif_template_description": "$scallopcaviardescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "langoustine",
+                            "_pwexif_template_src": "./imgs/photos/langoustine.jpg",
+                            "_pwexif_template_title": "$langoustinetitle$",
+                            "_pwexif_template_description": "$langoustinedescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "doversole",
+                            "_pwexif_template_src": "./imgs/photos/doversole.jpg",
+                            "_pwexif_template_title": "$doversoletitle$",
+                            "_pwexif_template_description": "$doversoledescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "zhajiangmian",
+                            "_pwexif_template_src": "./imgs/photos/zhajiangmian.jpg",
+                            "_pwexif_template_title": "$zhajiangmiantitle$",
+                            "_pwexif_template_description": "$zhajiangmiandescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "boiledslicedbeef",
+                            "_pwexif_template_src": "./imgs/photos/boiledslicedbeef.jpg",
+                            "_pwexif_template_title": "$boiledslicedbeeftitle$",
+                            "_pwexif_template_description": "$boiledslicedbeefdescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "shaanshisan",
+                            "_pwexif_template_src": "./imgs/photos/shaanshisan.jpg",
+                            "_pwexif_template_title": "$shaanshisantitle$",
+                            "_pwexif_template_description": "$shaanshisandescription$"
                         }
                     }
                 ]
