@@ -38,11 +38,11 @@
                 "name": "publications",
                 "vars": {
                     "_pub_template_authors": "<i>Xiangqun Zhang</i>, Shuyi Pei, Jongmoo Choi, Bryan S. Kim",
-                    "_pub_template_title": "Excessive SSD Internal Parallelism Considered Harmful",
+                    "_pub_template_title": "Excessive SSD-Internal Parallelism Considered Harmful",
                     "_pub_template_pubon": "HotStorage",
                     "_pub_template_year": "2023",
                     "_pub_template_align": "center",
-                    "_pub_template_paperlink": "",
+                    "_pub_template_paper_link": "https://dl.acm.org/doi/10.1145/3599691.3603412",
                     "_pub_template_bibtex": "@inproceedings{10.1145/3599691.3603412,\nauthor = {Zhang, Xiangqun and Pei, Shuyi and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Excessive SSD-Internal Parallelism Considered Harmful},\nyear = {2023},\nisbn = {9798400702242},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3599691.3603412},\ndoi = {10.1145/3599691.3603412},\nabstract = {Modern SSDs achieve high throughput by utilizing multiple independent channels and chips in parallel. However, we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation. Based on this observation, we design PLAN, a novel SSD parallelism management and data placement scheme that allocates different levels of parallelism to different workloads with different needs to minimize the GC overhead. We demonstrate the effectiveness of PLAN by evaluating it against other state-of-the-art designs across various real-world workloads. PLAN reduces write amplification with comparable or better performance to the other designs that are always at full parallelism.},\nbooktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Storage and File Systems},\npages = {65–72},\nnumpages = {8},\nkeywords = {write amplification, solid state drive, garbage collection},\nlocation = {Boston, MA, USA},\nseries = {HotStorage '23}\n}"
                 }
             }
