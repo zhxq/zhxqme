@@ -17,11 +17,3 @@ function copyBibTeX(elmt){
         return false;
     }
 }
-
-
-$(".presentation-slides-button").on('load', function(){
-    var href = $(this).attr('href');
-    if (href == '' || href == undefined){
-        $(this).css('display', 'none');
-    }
-});
