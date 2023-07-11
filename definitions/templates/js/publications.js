@@ -19,7 +19,7 @@ function copyBibTeX(elmt){
 }
 
 
-$(document).live('load', '.presentation-slides-button', function(){
+$(document).on('load', '.presentation-slides-button', function(){
     var href = $(this).attr('href');
     console.log(href);
     if (href == '' || href == undefined){
