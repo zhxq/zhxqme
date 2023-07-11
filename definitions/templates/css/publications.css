@@ -8,10 +8,6 @@
     display: none;
 }
 
-@keyframes floatup {
-    
-}
-
 .publications-copying {
     animation: publicationbibcopied .5s ease-in-out;
     display: inline;
