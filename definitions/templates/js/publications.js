@@ -22,12 +22,10 @@ function copyBibTeX(elmt){
 
 $(function(){
     $('.presentation-slides-button').on('load', function(){
-        for (var i = 0; i < prsslidesbutton.length; i++){
-            var href = $(prsslidesbutton[i]).attr('href');
-            console.log(href);
-            if (href == '' || href == undefined){
-                $(prsslidesbutton[i]).css('display', 'none');
-            }
+        var href = $(this).attr('href');
+        console.log(href);
+        if (href == '' || href == undefined){
+            $(this).css('display', 'none');
         }
     });
 });
