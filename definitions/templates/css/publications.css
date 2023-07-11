@@ -4,8 +4,9 @@
 }
 
 .publications-copied-label{
-    position: absolute;
+    position: relative;
     display: none;
+    left: -12px;
 }
 
 .publications-copying {
