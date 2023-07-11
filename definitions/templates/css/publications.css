@@ -5,12 +5,13 @@
 
 .publications-copied-label{
     position: relative;
-    display: none;
+    visibility: hidden;
     left: -12px;
 }
 
 .publications-copying {
     animation: publicationbibcopied .5s ease-in-out;
+    visibility: visible;
     display: inline !important;
     position: relative;
 }
