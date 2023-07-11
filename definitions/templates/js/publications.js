@@ -17,3 +17,7 @@ function copyBibTeX(elmt){
         return false;
     }
 }
+
+$('.presentation-slides-button').forEach(element => {
+    if ($(this).attr('href') == '' || $(this).attr('href') == undefined){$(this).css('display', 'none');}
+});
