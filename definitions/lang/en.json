@@ -8,14 +8,14 @@
         "phdstudent": "Ph.D. Student",
         "syracuseuniversity": "Syracuse University",
         "personalinformation": "Personal Information",
-        "personalinformationline": "Welcome to my personal page! I am a Computer Science major Ph.D. Student at Syracuse University. My main research area is Solid State Drive (SSD) optimization, but I am also interested in Computer Networking, Network Security, Social Engineering and et cetera.",
+        "personalinformationline": "Welcome to my personal page! I am a Computer Science major Ph.D. Student at Syracuse University. My main research area is Solid State Drive (SSD) optimization. SSDs have largely substituted traditional Hard Disk Drives (HDDs) recently. As a storage device, it must be fast enough to support anything running on top of it, which means optimizing SSD is crucial for modern computers. <br>I am also interested in CS education, especially in the field of computer organization. CS major is not just programming: a CS student must know how computers work. Computer organization is hard for newcomers, but I'm constantly looking for methods to make it fun and easy to understand for students.",
         "educationexp": "Education",
-        "educationphdstart": "Ph.D. Student (Supervisor: ",
+        "educationphdstart": "Ph.D. Student (Advisor: ",
         "bsk": "Bryan S. Kim",
         "educationphdend": ") in Computer Science at Syracuse University (2020-)",
         "educationms": "M.S. in Computer Science at New York University Tandon School of Engineering (2018-2019)",
         "educationbachelor": "B.A. in German Studies (w. Honors)/B.S. in Mathematics Computer Science at University of California, San Diego (2014-2018)",
-        "educationdescription": "Due to this reason, my research interest is not limited in Computer Science field as well. I am also interested in history (modern German/Chinese history), linguistics (especially Comparison Linguistics between Indo-European and Germantic langauges, and Chinese/Japanese/Korean comparison), and history-related politics (as an objective, third-party observer). I speak Chinese, English and German.",
+        "educationdescription": "Due to this reason, my personal interest is not limited in Computer Science field as well. I am also interested in German/Chinese history and linguistics (especially Comparison Linguistics between Indo-European/Germantic langauges and Chinese/Japanese/Korean). I speak Chinese, English and German.",
         "publicationstitle": "Publications",
         "publicationsline": "As a new Ph.D. Student, I have no publicated papers as for now. Stay tuned!",
         "teachingtitle": "Teaching",
@@ -36,7 +36,9 @@
                     "_pub_template_align": "center",
                     "_pub_template_paper_link": "https://dl.acm.org/doi/10.1145/3599691.3603412",
                     "_pub_template_bibtex": "@inproceedings{10.1145/3599691.3603412,\nauthor = {Zhang, Xiangqun and Pei, Shuyi and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Excessive SSD-Internal Parallelism Considered Harmful},\nyear = {2023},\nisbn = {9798400702242},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3599691.3603412},\ndoi = {10.1145/3599691.3603412},\nabstract = {Modern SSDs achieve high throughput by utilizing multiple independent channels and chips in parallel. However, we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation. Based on this observation, we design PLAN, a novel SSD parallelism management and data placement scheme that allocates different levels of parallelism to different workloads with different needs to minimize the GC overhead. We demonstrate the effectiveness of PLAN by evaluating it against other state-of-the-art designs across various real-world workloads. PLAN reduces write amplification with comparable or better performance to the other designs that are always at full parallelism.},\nbooktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Storage and File Systems},\npages = {65–72},\nnumpages = {8},\nkeywords = {write amplification, solid state drive, garbage collection},\nlocation = {Boston, MA, USA},\nseries = {HotStorage '23}\n}",
-                    "_pub_template_presentation_link": "https://www.hotstorage.org/2023/slides/excessive-ssd-internal-parallelism.pdf"
+                    "_pub_template_slides_link": "https://www.hotstorage.org/2023/slides/excessive-ssd-internal-parallelism.pdf",
+                    "_pub_template_video_link": "",
+                    "_pub_template_code_link": ""
                 }
             }
         ],

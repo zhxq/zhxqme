@@ -8,14 +8,14 @@
         "phdstudent": "博士生在读",
         "syracuseuniversity": "雪城大学",
         "personalinformation": "个人信息",
-        "personalinformationline": "欢迎来到我的个人主页！我是一名于雪城大学(Syracuse University)就读的博士学生。我的主要研究方向是固态硬盘(SSD)优化，但我的兴趣也包括计算机网络、网络安全、社会工程学等。",
+        "personalinformationline": "欢迎来到我的个人主页！我是一名于雪城大学(Syracuse University)就读的博士学生。我的主要研究方向是固态硬盘(SSD)优化。SSD近年来已经很大程度上取代了传统的机械硬盘。作为一个存储设备，跑在上面的任何负载都需要SSD足够快才能够跑得快，因此优化SSD性能对于现代电脑来说十分重要。 <br>我同时也对计算机科学教育感兴趣，尤其是计算机系统架构方向。计算机科学专业不光是为了编程：一个计算机科学专业的学生必须知道电脑是如何运作的。计算机系统架构对刚学习起来的学生来说是一个很难的科目，但我会尽我所能来为学生打造一些有趣和简单的方式来增进他们学习的效率。",
         "educationexp": "教育经历",
         "educationphdstart": "2020-今 雪城大学 计算机专业博士生在读 导师：",
         "bsk": "Bryan S. Kim",
         "educationphdend": "",
         "educationms": "2018-2019 纽约大学 坦顿工程学院 计算机专业硕士",
         "educationbachelor": "2014-2018 加州大学圣地亚哥分校 德国研究专业文学士/数学计算机专业理学士",
-        "educationdescription": "由于这样的原因，我的研究兴趣也不仅仅限于计算机领域内。我同时对历史（尤其是德国和中国近现当代史）、语言（尤其是印欧和东亚语言的比较语言学）和历史有关政治（作为中立第三方观察者）感兴趣。我会中、英、德三语。",
+        "educationdescription": "由于这样的原因，我的个人兴趣也不仅仅限于计算机领域内。我同时对德国/中国史和语言（尤其是印欧和东亚语言的比较语言学）感兴趣。我会中、英、德三语。",
         "publicationstitle": "出品论文",
         "publicationsline": "作为新入学的博士生，我目前没有已发布的论文。敬请持续关注！",
         "teachingtitle": "教学有关",
@@ -36,7 +36,7 @@
                     "_pub_template_align": "center",
                     "_pub_template_paper_link": "https://dl.acm.org/doi/10.1145/3599691.3603412",
                     "_pub_template_bibtex": "@inproceedings{10.1145/3599691.3603412,\nauthor = {Zhang, Xiangqun and Pei, Shuyi and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Excessive SSD-Internal Parallelism Considered Harmful},\nyear = {2023},\nisbn = {9798400702242},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3599691.3603412},\ndoi = {10.1145/3599691.3603412},\nabstract = {Modern SSDs achieve high throughput by utilizing multiple independent channels and chips in parallel. However, we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation. Based on this observation, we design PLAN, a novel SSD parallelism management and data placement scheme that allocates different levels of parallelism to different workloads with different needs to minimize the GC overhead. We demonstrate the effectiveness of PLAN by evaluating it against other state-of-the-art designs across various real-world workloads. PLAN reduces write amplification with comparable or better performance to the other designs that are always at full parallelism.},\nbooktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Storage and File Systems},\npages = {65–72},\nnumpages = {8},\nkeywords = {write amplification, solid state drive, garbage collection},\nlocation = {Boston, MA, USA},\nseries = {HotStorage '23}\n}",
-                    "_pub_template_presentation_link": "https://www.hotstorage.org/2023/slides/excessive-ssd-internal-parallelism.pdf"
+                    "_pub_template_slides_link": "https://www.hotstorage.org/2023/slides/excessive-ssd-internal-parallelism.pdf"
                 }
             }
         ],
