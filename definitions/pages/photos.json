@@ -46,6 +46,15 @@
                     {
                         "name": "picwithexif", 
                         "vars": {
+                            "_pwexif_template_id": "cherryspringsgalaxy",
+                            "_pwexif_template_src": "./imgs/photos/stairwaytothegalaxy.jpg",
+                            "_pwexif_template_title": "$stairwaytothegalaxytitle$",
+                            "_pwexif_template_description": "$stairwaytothegalaxydescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
                             "_pwexif_template_id": "greenlakebonfire",
                             "_pwexif_template_src": "./imgs/photos/greenlakebonfire.jpg",
                             "_pwexif_template_title": "$greenlakebonfiretitle$",
