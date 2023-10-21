@@ -167,6 +167,15 @@
                             "_pwexif_template_title": "$zurzukunfttitle$",
                             "_pwexif_template_description": "$zurzukunftdescription$"
                         }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "redarrowlines",
+                            "_pwexif_template_src": "./imgs/photos/redarrowlines.jpg",
+                            "_pwexif_template_title": "$redarrowlinestitle$",
+                            "_pwexif_template_description": "$redarrowlinesdescription$"
+                        }
                     }
                 ]
             }
