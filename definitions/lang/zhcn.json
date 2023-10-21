@@ -25,6 +25,9 @@
         "spring2023teaching": [
             "Spring 2023: 雪城大学 CIS 600 (Social Media and Data Mining) 助教"
         ],
+        "fall2023teaching": [
+            "Fall 2023: 雪城大学 CIS 341 (Computer Organization & Programming Systems) 助教"
+        ],
         "excessiveparallelism": [
             {
                 "name": "publications",
@@ -55,8 +58,12 @@
         "greenlakebonfiredescription": "雪城绿湖(Green Lakes)野营时，那令人放松的那一束篝火。",
         "greenlakestars1title": "绿湖星空 - 1",
         "greenlakestars1description": "雪城绿湖(Green Lakes)野营时拍摄的星空一瞥。",
-        "greenlakestars2title": "绿湖星空 - 2",
+        "greenlakestars2title": "绿湖星空",
         "greenlakestars2description": "雪城绿湖(Green Lakes)野营时拍摄星空，恰逢一直升机飞过。",
+        "cherryspringsskies1title": "樱桃泉星空 - 1",
+        "cherryspringsskies1description": "在美国东岸最黑暗的地方之一观赏最明亮的星空。",
+        "cherryspringsskies2title": "樱桃泉星空 - 2",
+        "cherryspringsskies2description": "明亮星空前面的黑暗剪影。",
         "unaginigirititle": "手握鳗鱼寿司",
         "unaginigiridescription": "纽约伊势(Ise)饭店的一对手握鳗鱼寿司。",
         "scallopcaviartitle": "扇贝鱼籽酱",

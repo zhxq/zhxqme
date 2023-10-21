@@ -64,10 +64,19 @@
                     {
                         "name": "picwithexif", 
                         "vars": {
-                            "_pwexif_template_id": "greenlakestars1",
-                            "_pwexif_template_src": "./imgs/photos/greenlakestars1.jpg",
-                            "_pwexif_template_title": "$greenlakestars1title$",
-                            "_pwexif_template_description": "$greenlakestars1description$"
+                            "_pwexif_template_id": "cherryspringsskies1",
+                            "_pwexif_template_src": "./imgs/photos/cherryspringsskies1.jpg",
+                            "_pwexif_template_title": "$cherryspringsskies1title$",
+                            "_pwexif_template_description": "$cherryspringsskies1description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "cherryspringsskies2",
+                            "_pwexif_template_src": "./imgs/photos/cherryspringsskies2.jpg",
+                            "_pwexif_template_title": "$cherryspringsskies2title$",
+                            "_pwexif_template_description": "$cherryspringsskies2description$"
                         }
                     },
                     {

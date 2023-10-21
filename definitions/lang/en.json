@@ -25,6 +25,9 @@
         "spring2023teaching": [
             "Spring 2023: Teaching Assistant for CIS 600 Social Media and Data Mining, Syracuse University"
         ],
+        "fall2023teaching": [
+            "Fall 2023: Teaching Assistant for CIS 341 Computer Organization & Programming Systems, Syracuse University"
+        ],
         "excessiveparallelism": [
             {
                 "name": "publications",
@@ -57,8 +60,12 @@
         "greenlakebonfiredescription": "Just some calming bonfire when camping at the Green Lakes State Park.",
         "greenlakestars1title": "Green Lakes Stars - 1",
         "greenlakestars1description": "A glance at the stars when camping at the Green Lakes State Park.",
-        "greenlakestars2title": "Green Lakes Stars - 2",
-        "greenlakestars2description": "Another glance at the stars at the Green Lakes when a heli bumped into my shot.",
+        "greenlakestars2title": "Green Lakes Stars",
+        "greenlakestars2description": "A glance at the skies at the Green Lakes when a heli bumped into my shot.",
+        "cherryspringsskies1title": "Cherry Springs Galaxy - 1",
+        "cherryspringsskies1description": "The galaxy at one of the darkest places on the East Coast.",
+        "cherryspringsskies2title": "Cherry Springs Galaxy - 2",
+        "cherryspringsskies2description": "A silhouette in front of the bright skies.",
         "unaginigirititle": "Unagi Nigiri",
         "unaginigiridescription": "A pair of unagi nigiris at Ise, NYC.",
         "scallopcaviartitle": "Scallop Caviar",
