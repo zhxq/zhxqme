@@ -57,7 +57,7 @@
             "name": "explist",
             "vars": {
                 "_explist_template_title": "$teachingtitle$",
-                "_explist_template_macros": ["$fall2022teaching$", "$spring2023teaching$"]
+                "_explist_template_macros": ["$fall2023teaching$", "$spring2023teaching$", "$fall2022teaching$"]
             }
         },
         {

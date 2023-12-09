@@ -46,6 +46,15 @@
                     {
                         "name": "picwithexif", 
                         "vars": {
+                            "_pwexif_template_id": "cherryspringsgalaxy",
+                            "_pwexif_template_src": "./imgs/photos/stairwaytothegalaxy.jpg",
+                            "_pwexif_template_title": "$stairwaytothegalaxytitle$",
+                            "_pwexif_template_description": "$stairwaytothegalaxydescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
                             "_pwexif_template_id": "greenlakebonfire",
                             "_pwexif_template_src": "./imgs/photos/greenlakebonfire.jpg",
                             "_pwexif_template_title": "$greenlakebonfiretitle$",
@@ -55,10 +64,19 @@
                     {
                         "name": "picwithexif", 
                         "vars": {
-                            "_pwexif_template_id": "greenlakestars1",
-                            "_pwexif_template_src": "./imgs/photos/greenlakestars1.jpg",
-                            "_pwexif_template_title": "$greenlakestars1title$",
-                            "_pwexif_template_description": "$greenlakestars1description$"
+                            "_pwexif_template_id": "cherryspringsskies1",
+                            "_pwexif_template_src": "./imgs/photos/cherryspringsskies1.jpg",
+                            "_pwexif_template_title": "$cherryspringsskies1title$",
+                            "_pwexif_template_description": "$cherryspringsskies1description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "cherryspringsskies2",
+                            "_pwexif_template_src": "./imgs/photos/cherryspringsskies2.jpg",
+                            "_pwexif_template_title": "$cherryspringsskies2title$",
+                            "_pwexif_template_description": "$cherryspringsskies2description$"
                         }
                     },
                     {
@@ -148,6 +166,15 @@
                             "_pwexif_template_src": "./imgs/photos/zurzukunft.jpg",
                             "_pwexif_template_title": "$zurzukunfttitle$",
                             "_pwexif_template_description": "$zurzukunftdescription$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "redarrowlines",
+                            "_pwexif_template_src": "./imgs/photos/redarrowlines.jpg",
+                            "_pwexif_template_title": "$redarrowlinestitle$",
+                            "_pwexif_template_description": "$redarrowlinesdescription$"
                         }
                     }
                 ]

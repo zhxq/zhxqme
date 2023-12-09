@@ -5,7 +5,7 @@
         "aboutmetitle": "About Me",
         "factstitle": "Facts",
         "xiangqunzhang": "Xiangqun Zhang",
-        "phdstudent": "Ph.D. Student",
+        "phdstudent": "Ph.D. Candidate",
         "syracuseuniversity": "Syracuse University",
         "personalinformation": "Personal Information",
         "personalinformationline": "Welcome to my personal page! I am a Computer Science major Ph.D. Student at Syracuse University. My main research area is Solid State Drive (SSD) optimization. SSDs have largely substituted traditional Hard Disk Drives (HDDs) recently. As a storage device, it must be fast enough to support anything running on top of it, which means optimizing SSD is crucial for modern computers. <br>I am also interested in CS education, especially in the field of computer organization. CS major is not just programming: a CS student must know how computers work. Computer organization is hard for newcomers, but I'm constantly looking for methods to make it fun and easy to understand for students.",
@@ -24,6 +24,9 @@
         ],
         "spring2023teaching": [
             "Spring 2023: Teaching Assistant for CIS 600 Social Media and Data Mining, Syracuse University"
+        ],
+        "fall2023teaching": [
+            "Fall 2023: Teaching Assistant for CIS 341 Computer Organization & Programming Systems, Syracuse University"
         ],
         "excessiveparallelism": [
             {
@@ -68,12 +71,18 @@
         "photoscopyright": "© Xiangqun Zhang, all rights reserved. No commercial use allowed without written approval.",
         "N24927-1description": "A B-24A Liberator low passing Syracuse Airport.",
         "N174UP-1description": "An Airbus A300 owned by UPS serving flight 5X1054 from SDF to SYR.",
+        "stairwaytothegalaxytitle": "Stairway to Galaxy",
+        "stairwaytothegalaxydescription": "Galaxy with 660s of exposure, revealing the colors of the universe. Photo taken at Cherry Springs State Park, PA.",
         "greenlakebonfiretitle": "Green Lakes Bonfire",
         "greenlakebonfiredescription": "Just some calming bonfire when camping at the Green Lakes State Park.",
         "greenlakestars1title": "Green Lakes Stars - 1",
         "greenlakestars1description": "A glance at the stars when camping at the Green Lakes State Park.",
-        "greenlakestars2title": "Green Lakes Stars - 2",
-        "greenlakestars2description": "Another glance at the stars at the Green Lakes when a heli bumped into my shot.",
+        "greenlakestars2title": "Green Lakes Stars",
+        "greenlakestars2description": "A glance at the skies at the Green Lakes when a heli bumped into my shot.",
+        "cherryspringsskies1title": "Cherry Springs Galaxy - 1",
+        "cherryspringsskies1description": "The galaxy at one of the darkest places on the East Coast.",
+        "cherryspringsskies2title": "Cherry Springs Galaxy - 2",
+        "cherryspringsskies2description": "A silhouette in front of the bright skies.",
         "unaginigirititle": "Unagi Nigiri",
         "unaginigiridescription": "A pair of unagi nigiris at Ise, NYC.",
         "scallopcaviartitle": "Scallop Caviar",
@@ -102,6 +111,8 @@
         "ewrsunrisedescription": "Encountered a sunrise at EWR; it really excited me after a long trip. The NYC skyline can be seen in the background.",
         "zurzukunfttitle": "Zur Zukunft",
         "zurzukunftdescription": "\"To the Future\". A modern tram running in downtown Dresden in front of the Stadtmuseum (City Museum).",
+        "redarrowlinestitle": "Red Arrow Lines",
+        "redarrowlinesdescription": "Excursion tram in Scranton, PA. This car was part of the fleet at Philadelphia Suburban Transportation Co.",
         "fireworkflowertitle": "Firework Flower",
         "fireworkflowerdescription": "A bunch of fireworks rendering a flower. Photoed at Taughannock Falls State Park, New York.",
         "teaching": "Teaching",
