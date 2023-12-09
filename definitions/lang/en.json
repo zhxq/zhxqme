@@ -42,6 +42,23 @@
                 }
             }
         ],
+        "designCVSSD": [
+            {
+                "name": "publications",
+                "vars": {
+                    "_pub_template_authors": "Ziyang Jiao, <i>Xiangqun Zhang</i>, Hojin Shin, Jongmoo Choi, Bryan S. Kim",
+                    "_pub_template_title": "The Design and Implementation of a Capacity-Variant Storage System",
+                    "_pub_template_pubon": "FAST",
+                    "_pub_template_year": "2024",
+                    "_pub_template_align": "center",
+                    "_pub_template_paper_link": "",
+                    "_pub_template_bibtex": "",
+                    "_pub_template_slides_link": "",
+                    "_pub_template_video_link": "",
+                    "_pub_template_code_link": ""
+                }
+            }
+        ],
         "hobbies": "Hobbies",
         "photographyworks": "Photography Works",
         "urbanlifeandlandscape": "Beauty of City",
