@@ -17,8 +17,3 @@ function copyBibTeX(elmt){
         return false;
     }
 }
-
-
-$(function() {
-    
-});
