@@ -20,7 +20,5 @@ function copyBibTeX(elmt){
 
 
 $(function() {
-    var parentTag = $(".publications_item_entry");
-    console.log(parentTag);
-    [['paper-link', 'href'], ['presentation-slides', 'href'], ['presentation-video', 'href'], ['publication-code', 'href'], ['bibtex-copy', 'data-bib']].forEach(element => {var selected = $($(parentTag).find(`.${element[0]}-button`)[0]); if (selected.attr(element[1]) == '' || selected.attr(element[1]) == undefined){selected.css('display', 'none');selected.next().css('display', 'none')}});
+    
 });
