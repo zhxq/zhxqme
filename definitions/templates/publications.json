@@ -11,7 +11,7 @@
                 "style": {
                     "text-align": "$_pub_template_align$"
                 },
-                "class": ["publications_item_entry"]
+                "class": ["publications_item_entry_not_processed"]
             },
             "content": [
                 [
@@ -48,7 +48,7 @@
         {
             "name": "script",
             "content": [
-                "var allParentTag = $('.publications_item_entry'); var parentTag = allParentTag[(allParentTag.length) - 1]; console.log(parentTag); [['paper-link', 'href'], ['presentation-slides', 'href'], ['presentation-video', 'href'], ['publication-code', 'href'], ['bibtex-copy', 'data-bib']].forEach(element => {var selected = $($(parentTag).find(`.${element[0]}-button`)[0]); if (selected.attr(element[1]) == '' || selected.attr(element[1]) == undefined){selected.css('display', 'none');selected.next().css('display', 'none')}});"
+                "var allParentTag = $('.publications_item_entry_not_processed'); for(var i = 0; i < allParentTag.length; i++){var parentTag = allParentTag[i]; console.log(parentTag); [['paper-link', 'href'], ['presentation-slides', 'href'], ['presentation-video', 'href'], ['publication-code', 'href'], ['bibtex-copy', 'data-bib']].forEach(element => {var selected = $($(parentTag).find(`.${element[0]}-button`)[0]); if (selected.attr(element[1]) == '' || selected.attr(element[1]) == undefined){selected.css('display', 'none');selected.next().css('display', 'none')}}); parentTag.removeClass('publications_item_entry_not_processed');}"
             ]
         }
     ],
