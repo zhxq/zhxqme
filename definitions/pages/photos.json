@@ -96,6 +96,15 @@
                             "_pwexif_template_title": "$fireworkflowertitle$",
                             "_pwexif_template_description": "$fireworkflowerdescription$"
                         }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "otannenbaum",
+                            "_pwexif_template_src": "./imgs/photos/tannenbaum.jpg",
+                            "_pwexif_template_title": "$tannenbaumtitle$",
+                            "_pwexif_template_description": "$tannenbaumdescription$"
+                        }
                     }
                 ]
             }
