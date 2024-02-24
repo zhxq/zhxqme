@@ -80,10 +80,8 @@ function parse_all($payload, $attrenv, $varenv){
                 $keyname = substr($ve, 1, -1);
                 $ve = $varenv[$keyname];
                 if ($ve == null){
-                    $ve = $def['default']['attr'][$keyname];
-                    if ($ve[0] == '$' && $ve[-1] == '$'){
-                        $ve = $varenv[$keyname];
-                    }
+                    // Cannot render this block
+                    // because we cannot translate the macro into a real block name
                 }
             }
         }
