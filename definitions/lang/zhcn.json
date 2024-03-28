@@ -53,9 +53,9 @@
                     "_pub_template_year": "2024",
                     "_pub_template_align": "center",
                     "_pub_template_paper_link": "https://www.usenix.org/conference/fast24/presentation/jiao",
-                    "_pub_template_bibtex": "@inproceedings {294793,\nauthor = {Ziyang Jiao and Xiangqun Zhang and Hojin Shin and Jongmoo Choi and Bryan S. Kim},\ntitle = {The Design and Implementation of a {Capacity-Variant} Storage System},\nbooktitle = {22nd USENIX Conference on File and Storage Technologies},\nyear = {2024},\nisbn = {978-1-939133-38-0},\naddress = {Santa Clara, CA},\npages = {159--176},\nurl = {https://www.usenix.org/conference/fast24/presentation/jiao},\npublisher = {USENIX Association},\nmonth = {Feb},\nseries = {FAST '24}\n}",
-                    "_pub_template_slides_link": "",
-                    "_pub_template_video_link": "",
+                    "_pub_template_bibtex": "@inproceedings {294793,\nauthor = {Ziyang Jiao and Xiangqun Zhang and Hojin Shin and Jongmoo Choi and Bryan S. Kim},\ntitle = {The Design and Implementation of a {Capacity-Variant} Storage System},\nbooktitle = {22nd USENIX Conference on File and Storage Technologies},\nyear = {2024},\nisbn = {978-1-939133-38-0},\naddress = {Santa Clara, CA},\npages = {159--176},\nurl = {https://www.usenix.org/conference/fast24/presentation/jiao},\npublisher = {USENIX Association},\nmonth = {02},\nseries = {FAST '24}\n}",
+                    "_pub_template_slides_link": "https://www.usenix.org/system/files/fast24_slides-jiao_0.pdf",
+                    "_pub_template_video_link": "https://youtu.be/mVv_Dgk_H7w",
                     "_pub_template_code_link": "https://github.com/ZiyangJiao/FAST24_CVSS_FEMU"
                 }
             }
