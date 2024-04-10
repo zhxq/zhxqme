@@ -91,6 +91,24 @@
                     {
                         "name": "picwithexif", 
                         "vars": {
+                            "_pwexif_template_id": "totality202404",
+                            "_pwexif_template_src": "./imgs/photos/totality202404.jpg",
+                            "_pwexif_template_title": "$totality202404title$",
+                            "_pwexif_template_description": "$totality202404description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "prominence202404",
+                            "_pwexif_template_src": "./imgs/photos/prominence202404.jpg",
+                            "_pwexif_template_title": "$prominence202404title$",
+                            "_pwexif_template_description": "$prominence202404description$"
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
                             "_pwexif_template_id": "fireworkflower",
                             "_pwexif_template_src": "./imgs/photos/fireworkflower.jpg",
                             "_pwexif_template_title": "$fireworkflowertitle$",
