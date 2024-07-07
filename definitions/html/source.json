@@ -1,0 +1,14 @@
+{
+    "type": "def",
+    "name": "source",
+    "html": "source",
+    "close": false,
+    "default": {
+        "attr": {
+            "style": {}
+        },
+        "class": []
+    },
+    "attr": {"srcset": "$srcset$", "media": "$media$", "type": "$type$", "class": ["$class$"]},
+    "content": [""]
+}

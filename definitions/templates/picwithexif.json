@@ -22,6 +22,8 @@
                         "target": "_blank"
                     },
                     "content": [
+                        "<picture>",
+                        "$_pwexif_template_extra_src$",
                         {
                             "name": "pic",
                             "attr": {
@@ -38,7 +40,8 @@
                             "vars": {
                                 "src": "$_pwexif_template_src$"
                             }
-                        }
+                        },
+                        "</picture>"
                     ]
                 },
                 {
@@ -72,6 +75,7 @@
         "_pwexif_template_picwidth": "",
         "_pwexif_template_picheight": "",
         "_pwexif_template_src": "/img/test.png",
+        "$_pwexif_template_extra_src$": "",
         "_pwexif_template_title": "Title",
         "_pwexif_template_description": "This is a description."
     }
