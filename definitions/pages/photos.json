@@ -299,6 +299,54 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "titlewdiv",
+            "vars": {
+                "_twd_template_title": ["$portraits$"],
+                "_twd_template_paragraph": [
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "fifthave",
+                            "_pwexif_template_src": "./imgs/photos/fifthave.jpg",
+                            "_pwexif_template_title": "$fifthavetitle$",
+                            "_pwexif_template_description": "$fifthavedescription$",
+                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/fifthave.avif"}}]
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "emeraldbay",
+                            "_pwexif_template_src": "./imgs/photos/emeraldbay.jpg",
+                            "_pwexif_template_title": "$emeraldbaytitle$",
+                            "_pwexif_template_description": "$emeraldbaydescription$",
+                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/emeraldbay.avif"}}]
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "apeek",
+                            "_pwexif_template_src": "./imgs/photos/apeek.jpg",
+                            "_pwexif_template_title": "$apeektitle$",
+                            "_pwexif_template_description": "$apeekdescription$",
+                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/apeek.avif"}}]
+                        }
+                    },
+                    {
+                        "name": "picwithexif", 
+                        "vars": {
+                            "_pwexif_template_id": "olmstedpoint",
+                            "_pwexif_template_src": "./imgs/photos/olmstedpoint.jpg",
+                            "_pwexif_template_title": "$olmstedpointtitle$",
+                            "_pwexif_template_description": "$olmstedpointdescription$",
+                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/olmstedpoint.avif"}}]
+                        }
+                    }
+                ]
+            }
         }
     ]
 }
