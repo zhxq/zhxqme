@@ -55,13 +55,9 @@
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "greenlakebonfire",
-                            "_pwexif_template_src": "./imgs/photos/greenlakebonfire.jpg",
-                            "_pwexif_template_title": "$greenlakebonfiretitle$",
-                            "_pwexif_template_description": "$greenlakebonfiredescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/greenlakebonfire.avif"}}]
+                            "_pmv_template_id": "greenlakebonfire"
                         }
                     },
                     {
@@ -71,7 +67,7 @@
                             "_pwexif_template_src": "./imgs/photos/cherryspringsskies1.jpg",
                             "_pwexif_template_title": "$cherryspringsskies1title$",
                             "_pwexif_template_description": "$cherryspringsskies1description$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/cherryspringsskies1.avif"}}]
+                            "_pwexif_template_extra_src": [{"name": "hdravif", "vars":{"_hdravif_template_srcset": "./imgs/photos/cherryspringsskies1.avif"}}]
                         }
                     },
                     {
@@ -81,27 +77,19 @@
                             "_pwexif_template_src": "./imgs/photos/cherryspringsskies2.jpg",
                             "_pwexif_template_title": "$cherryspringsskies2title$",
                             "_pwexif_template_description": "$cherryspringsskies2description$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/cherryspringsskies2.avif"}}]
+                            "_pwexif_template_extra_src": [{"name": "hdravif", "vars":{"_hdravif_template_srcset": "./imgs/photos/cherryspringsskies2.avif"}}]
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "greenlakestars2",
-                            "_pwexif_template_src": "./imgs/photos/greenlakestars2.jpg",
-                            "_pwexif_template_title": "$greenlakestars2title$",
-                            "_pwexif_template_description": "$greenlakestars2description$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/greenlakestars2.avif"}}]
+                            "_pmv_template_id": "greenlakestars2"
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "totality202404",
-                            "_pwexif_template_src": "./imgs/photos/totality202404.jpg",
-                            "_pwexif_template_title": "$totality202404title$",
-                            "_pwexif_template_description": "$totality202404description$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/totality202404.avif"}}]
+                            "_pmv_template_id": "totality202404"
                         }
                     },
                     {
@@ -114,23 +102,15 @@
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "fireworkflower",
-                            "_pwexif_template_src": "./imgs/photos/fireworkflower.jpg",
-                            "_pwexif_template_title": "$fireworkflowertitle$",
-                            "_pwexif_template_description": "$fireworkflowerdescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/fireworkflower.avif"}}]
+                            "_pmv_template_id": "fireworkflower"
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "20240704fireworks",
-                            "_pwexif_template_src": "./imgs/photos/20240704fireworks.jpg",
-                            "_pwexif_template_title": "$20240704fireworkstitle$",
-                            "_pwexif_template_description": "$20240704fireworksdescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/20240704fireworks.avif"}}]
+                            "_pmv_template_id": "20240704fireworks"
                         }
                     },
                     {
@@ -169,13 +149,9 @@
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "xiansoutheastcornerbuilding",
-                            "_pwexif_template_src": "./imgs/photos/xiansoutheastcornerbuilding.jpg",
-                            "_pwexif_template_title": "$xiansoutheastcornerbuildingtitle$",
-                            "_pwexif_template_description": "$xiansoutheastcornerbuildingdescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/xiansoutheastcornerbuilding.avif"}}]
+                            "_pmv_template_id": "xiansoutheastcornerbuilding"
                         }
                     },
                     {
@@ -185,17 +161,13 @@
                             "_pwexif_template_src": "./imgs/photos/xiansouthwall.jpg",
                             "_pwexif_template_title": "$xiansouthwalltitle$",
                             "_pwexif_template_description": "$xiansouthwalldescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/xiansouthwall.avif"}}]
+                            "_pwexif_template_extra_src": [{"name": "hdravif", "vars":{"_hdravif_template_srcset": "./imgs/photos/xiansouthwall.avif"}}]
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "shenglisquare",
-                            "_pwexif_template_src": "./imgs/photos/shenglisquare.jpg",
-                            "_pwexif_template_title": "$shenglisquaretitle$",
-                            "_pwexif_template_description": "$shenglisquaredescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/shenglisquare.avif"}}]
+                            "_pmv_template_id": "shenglisquare"
                         }
                     },
                     {
@@ -208,13 +180,9 @@
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "zurzukunft",
-                            "_pwexif_template_src": "./imgs/photos/zurzukunft.jpg",
-                            "_pwexif_template_title": "$zurzukunfttitle$",
-                            "_pwexif_template_description": "$zurzukunftdescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/zurzukunft.avif"}}]
+                            "_pmv_template_id": "zurzukunft"
                         }
                     },
                     {
@@ -306,43 +274,27 @@
                 "_twd_template_title": ["$portraits$"],
                 "_twd_template_paragraph": [
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "fifthave",
-                            "_pwexif_template_src": "./imgs/photos/fifthave.jpg",
-                            "_pwexif_template_title": "$fifthavetitle$",
-                            "_pwexif_template_description": "$fifthavedescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/fifthave.avif"}}]
+                            "_pmv_template_id": "fifthave"
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "emeraldbay",
-                            "_pwexif_template_src": "./imgs/photos/emeraldbay.jpg",
-                            "_pwexif_template_title": "$emeraldbaytitle$",
-                            "_pwexif_template_description": "$emeraldbaydescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/emeraldbay.avif"}}]
+                            "_pmv_template_id": "emeraldbay"
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "apeek",
-                            "_pwexif_template_src": "./imgs/photos/apeek.jpg",
-                            "_pwexif_template_title": "$apeektitle$",
-                            "_pwexif_template_description": "$apeekdescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/apeek.avif"}}]
+                            "_pmv_template_id": "apeek"
                         }
                     },
                     {
-                        "name": "picwithexif", 
+                        "name": "picmultiver", 
                         "vars": {
-                            "_pwexif_template_id": "olmstedpoint",
-                            "_pwexif_template_src": "./imgs/photos/olmstedpoint.jpg",
-                            "_pwexif_template_title": "$olmstedpointtitle$",
-                            "_pwexif_template_description": "$olmstedpointdescription$",
-                            "_pwexif_template_extra_src": [{"name": "source", "attr": {"srcset": "./imgs/photos/olmstedpoint.avif"}}]
+                            "_pmv_template_id": "olmstedpoint"
                         }
                     }
                 ]

@@ -19,6 +19,44 @@ $loaddir = ['./', "./themes/$theme/definitions/pages/", "./themes/$theme/definit
 
 dieVars(true, true, '', parse($payload));
 
+function list_to_str($varenv, $arr){
+    // var_dump($arr);
+    $finalStr = '';
+    
+    if (gettype($arr) == gettype([])){
+        foreach ($arr as &$e){
+            // var_dump("Initial");
+            // var_dump($e);
+            if (gettype($e) == gettype([]) && !isAssoc($e)){
+                // var_dump("!isAssoc $e");
+                $e = list_to_str($varenv, $e);
+            }elseif (gettype($e) == gettype([]) && isAssoc($e)){
+                // var_dump("isAssoc $e");
+                $e = parse_all($e, [], $varenv);
+            }elseif (gettype($e) == gettype("")){
+                // var_dump("str $e");
+                while (($keyname = check_var($e)) !== false){
+                    $e = $varenv[$keyname];
+                }
+                if (gettype($e) == gettype([])){
+                    $e = list_to_str($varenv, $e);
+                }
+            }
+        }
+        $finalStr = implode("", $arr);
+    }elseif (gettype($arr) == gettype('')){
+        while (($keyname = check_var($arr)) !== false){
+            $arr = $varenv[$keyname];
+        }
+        if (gettype($arr) == gettype([])){
+            $arr = list_to_str($varenv, $arr);
+        }
+        $finalStr = $arr;
+    }
+    
+    return $finalStr;
+}
+
 function parse($payload){
     global $usedCSS;
     global $usedJS;
@@ -288,9 +326,9 @@ function parse_page($payload, $attrenv, $varenv){
     global $definition;
     $def = $definition[$payload['name']];
     
-    mergecontentsanicheck($def, $varenv, $payload);
+    merge_content_sanity_check($def, $varenv, $payload);
     $varenv = resolve_varenv($def['default']['vars'], $def['vars'], $payload['vars'], $varenv);
-    mergeattrsanicheck($def, $attrenv, $payload);
+    merge_attr_sanity_check($def, $attrenv, $payload);
     $attrenv = resolve_attrenv($def['default']['attr'], $def['attr'], $payload['attr'], $attrenv, $varenv);
     $return = '';
     foreach ($def['content'] as $c){
@@ -310,9 +348,9 @@ function parse_page($payload, $attrenv, $varenv){
 function parse_block($payload, $attrenv, $varenv){
     global $definition;
     $def = $definition[$payload['name']];
-    mergecontentsanicheck($def, $varenv, $payload);
+    merge_content_sanity_check($def, $varenv, $payload);
     $varenv = resolve_varenv($def['default']['vars'], $def['vars'], $payload['vars'], $varenv);
-    mergeattrsanicheck($def, $attrenv, $payload);
+    merge_attr_sanity_check($def, $attrenv, $payload);
     $attrenv = resolve_attrenv($def['default']['attr'], $def['attr'], $payload['attr'], $attrenv, $varenv);
     $return = '';
     foreach ($def['content'] as $c){
@@ -328,9 +366,9 @@ function parse_def($payload, $attrenv, $varenv){
     
     $def = $definition[$payload['name']];
     $start = '<' . $def['html'];
-    mergecontentsanicheck($def, $varenv, $payload);
+    merge_content_sanity_check($def, $varenv, $payload);
     $varenv = resolve_varenv($def['default']['vars'], $def['vars'], $payload['vars'], $varenv);
-    mergeattrsanicheck($def, $attrenv, $payload);
+    merge_attr_sanity_check($def, $attrenv, $payload);
     $attrenv = resolve_attrenv($def['default']['attr'], $def['attr'], $payload['attr'], $attrenv, $varenv);
     
     $attrStr = "";
@@ -339,14 +377,8 @@ function parse_def($payload, $attrenv, $varenv){
             $tmp = '';
             foreach ($v as $sk=>$sv){
                 if (($keyname = check_var($sv)) !== false){
-                    $sv = $attrenv[$keyname];
-                    if ($sv == null) $sv = $varenv[$keyname];
-                    if ($sv == null){
-                        $sv = $def['default']['attr'][$keyname];
-                        if ($sv[0] == '$' && $sv[-1] == '$'){
-                            $sv = $varenv[$keyname];
-                        }
-                    }
+                    $sv = list_to_str($attrenv, $sv);
+                    if ($sv == null) $sv = list_to_str($varenv, $sv);
                 }
                 if ($sv != null) $tmp .= "$sk: $sv; ";
             }
@@ -361,19 +393,7 @@ function parse_def($payload, $attrenv, $varenv){
             if (gettype($v) == gettype('')){
                 $varr = [$v];
             }
-            foreach ($varr as &$ve){
-                if ($ve[0] == '$' && $ve[-1] == '$'){
-                    $keyname = substr($ve, 1, -1);
-                    $ve = $varenv[$keyname];
-                    if ($ve == null){
-                        $ve = $def['default']['attr'][$keyname];
-                        if ($ve[0] == '$' && $ve[-1] == '$'){
-                            $ve = $varenv[$keyname];
-                        }
-                    }
-                }
-            }
-            $v = implode('', $varr);
+            $v = list_to_str($varenv, $varr);
             $attrStr .= " $k=\"$v\"";
         }
     }
@@ -397,30 +417,15 @@ function parse_def($payload, $attrenv, $varenv){
             break;
         }
     }
-    
+
     if (gettype($payload['content']) == gettype([])){
         foreach ($payload['content'] as &$c){
             if (gettype($c) == gettype('')){
                 $c = [$c];
             }
             $varenv['content'] = parse_all($c, $c['attr'], $varenv);
+            $return .= list_to_str($varenv, $def['content']);
             
-            foreach ($def['content'] as $kd=>$d){
-                if (gettype($d) == gettype('')){
-                    if (($dkeyname = check_var($d)) !== false){
-                        $content = $varenv[$dkeyname];
-                        while (($keyname = check_var($content)) !== false){
-                            $content = $varenv[$keyname];
-                        }
-                        $content = parse_all($content, [], $varenv);
-                        $return .= $content;
-                    }else{
-                        $return .= $d;
-                    }
-                }else{
-                    //echo("Error");
-                }
-            }
         }
     }
     if (!$def['close']){
@@ -435,7 +440,7 @@ function parse_template($payload, $attrenv, $varenv){
     $def = $definition[$payload['name']];
     $return = '';
     
-    mergecontentsanicheck($def, $varenv, $payload);
+    merge_content_sanity_check($def, $varenv, $payload);
     // A template may have local language string defs. Merge it.
     if (array_key_exists('langvars', $def)){
         $currentLang = currentLang();
@@ -476,7 +481,7 @@ function parse_template($payload, $attrenv, $varenv){
         }
     }
     $varenv = resolve_varenv($def['default']['vars'], $def['vars'], $payload['vars'], $varenv);
-    mergeattrsanicheck($def, $attrenv, $payload);
+    merge_attr_sanity_check($def, $attrenv, $payload);
     $attrenv = resolve_attrenv($def['default']['attr'], $def['attr'], $payload['attr'], $attrenv, $varenv);
     foreach ($def['content'] as $c){
         if (gettype($c) == gettype([])){
@@ -485,7 +490,7 @@ function parse_template($payload, $attrenv, $varenv){
     }
     return $return;
 }
-function mergecontentsanicheck(&$def, &$varenv, &$payload){
+function merge_content_sanity_check(&$def, &$varenv, &$payload){
     if ($varenv == null){
         $varenv = [];
     }
@@ -509,7 +514,7 @@ function mergecontentsanicheck(&$def, &$varenv, &$payload){
     }
 }
 
-function mergeattrsanicheck(&$def, &$attrenv, &$payload){
+function merge_attr_sanity_check(&$def, &$attrenv, &$payload){
     
     if (!array_key_exists('attr', $def)){
         $def['attr'] = [];

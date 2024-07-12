@@ -10,16 +10,18 @@ function picwithexif_getInvert(num){
 
 function picwithexif_call(id){
     var element = document.getElementById(id + '_pic');
-    EXIF.getData(element, function(){
-        var make = EXIF.getTag(this, "Make");
-        var model = EXIF.getTag(this, "Model");
+    var currentSrc = element.currentSrc;
+    var newElmt = document.createElement("img");
+    newElmt.src = currentSrc;
+    window.exifr.parse(newElmt).then(function(exif){
+        var make = exif.Make;
+        var model = exif.Model;
         if (model.startsWith(make)){
             make = '';
         }
-        var tags = make + ' ' + model + ' ' + EXIF.getTag(this, "FocalLength") + "mm " + picwithexif_getInvert(EXIF.getTag(this, "ExposureTime")) + 's f/' + EXIF.getTag(this, "FNumber");
+        var tags = make + ' ' + model + ' ' + exif.FocalLength + "mm " + picwithexif_getInvert(exif.ExposureTime) + 's f/' + exif.FNumber;
         $('#' + id + '_exif').html(tags);
     });
     var parentLink = element.parentElement.parentElement;
-    var currentSrc = element.currentSrc;
     parentLink.setAttribute("href", currentSrc);
 }

@@ -1,6 +1,6 @@
 {
     "type": "template",
-    "js": ["https://cdn.jsdelivr.net/npm/exif-js", "./js/picwithexif.js"],
+    "js": ["https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js", "./js/picwithexif.js"],
     "name": "picwithexif",
     "content": [
         {
@@ -22,7 +22,9 @@
                         "target": "_blank"
                     },
                     "content": [
-                        "<picture>",
+                        "<picture id=\"",
+                        ["$_pwexif_template_id$", "_picture"],
+                        "\">",
                         "$_pwexif_template_extra_src$",
                         {
                             "name": "pic",
@@ -33,6 +35,7 @@
                                     "max-width": "100%",
                                     "margin": "20px 0px 0px 0px"
                                 },
+                                "loading": "$_pwexif_template_extra_loading$",
                                 "id": ["$_pwexif_template_id$", "_pic"],
                                 "onload": ["picwithexif_call('", "$_pwexif_template_id$", "');"],
                                 "class": ["picwithexifsinglepic"]
@@ -75,8 +78,9 @@
         "_pwexif_template_picwidth": "",
         "_pwexif_template_picheight": "",
         "_pwexif_template_src": "/img/test.png",
-        "$_pwexif_template_extra_src$": "",
+        "_pwexif_template_extra_src": "",
         "_pwexif_template_title": "Title",
-        "_pwexif_template_description": "This is a description."
+        "_pwexif_template_description": "This is a description.",
+        "_pwexif_template_extra_loading": ""
     }
 }

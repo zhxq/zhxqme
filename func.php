@@ -1,8 +1,8 @@
 <?php
-//For Debug
+// For Debug
 ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
-//error_reporting(E_ALL);
+# error_reporting(E_ALL);
 
 
 $resumate_version = "0.0.3";
@@ -81,7 +81,7 @@ function getLangFile($lang){
 
 function check_var($input){
     if (gettype($input) != gettype('')) return false;
-    if (strlen($input) > 0 && $input[0] == '$' && $input[-1] == '$'){
+    if (strlen($input) > 1 && $input[0] == '$' && $input[-1] == '$'){
         return substr($input, 1, -1);
     }
     return false;

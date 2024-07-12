@@ -1,0 +1,27 @@
+{
+    "name": "hdravif",
+    "type": "template",
+    "css": [],
+    "content": [
+        {
+            "name": "source",
+            "attr": {
+                "srcset": "$_hdravif_template_srcset$",
+                "media": "(dynamic-range:high)",
+                "type": "image/avif"
+            }
+        },
+        {
+            "name": "source",
+            "attr": {
+                "srcset": "$_hdravif_template_fallback$",
+                "media": "(dynamic-range:normal)",
+                "type": "image/avif"
+            }
+        }
+    ],
+    "vars": {
+        "_hdravif_template_srcset": "$_hdravif_template_fallback$",
+        "_hdravif_template_fallback": ""
+    }
+}

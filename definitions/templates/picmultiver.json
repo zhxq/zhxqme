@@ -1,0 +1,21 @@
+{
+    "type": "template",
+    "js": [],
+    "name": "picmultiver",
+    "content": [
+        {
+            "name": "picwithexif", 
+            "vars": {
+                "_pwexif_template_id": "$_pmv_template_id$",
+                "_pwexif_template_extra_loading": "lazy",
+                "_pwexif_template_src": ["./imgs/photos/", "$_pmv_template_id$", ".jpg"],
+                "_pwexif_template_title": ["$", "$_pmv_template_id$", "title$"],
+                "_pwexif_template_description": ["$", "$_pmv_template_id$", "description$"],
+                "_pwexif_template_extra_src": [{"name": "hdravif", "vars":{"_hdravif_template_srcset": ["./imgs/photos/", "$_pmv_template_id$", ".avif"], "_hdravif_template_fallback": ["./imgs/photos/", "$_pmv_template_id$", "-nohdr.avif"]}}]
+            }
+        }
+    ],
+    "vars": {
+        "_pmv_template_id": ""
+    }
+}
