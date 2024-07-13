@@ -11,11 +11,13 @@
                 "_pwexif_template_src": ["./imgs/photos/", "$_pmv_template_id$", ".jpg"],
                 "_pwexif_template_title": ["$", "$_pmv_template_id$", "title$"],
                 "_pwexif_template_description": ["$", "$_pmv_template_id$", "description$"],
-                "_pwexif_template_extra_src": [{"name": "hdravif", "vars":{"_hdravif_template_srcset": ["./imgs/photos/", "$_pmv_template_id$", ".avif"], "_hdravif_template_fallback": ["./imgs/photos/", "$_pmv_template_id$", "-nohdr.avif"]}}]
+                "_pwexif_template_extra_src": [{"name": "hdravif", "vars":{"_hdravif_template_srcset": "$_pmv_template_hdr_srcset$", "_hdravif_template_fallback": "$_pmv_template_fallback$"}}]
             }
         }
     ],
     "vars": {
-        "_pmv_template_id": ""
+        "_pmv_template_id": "",
+        "_pmv_template_hdr_srcset": ["./imgs/photos/", "$_pmv_template_id$", ".avif"],
+        "_pmv_template_fallback": ["./imgs/photos/", "$_pmv_template_id$", "-nohdr.avif"]
     }
 }

@@ -15,7 +15,7 @@
             "name": "source",
             "attr": {
                 "srcset": "$_hdravif_template_fallback$",
-                "media": "(dynamic-range:normal)",
+                "media": "",
                 "type": "image/avif"
             }
         }
