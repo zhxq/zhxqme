@@ -98,12 +98,6 @@
                     {
                         "name": "picmultiver", 
                         "vars": {
-                            "_pmv_template_id": "20240704fireworks"
-                        }
-                    },
-                    {
-                        "name": "picmultiver", 
-                        "vars": {
                             "_pmv_template_id": "tannenbaum"
                         }
                     }
