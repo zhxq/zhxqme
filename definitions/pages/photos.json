@@ -86,6 +86,13 @@
                     {
                         "name": "picmultiver", 
                         "vars": {
+                            "_pmv_template_id": "midautumneclipse202409",
+                            "_pmv_template_hdr_srcset": ""
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
                             "_pmv_template_id": "fireworkflower"
                         }
                     },
