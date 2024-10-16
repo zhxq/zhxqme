@@ -198,7 +198,28 @@
                     {
                         "name": "picmultiver", 
                         "vars": {
-                            "_pmv_template_id": "langoustine",
+                            "_pmv_template_id": "oysterspearls",
+                            "_pmv_template_hdr_srcset": ""
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "veloute",
+                            "_pmv_template_hdr_srcset": ""
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "raviolo",
+                            "_pmv_template_hdr_srcset": ""
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "squab",
                             "_pmv_template_hdr_srcset": ""
                         }
                     },
