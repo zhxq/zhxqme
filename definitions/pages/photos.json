@@ -198,13 +198,6 @@
                     {
                         "name": "picmultiver", 
                         "vars": {
-                            "_pmv_template_id": "scallopcaviar",
-                            "_pmv_template_hdr_srcset": ""
-                        }
-                    },
-                    {
-                        "name": "picmultiver", 
-                        "vars": {
                             "_pmv_template_id": "oysterspearls",
                             "_pmv_template_hdr_srcset": ""
                         }
@@ -227,6 +220,13 @@
                         "name": "picmultiver", 
                         "vars": {
                             "_pmv_template_id": "squab",
+                            "_pmv_template_hdr_srcset": ""
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "scallopcaviar",
                             "_pmv_template_hdr_srcset": ""
                         }
                     },
