@@ -8,8 +8,12 @@ function picwithexif_getInvert(num){
     }
 }
 
-function picwithexif_call(id){
+function picwithexif_call(id){    
     var element = document.getElementById(id + '_pic');
+    if (!navigator.userAgent.includes('Chrome') && navigator.userAgent.includes('Safari')) {
+        // Fix Safari false positive
+        $(element.parentElement.firstChild).attr("srcset", "");
+    }
     var currentSrc = element.currentSrc;
     var newElmt = document.createElement("img");
     newElmt.src = currentSrc;
@@ -24,4 +28,5 @@ function picwithexif_call(id){
     });
     var parentLink = element.parentElement.parentElement;
     parentLink.setAttribute("href", currentSrc);
+    element.setAttribute("onload", "");
 }
