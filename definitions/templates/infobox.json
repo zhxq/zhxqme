@@ -46,6 +46,22 @@
                     "content": ["$_ib_template_line3$"]
                 },
                 {
+                    "name": "cdiv",
+                    "vars": {
+                        "_cdiv_template_content": [
+                            {
+                                "name": "portfoliolinks",
+                                "vars": {
+                                    "_portfolio_template_github_link": "$_ib_template_github_link$",
+                                    "_portfolio_template_linkedin_link": "$_ib_template_linkedin_link$",
+                                    "_portfolio_template_orcid_link": "$_ib_template_orcid_link$",
+                                    "_portfolio_template_dblp_link": "$_ib_template_dblp_link$"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
                     "name": "hr",
                     "content": [""]
                 }
@@ -59,6 +75,10 @@
         "_ib_template_line1": "This is the line for line 1.",
         "_ib_template_line2": "This is the line for line 2.",
         "_ib_template_line3": "This is the line for line 3.",
+        "_ib_template_github_link": "",
+        "_ib_template_linkedin_link": "",
+        "_ib_template_orcid_link": "",
+        "_ib_template_dblp_link": "",
         "_ib_template_src": "/img/test.png"
     }
 }
