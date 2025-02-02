@@ -288,6 +288,18 @@
                         "vars": {
                             "_pmv_template_id": "olmstedpoint"
                         }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "toshi"
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "yorkshire"
+                        }
                     }
                 ]
             }
