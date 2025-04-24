@@ -12,6 +12,12 @@
             "readable": "$aboutmetitle$",
             "right": false
         },
+        "cv": {
+            "readable": "$cv$",
+            "right": false,
+            "link": "cv.pdf",
+            "target": "_blank"
+        },
         "photos": {
             "readable": "$photographyworks$",
             "right": false
