@@ -56,8 +56,10 @@
             "vars": {
                 "_explist_template_title": "$publicationstitle$",
                 "_explist_template_macros": [
+                    "$fillinginmissingpiece$",
                     "$ssdabstractions$", 
-                    "$designCVSSD$", "$excessiveparallelism$"
+                    "$designCVSSD$", 
+                    "$excessiveparallelism$"
                 ]
             }
         },

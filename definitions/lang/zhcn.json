@@ -75,6 +75,20 @@
                 }
             }
         ],
+        "fillinginmissingpiece": [
+            {
+                "name": "publications",
+                "vars": {
+                    "_pub_template_authors": "<i>Xiangqun Zhang</i>, Ziyang Jiao, Farzana Rahman, Bryan S. Kim",
+                    "_pub_template_title": "Filling in the Missing Piece: Integrating Storage into CompOrg Courses",
+                    "_pub_template_pubon": "ASEE Annual Conference",
+                    "_pub_template_year": "2025",
+                    "_pub_template_align": "center",
+                    "_pub_template_paper_link": "",
+                    "_pub_template_bibtex": "@INPROCEEDINGS{FillingInMissingPiece,\nauthor = {Xiangqun Zhang and Ziyang Jiao and Farzana Rahman and Bryan S. Kim},\ntitle = {Filling in the Missing Piece: Integrating Storage into CompOrg Courses},\nbooktitle = {Proceedings of the 2025 ASEE Annual Conference \\& Exposition},\nyear = {2025},\nmonth = {June},\naddress = {Montreal, QC, Canada},\npublisher = {ASEE Conferences},\nseries = {ASEE '25}\n}"
+                }
+            }
+        ],
         "hobbies": "兴趣",
         "photographyworks": "摄影作品",
         "urbanlifeandlandscape": "城市之美",
