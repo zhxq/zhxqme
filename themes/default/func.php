@@ -7,17 +7,26 @@ function makeMenu(){
     foreach ($menuSettings as $k=>$v){
         $opt = '<li data-name="' . $k . '" data-type="topmenubutton" id="navid' . $i . '"';
         $dropdown = '';
+        $target = array_key_exists("target", $v) ? $v['target'] : '_blank';
         if (array_key_exists('dropdown', $v)){
             $opt .= ' class="dropdown">';
             $dropdown = '<ul class="dropdown-menu">';
             foreach ($v['dropdown'] as $dk=>$dv){
-                $dropdown .= '<li data-name="' . $k . '"><a href="javascript:void(0);" onclick="setHash(\'' . $dk . '\');clickCollapseButton();">' . getLocalizedString($dv['readable']) . '</a></li>';
+                if (array_key_exists("link", $v)){
+                    $dropdown .= '<li data-name="' . $k . '"><a href="' . $v['link']  . '" target="' . $target .'">' . getLocalizedString($v['readable']) . '</a></li>';
+                }else{
+                    $dropdown .= '<li data-name="' . $k . '"><a href="javascript:void(0);" onclick="setHash(\'' . $dk . '\');clickCollapseButton();">' . getLocalizedString($dv['readable']) . '</a></li>';
+                }
             }
             $dropdown .= '</ul>';
             $opt .= '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">' . getLocalizedString($v['readable']) . '<span class="caret"></span></a>' . $dropdown;
         }else{
-            $opt .= ' onmousedown="changeActiveStatus(\'' . $i . '\');">';
-            $opt .= '<a href="javascript:void(0);" onclick="setHash(\'' . $k . '\');clickCollapseButton();">' . getLocalizedString($v['readable']) . '</a>';
+            if (array_key_exists("link", $v)){
+                $opt .= '><a href="' . $v['link']  . '" target="' . $target .'">' . getLocalizedString($v['readable']) . '</a>';
+            }else{
+                $opt .= ' onmousedown="changeActiveStatus(\'' . $i . '\');">';
+                $opt .= '<a href="javascript:void(0);" onclick="setHash(\'' . $k . '\');clickCollapseButton();">' . getLocalizedString($v['readable']) . '</a>';
+            }
         }
         $opt .= "</li>";
         $i++;

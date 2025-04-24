@@ -8,7 +8,7 @@ window.onload = function(){
 	$.ajax({
 		type: "GET",
 		dataType: "json",
-		async: true,
+		async: getWebpageAsync,
 		url: "settings.json",
 		success: function(data){
 			settings = data;
