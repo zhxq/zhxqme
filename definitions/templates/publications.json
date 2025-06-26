@@ -9,7 +9,8 @@
             "name": "div",
             "attr": {
                 "style": {
-                    "text-align": "$_pub_template_align$"
+                    "text-align": "$_pub_template_align$",
+                    "max-width": "$_pub_template_maxwidth$"
                 },
                 "class": ["publications_item_entry_not_processed"]
             },
@@ -70,7 +71,8 @@
         "_pub_template_slides_link": "",
         "_pub_template_video_link": "",
         "_pub_template_code_link": "",
-        "_pub_template_align": "left"
+        "_pub_template_align": "left",
+        "_pub_template_maxwidth": "800px"
     },
     "langvars": {
         "default": {

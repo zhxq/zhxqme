@@ -1,4 +1,5 @@
 function setHash(theHash){
+	console.log(theHash);
 	theHash = theHash.replace('#!', '').replace('#', '');
 	
 	var sharpIndex = window.location.href.indexOf("#!");
@@ -66,16 +67,16 @@ function changeActiveStatus(listid) {
 	var selected = $('li[data-type="topmenubutton"].active');
 	var lastID = selected.length ? selected[0].id : '';
 	$('#lastNaviID').val(lastID.replace('navid', ''));
-	$('li[data-type="topmenubutton"]').removeClass('active');
-	$('#navid' + listid).addClass("active");
+	$('li[data-type="topmenubutton"]>a').removeClass('active');
+	$('#navid' + listid + ">a").addClass("active");
 }
 
 function changeActiveStatusByName(theName) {
 	var selected = $('li[data-type="topmenubutton"].active');
 	var lastID = selected.length ? selected[0].id : '';
 	$('#lastNaviID').val(lastID.replace('navid', ''));
-	$('li[data-type="topmenubutton"]').removeClass('active');
-	$('li[data-type="topmenubutton"][data-name="' + theName + '"]').addClass('active');
+	$('li[data-type="topmenubutton"]>a').removeClass('active');
+	$('li[data-type="topmenubutton"][data-name="' + theName + '"]>a').addClass('active');
 }
 
 jQuery.cachedScript = function( url, options ) {
