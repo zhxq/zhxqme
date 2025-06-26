@@ -86,8 +86,9 @@
                     "_pub_template_pubon": "ASEE Annual Conference",
                     "_pub_template_year": "2025",
                     "_pub_template_align": "center",
-                    "_pub_template_paper_link": "",
-                    "_pub_template_bibtex": "@INPROCEEDINGS{FillingInMissingPiece,\nauthor = {Xiangqun Zhang and Ziyang Jiao and Farzana Rahman and Bryan S. Kim},\ntitle = {Filling in the Missing Piece: Integrating Storage into CompOrg Courses},\nbooktitle = {Proceedings of the 2025 ASEE Annual Conference \\& Exposition},\nyear = {2025},\nmonth = {June},\naddress = {Montreal, QC, Canada},\npublisher = {ASEE Conferences},\nseries = {ASEE '25}\n}"
+                    "_pub_template_paper_link": "https://nemo.asee.org/public/conferences/365/papers/48840/view",
+                    "_pub_template_bibtex": "@INPROCEEDINGS{FillingInMissingPiece,\nauthor = {Xiangqun Zhang and Ziyang Jiao and Farzana Rahman and Bryan S. Kim},\ntitle = {Filling in the Missing Piece: Integrating Storage into CompOrg Courses},\nbooktitle = {Proceedings of the 2025 ASEE Annual Conference \\& Exposition},\nyear = {2025},\nmonth = {June},\naddress = {Montreal, QC, Canada},\npublisher = {ASEE Conferences},\nseries = {ASEE '25}\nurl = {https://nemo.asee.org/public/conferences/365/papers/48840/view}\n}",
+                    "_pub_template_code_link": "https://github.com/zhxq/SSDLab"
                 }
             }
         ],
