@@ -2,10 +2,12 @@
 require_once('func.php');
 ?>
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html data-bs-theme="<?=getThemeSetting('defaultappearance')?>">
 <head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/bootstrap5theme.js"></script>
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/onload.js"></script>
 <title><?=getLocalizedSetting('title')?></title>
@@ -46,15 +48,30 @@ body { -webkit-text-size-adjust: 100%; }
     
 <nav id="navigationBar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header order-1 order-lg-1">
             <a style="margin-left:1%; white-space:nowrap;" class="navbar-brand">
             <?=getLocalizedSetting('menutitle')?>
             </a>
         </div>
-        <button id="collapsebutton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <?php
+        $appearanceMenu = '
+            <form style="display: inline-block;" role="appearance">
+            <div class="form-switch" style="display:flex;justify-content:center;align-items:center; padding-left: 0em; padding-right: 20px">
+                <label class="form-check-label" style="display: inline-block; margin-right: 10px;" for="appearanceToggle"><i class="bi bi-sun-fill github-logo"></i></label>
+                <input style="display: inline-block; margin: 0 auto;" class="form-check-input form-control" type="checkbox" id="appearanceToggle">
+                <label style="display: inline-block; margin-left: 10px;" class="form-check-label" for="appearanceToggle"><i class="bi bi-moon-stars-fill github-logo"></i></label>
+            </div>
+            </form>
+        ';
+        ?>
+        <div class="d-flex align-items-center order-2 order-lg-3">
+            <?=$appearanceMenu?>
+            <button id="collapsebutton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+        <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNav">
             <?=makeMenu()?>
         </div>
     </div>
