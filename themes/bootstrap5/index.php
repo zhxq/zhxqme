@@ -4,9 +4,10 @@ require_once('func.php');
 <!DOCTYPE html>
 <html data-bs-theme="<?=getThemeSetting('defaultappearance')?>">
 <head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.7/css/bootstrap.css" rel="stylesheet">
+<link href="/themes/<?=getLocalizedSetting('theme')?>/css/styles.css" rel="stylesheet">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/bootstrap5theme.js"></script>
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/onload.js"></script>
@@ -20,8 +21,6 @@ require_once('func.php');
 <meta name="Keywords" content="<?=getLocalizedSetting('keywords')?>">
 <meta name="Description" content="<?=getLocalizedSetting('description')?>">
 <meta name="Content" Content="<?=getLocalizedSetting('content')?>">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.7/css/bootstrap.css" rel="stylesheet">
-<link href="/themes/<?=getLocalizedSetting('theme')?>/css/styles.css" rel="stylesheet">
 <link id="favicon" href="favicon.ico" rel="icon" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" >
 <style>
@@ -58,9 +57,9 @@ body { -webkit-text-size-adjust: 100%; }
         $appearanceMenu = '
             <form style="display: inline-block;" role="appearance">
             <div class="form-switch" style="display:flex;justify-content:center;align-items:center; padding-left: 0em; padding-right: 20px">
-                <label class="form-check-label" style="display: inline-block; margin-right: 10px;" for="appearanceToggle"><i class="bi bi-sun-fill github-logo"></i></label>
+                <label class="form-check-label" style="display: inline-block; margin-right: 10px;" for="appearanceToggle"><i class="bi bi-sun-fill navbar-appearance-svg" data-bs-theme="light"></i></label>
                 <input style="display: inline-block; margin: 0 auto;" class="form-check-input form-control" type="checkbox" id="appearanceToggle">
-                <label style="display: inline-block; margin-left: 10px;" class="form-check-label" for="appearanceToggle"><i class="bi bi-moon-stars-fill github-logo"></i></label>
+                <label style="display: inline-block; margin-left: 10px;" class="form-check-label" for="appearanceToggle"><i class="bi bi-moon-stars-fill navbar-appearance-svg" data-bs-theme="light"></i></label>
             </div>
             </form>
         ';

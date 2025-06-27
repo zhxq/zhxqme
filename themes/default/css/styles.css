@@ -50,7 +50,7 @@ body {
 
 .modal-center input,
 .modal-center table{
-	margin: 0 auto; /*居中所有的文本框*/
+	margin: 0 auto; /*Center all textboxes*/
 }
 
 .title {

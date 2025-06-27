@@ -4,6 +4,8 @@ require_once('func.php');
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+<link href="/themes/<?=getLocalizedSetting('theme')?>/css/styles.css" rel="stylesheet">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/defaulttheme.js"></script>
@@ -18,8 +20,6 @@ require_once('func.php');
 <meta name="Keywords" content="<?=getLocalizedSetting('keywords')?>">
 <meta name="Description" content="<?=getLocalizedSetting('description')?>">
 <meta name="Content" Content="<?=getLocalizedSetting('content')?>">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
-<link href="/themes/<?=getLocalizedSetting('theme')?>/css/styles.css" rel="stylesheet">
 <link id="favicon" href="favicon.ico" rel="icon" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" >
 <style>
