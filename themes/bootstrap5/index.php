@@ -44,7 +44,7 @@ body { -webkit-text-size-adjust: 100%; }
 <input type="hidden" id="lastHash" value="" />
 <input type="hidden" id="lastIncludedPage" value="" />
     
-<nav id="navigationBar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+<nav id="navigationBar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
         <div class="navbar-header">
             <a style="margin-left:1%; white-space:nowrap;" class="navbar-brand">
