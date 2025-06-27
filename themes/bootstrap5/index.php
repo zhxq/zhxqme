@@ -5,13 +5,12 @@ require_once('func.php');
 <html data-bs-theme="dark">
 <head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/bootstrap5theme.js"></script>
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/onload.js"></script>
 <title><?=getLocalizedSetting('title')?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="HandheldFriendly" content="True">
 <meta content="telephone=no" name="format-detection" /> 
@@ -20,7 +19,6 @@ require_once('func.php');
 <meta name="Description" content="<?=getLocalizedSetting('description')?>">
 <meta name="Content" Content="<?=getLocalizedSetting('content')?>">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.7/css/bootstrap.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css" rel="stylesheet">
 <link href="/themes/<?=getLocalizedSetting('theme')?>/css/styles.css" rel="stylesheet">
 <link id="favicon" href="favicon.ico" rel="icon" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" >
