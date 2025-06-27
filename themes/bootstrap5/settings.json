@@ -1,14 +1,5 @@
 {
     "type": "settings",
-    "defaultappearance": "dark",
-    "appearancelist": {
-        "dark": {
-            "name": "English",
-            "file": "en.json"
-        },
-        "light": {
-            "name": "中文",
-            "file": "zhcn.json"
-        }
-    }
+    "defaultappearance": "auto",
+    "enableappearancetoggle": true
 }
