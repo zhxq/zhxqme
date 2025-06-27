@@ -47,19 +47,25 @@ function checkAbsPath($path){
     return false;
 }
 
-function loadSettings($dir='./'){
-    if (!array_key_exists('resumate_settings', $GLOBALS)){
+function loadSettings($dir='./', $target='resumate_settings'){
+    if (!array_key_exists($target, $GLOBALS)){
         $data = loadfile([$dir], "settings.json", $dir);
         if ($data === false){
             return false;
         }
-        $GLOBALS['resumate_settings'] = json_decode($data, true);
+        $GLOBALS[$target] = json_decode($data, true);
     }
-    return $GLOBALS['resumate_settings'];
+    return $GLOBALS[$target];
 }
 
 function getSetting($key){
     $settings = loadSettings();
+    return $settings[$key];
+}
+
+function getThemeSetting($key){
+    $theme = getSetting('theme');
+    $settings = loadSettings("./themes/$theme/", 'theme_settings');
     return $settings[$key];
 }
 

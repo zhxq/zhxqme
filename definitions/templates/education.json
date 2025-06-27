@@ -2,40 +2,61 @@
     "name": "education",
     "type": "template",
     "content": [
+        ["<div class=\"container-fluid\" style=\"max-width: ", "$_edu_template_maxwidth$","; margin: 0 auto; text-align: ", "$_edu_template_align$",";\">"],
         {
-            "name": "h3",
-            "content": ["$_edu_template_title$"]
-        },
-        {
-            "name": "h5",
-            "content": ["$_edu_template_phd$"]
-        },
-        {
-            "name": "h5",
-            "content": ["$_edu_template_master$"]
-        },
-        {
-            "name": "h5",
+            "name": "div",
             "attr": {
                 "style": {
-                    "margin-bottom": "30px"
+                    "text-align": "$_edu_template_align$",
+                    "max-width": "$_edu_template_maxwidth$",
+                    "display": "inline-block"
                 }
             },
-            "content": ["$_edu_template_bachelor$"]
+            "content": [
+                {
+                    "name": "h3",
+                    "content": ["$_edu_template_title$"]
+                },
+                {
+                    "name": "ul",
+                    "content": [
+                        {
+                            "name": "h5",
+                            "content": ["$_edu_template_phd$"]
+                        },
+                        {
+                            "name": "h5",
+                            "content": ["$_edu_template_master$"]
+                        },
+                        {
+                            "name": "h5",
+                            "attr": {
+                                "style": {
+                                    "margin-bottom": "30px"
+                                }
+                            },
+                            "content": ["$_edu_template_bachelor$"]
+                        }
+                    ]
+                },
+                {
+                    "name": "cpara",
+                    "vars": {
+                        "_cpara_template_content": ["$_edu_template_comment$"],
+                        "_cpara_template_maxwidth": "800px"
+                    }
+                }
+            ]
         },
-        {
-            "name": "cpara",
-            "vars": {
-                "_cpara_template_content": ["$_edu_template_comment$"],
-                "_cpara_template_maxwidth": "800px"
-            }
-        }
+        ["</div>"]
     ],
     "vars": {
         "_edu_template_title": "Education",
         "_edu_template_phd": "Insert your PhD experience, if any",
         "_edu_template_master": "Insert your Master experience, if any",
         "_edu_template_bachelor": "Insert your Bachelor experience, if any",
-        "_edu_template_comment": "Explain and elaborate something more about your education experience here :)"
+        "_edu_template_comment": "Explain and elaborate something more about your education experience here :)",
+        "_edu_template_align": "left",
+        "_edu_template_maxwidth": "800px"
     }
 }

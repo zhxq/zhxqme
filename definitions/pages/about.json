@@ -28,7 +28,8 @@
             "name": "titlewpara",
             "vars": {
                 "_twp_template_title": "$personalinformation$",
-                "_twp_template_paragraph": "$personalinformationline$"
+                "_twp_template_paragraph": "$personalinformationline$",
+                "_twp_template_align": "left"
             }
         },
         {
@@ -74,7 +75,8 @@
             "name": "titlewpara",
             "vars": {
                 "_twp_template_title": "",
-                "_twp_template_paragraph": "$resumateack$"
+                "_twp_template_paragraph": "$resumateack$",
+                "_twp_template_align": "left"
             }
         }
     ]

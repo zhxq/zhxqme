@@ -2,11 +2,14 @@
     "name": "titlewpara",
     "type": "template",
     "content": [
+        ["<div class=\"container-fluid\" style=\"max-width: ", "$_twp_template_maxwidth$","; margin: 0 auto; text-align: ", "$_twp_template_align$",";\">"],
         {
             "name": "div",
             "attr": {
                 "style": {
-                    "text-align": "$_twp_template_align$"
+                    "text-align": "$_twp_template_align$",
+                    "max-width": "$_twp_template_maxwidth$",
+                    "display": "inline-block"
                 }
             },
             "content": [
@@ -22,7 +25,8 @@
                     }
                 }
             ]
-        }
+        },
+        ["</div>"]
     ],
     "vars": {
         "_twp_template_title": "Title",

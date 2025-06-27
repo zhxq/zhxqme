@@ -1,9 +1,9 @@
 body {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-color: #f5f5f5;
 	font-size: 15px;
 	font-family: "Helvetica Neue",Helvetica,STHeiti,SimHei,Arial,sans-serif!important;
+	background-color: var(--bs-body-bg);
 }
 
 .normal-form {
@@ -11,14 +11,13 @@ body {
 	overflow: auto;
 	padding: 19px 29px 29px;
 	margin: 0 auto;
-	background-color: #fafafa;
-	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
 	box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	background-color: var(--bs-secondary-bg);
 }
 
 .normal-form .normal-form-heading,
@@ -73,3 +72,71 @@ body {
 	-webkit-overflow-scrolling: auto !important;
 	overflow-y: auto !important;
 }/*https://github.com/twbs/bootstrap/issues/14839*/
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+	font-weight: 500;
+    line-height: 1.1;
+}
+
+h4, h5, h6 {
+	margin-top: 10px;
+    margin-bottom: 10px;
+	font-weight: 500;
+    line-height: 1.1;
+}
+
+[data-bs-theme="dark"] {
+	body {
+		background-color: #121212;
+	}
+	.normal-form {
+		background-color: #1f1f1f;
+		border: 1px solid #1c1c1c;
+	}
+	.darkmode-invert-logo-color {
+		filter: invert(100%);
+	}
+}
+
+[data-bs-theme="light"] {
+	body {
+		background-color: #f5f5f5;
+	}
+	.normal-form {
+		background-color: #fafafa;
+		border: 1px solid #e5e5e5;
+	}
+	.darkmode-invert-logo-color {
+		filter: invert(0%);
+	}
+}
+
+[data-bs-theme="light"] .navbar-appearance-svg{
+	filter: invert(100%);
+}

@@ -37,7 +37,7 @@
                     "_pub_template_title": "Excessive SSD-Internal Parallelism Considered Harmful",
                     "_pub_template_pubon": "HotStorage",
                     "_pub_template_year": "2023",
-                    "_pub_template_align": "center",
+                    "_pub_template_align": "",
                     "_pub_template_paper_link": "https://dl.acm.org/doi/10.1145/3599691.3603412",
                     "_pub_template_bibtex": "@inproceedings{10.1145/3599691.3603412,\nauthor = {Zhang, Xiangqun and Pei, Shuyi and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Excessive SSD-Internal Parallelism Considered Harmful},\nyear = {2023},\nisbn = {9798400702242},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3599691.3603412},\ndoi = {10.1145/3599691.3603412},\nabstract = {Modern SSDs achieve high throughput by utilizing multiple independent channels and chips in parallel. However, we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation. Based on this observation, we design PLAN, a novel SSD parallelism management and data placement scheme that allocates different levels of parallelism to different workloads with different needs to minimize the GC overhead. We demonstrate the effectiveness of PLAN by evaluating it against other state-of-the-art designs across various real-world workloads. PLAN reduces write amplification with comparable or better performance to the other designs that are always at full parallelism.},\nbooktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Storage and File Systems},\npages = {65–72},\nnumpages = {8},\nkeywords = {write amplification, solid state drive, garbage collection},\nlocation = {Boston, MA, USA},\nseries = {HotStorage '23}\n}",
                     "_pub_template_slides_link": "https://www.hotstorage.org/2023/slides/excessive-ssd-internal-parallelism.pdf",
@@ -54,7 +54,7 @@
                     "_pub_template_title": "The Design and Implementation of a Capacity-Variant Storage System",
                     "_pub_template_pubon": "FAST",
                     "_pub_template_year": "2024",
-                    "_pub_template_align": "center",
+                    "_pub_template_align": "",
                     "_pub_template_paper_link": "https://www.usenix.org/conference/fast24/presentation/jiao",
                     "_pub_template_bibtex": "@inproceedings {294793,\nauthor = {Ziyang Jiao and Xiangqun Zhang and Hojin Shin and Jongmoo Choi and Bryan S. Kim},\ntitle = {The Design and Implementation of a {Capacity-Variant} Storage System},\nbooktitle = {22nd USENIX Conference on File and Storage Technologies},\nyear = {2024},\nisbn = {978-1-939133-38-0},\naddress = {Santa Clara, CA},\npages = {159--176},\nurl = {https://www.usenix.org/conference/fast24/presentation/jiao},\npublisher = {USENIX Association},\nmonth = {02},\nseries = {FAST '24}\n}",
                     "_pub_template_slides_link": "https://www.usenix.org/system/files/fast24_slides-jiao_0.pdf",
@@ -71,7 +71,7 @@
                     "_pub_template_title": "Storage Abstractions for SSDs: The Past, Present, and Future",
                     "_pub_template_pubon": "ACM ToS",
                     "_pub_template_year": "2025",
-                    "_pub_template_align": "center",
+                    "_pub_template_align": "",
                     "_pub_template_paper_link": "https://dl.acm.org/doi/10.1145/3708992",
                     "_pub_template_bibtex": "@article{10.1145/3708992,\nauthor = {Zhang, Xiangqun and Bhimani, Janki and Pei, Shuyi and Lee, Eunji and Lee, Sungjin and Seong, Yoon Jae and Kim, Eui Jin and Choi, Changho and Nam, Eyee Hyun and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Storage Abstractions for SSDs: The Past, Present, and Future},\nyear = {2025},\nissue_date = {February 2025},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {21},\nnumber = {1},\nissn = {1553-3077},\nurl = {https://doi.org/10.1145/3708992},\ndoi = {10.1145/3708992},\nabstract = {This article traces the evolution of SSD (solid-state drive) interfaces, examining the transition from the block storage paradigm inherited from hard disk drives to SSD-specific standards customized to flash memory. Early SSDs conformed to the block abstraction for compatibility with the existing software storage stack, but studies and deployments show that this limits the performance potential for SSDs. As a result, new SSD-specific interface standards emerged to not only capitalize on the low latency and abundant internal parallelism of SSDs, but also include new command sets that diverge from the longstanding block abstraction.We first describe flash memory technology in the context of the block storage abstraction and the components within an SSD that provide the block storage illusion. We then describe the genealogy and relationships among academic research and industry standardization efforts for SSDs, along with some of their rise and fall in popularity. We classify these works into four evolving branches: (1) extending block abstraction with host-SSD hints/directives; (2) enhancing host-level control over SSDs; (3) offloading host-level management to SSDs; and (4) making SSDs byte-addressable. By dissecting these trajectories, the article also sheds light on the emerging challenges and opportunities, providing a roadmap for future research and development in SSD technologies.},\njournal = {ACM Trans. Storage},\nmonth = jan,\narticleno = {2},\nnumpages = {44},\nkeywords = {SSD, garbage collection, flash translation layer, data placement scheme, zoned namespace, multi-stream, flexible data placement, computational storage, byte-addressable SSD}\n}"
                 }
@@ -85,7 +85,7 @@
                     "_pub_template_title": "Filling in the Missing Piece: Integrating Storage into CompOrg Courses",
                     "_pub_template_pubon": "ASEE Annual Conference",
                     "_pub_template_year": "2025",
-                    "_pub_template_align": "center",
+                    "_pub_template_align": "",
                     "_pub_template_paper_link": "https://nemo.asee.org/public/conferences/365/papers/48840/view",
                     "_pub_template_bibtex": "@INPROCEEDINGS{FillingInMissingPiece,\nauthor = {Xiangqun Zhang and Ziyang Jiao and Farzana Rahman and Bryan S. Kim},\ntitle = {Filling in the Missing Piece: Integrating Storage into CompOrg Courses},\nbooktitle = {Proceedings of the 2025 ASEE Annual Conference \\& Exposition},\nyear = {2025},\nmonth = {June},\naddress = {Montreal, QC, Canada},\npublisher = {ASEE Conferences},\nseries = {ASEE '25}\nurl = {https://nemo.asee.org/public/conferences/365/papers/48840/view}\n}",
                     "_pub_template_code_link": "https://github.com/zhxq/SSDLab"

@@ -3,23 +3,42 @@
     "type": "template",
     "css": ["./css/explist.css"],
     "content": [
+        ["<div class=\"container-fluid\" style=\"max-width: ", "$_explist_template_maxwidth$","; margin: 0 auto; text-align: ", "$_explist_template_internal_text_align$",";\">"],
         {
-            "name": "h3",
-            "content": ["$_explist_template_title$"]
-        },
-        {
-            "name": "ul",
-            "content": "$_explist_template_macros$",
-            "style": {
-                "text-align": "0 auto"
-            },
+            "name": "div",
             "attr": {
-                "class": ["explist_ul"]
-            }
-        }
+                "style": {
+                    "text-align": "$_explist_template_internal_text_align$",
+                    "max-width": "$_explist_template_maxwidth$",
+                    "display": "inline-block"
+                }
+            },
+            "content": [
+                {
+                    "name": "h3",
+                    "content": ["$_explist_template_title$"]
+                },
+                {
+                    "name": "ul",
+                    "content": "$_explist_template_macros$",
+                    "style": {
+                        "text-align": "$_explist_template_internal_text_align$"
+                    },
+                    "attr": {
+                        "class": ["explist_ul"],
+                        "style": {
+                            "max-width": "$_explist_template_maxwidth$"
+                        }
+                    }
+                }
+            ]
+        },
+        ["</div>"]
     ],
     "vars": {
         "_explist_template_title": "Experience List",
-        "_explist_template_macros": ["Experience 1", "Experience 2"]
+        "_explist_template_macros": ["Experience 1", "Experience 2"],
+        "_explist_template_maxwidth": "800px",
+        "_explist_template_internal_text_align": "left"
     }
 }
