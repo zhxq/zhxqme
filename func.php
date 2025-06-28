@@ -18,7 +18,7 @@ function dieJSON($array){
 	if ($echoJSON != NULL){
 		die($echoJSON);
 	}else{
-		die(json_encode(array('confirmed' => false, 'success' => false, 'confirmString' => 'dieJSON()传入参数错误!')));
+		die(json_encode(array('confirmed' => false, 'success' => false, 'confirmString' => 'Invalid arguments for dieJSON().')));
 	}
 }
 

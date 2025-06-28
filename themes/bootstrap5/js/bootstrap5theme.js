@@ -1,5 +1,4 @@
 function setHash(theHash){
-	console.log(theHash);
 	theHash = theHash.replace('#!', '').replace('#', '');
 	
 	var sharpIndex = window.location.href.indexOf("#!");
