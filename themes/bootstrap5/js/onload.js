@@ -103,7 +103,7 @@ const showActiveTheme = (theme) => {
   window.addEventListener('DOMContentLoaded', () => {
     showActiveTheme(getPreferredTheme());
 
-	$("#appearanceToggle").change(function() {
+	$("#appearanceToggle").on('change', function() {
 		const theme = this.checked ? 'dark' : 'light';
 		setStoredTheme(theme);
 		setTheme(theme);
