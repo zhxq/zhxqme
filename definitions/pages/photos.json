@@ -274,6 +274,13 @@
                     {
                         "name": "picmultiver", 
                         "vars": {
+                            "_pmv_template_id": "mistyredwoods",
+                            "_pmv_template_hdr_srcset": ""
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
                             "_pmv_template_id": "emeraldbay"
                         }
                     },
