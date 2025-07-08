@@ -17,19 +17,49 @@
         {
             "name": "titlewdiv",
             "vars": {
-                "_twd_template_title": ["$planespotting$"],
+                "_twd_template_title": ["$portraits$"],
                 "_twd_template_paragraph": [
                     {
                         "name": "picmultiver", 
                         "vars": {
-                            "_pmv_template_id": "N24927-1",
+                            "_pmv_template_id": "fifthave"
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "mistyredwoods",
                             "_pmv_template_hdr_srcset": ""
                         }
                     },
                     {
                         "name": "picmultiver", 
                         "vars": {
-                            "_pmv_template_id": "N174UP-1"
+                            "_pmv_template_id": "emeraldbay"
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "apeek"
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "olmstedpoint"
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "toshi"
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "yorkshire"
                         }
                     }
                 ]
@@ -263,49 +293,19 @@
         {
             "name": "titlewdiv",
             "vars": {
-                "_twd_template_title": ["$portraits$"],
+                "_twd_template_title": ["$planespotting$"],
                 "_twd_template_paragraph": [
                     {
                         "name": "picmultiver", 
                         "vars": {
-                            "_pmv_template_id": "fifthave"
-                        }
-                    },
-                    {
-                        "name": "picmultiver", 
-                        "vars": {
-                            "_pmv_template_id": "mistyredwoods",
+                            "_pmv_template_id": "N24927-1",
                             "_pmv_template_hdr_srcset": ""
                         }
                     },
                     {
                         "name": "picmultiver", 
                         "vars": {
-                            "_pmv_template_id": "emeraldbay"
-                        }
-                    },
-                    {
-                        "name": "picmultiver", 
-                        "vars": {
-                            "_pmv_template_id": "apeek"
-                        }
-                    },
-                    {
-                        "name": "picmultiver", 
-                        "vars": {
-                            "_pmv_template_id": "olmstedpoint"
-                        }
-                    },
-                    {
-                        "name": "picmultiver", 
-                        "vars": {
-                            "_pmv_template_id": "toshi"
-                        }
-                    },
-                    {
-                        "name": "picmultiver", 
-                        "vars": {
-                            "_pmv_template_id": "yorkshire"
+                            "_pmv_template_id": "N174UP-1"
                         }
                     }
                 ]
