@@ -53,6 +53,12 @@
                     {
                         "name": "picmultiver", 
                         "vars": {
+                            "_pmv_template_id": "olmstedpointgalaxy2"
+                        }
+                    },
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
                             "_pmv_template_id": "toshi"
                         }
                     },
@@ -70,6 +76,12 @@
             "vars": {
                 "_twd_template_title": ["$travelphotos$"],
                 "_twd_template_paragraph": [
+                    {
+                        "name": "picmultiver", 
+                        "vars": {
+                            "_pmv_template_id": "olmstedpointgalaxy1"
+                        }
+                    },
                     {
                         "name": "picmultiver", 
                         "vars": {
