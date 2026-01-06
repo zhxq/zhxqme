@@ -1,55 +1,55 @@
-let map_template = {};
-let map_color = {};
-let rawBaseColors = ["#F05E84","#D57B00","#BDAA00","#47D600","#00D688","#00B1BF","#009CF1","#AF73F8","#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28","#009E50", "#84C6E4", "#6EB0C9", "#F2C62F","#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
+var map_template = {};
+var map_color = {};
+var rawBaseColors = ["#F05E84","#D57B00","#BDAA00","#47D600","#00D688","#00B1BF","#009CF1","#AF73F8","#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28","#009E50", "#84C6E4", "#6EB0C9", "#F2C62F","#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
 
-let baseColors = [];
-let allColors = [];
+var baseColors = [];
+var allColors = [];
 
-let colorLen = rawBaseColors.length + 1;
-for (let i = 0; i < colorLen; i++) {
+var colorLen = rawBaseColors.length + 1;
+for (var i = 0; i < colorLen; i++) {
  tinyColor = tinycolor(rawBaseColors[i]) 
  baseColors.push(eval(tinyColor))
 }
 
 for (i = 0; i < colorLen; i++) {
-  const color = baseColors[i].toString()
+  var color = baseColors[i].toString()
   allColors.push(color)
 }
 
 for (i = 0; i < colorLen; i++) {
-  const color = baseColors[i].clone().desaturate(40).toString()
+  var color = baseColors[i].clone().desaturate(40).toString()
   allColors.push(color)
 }
 
 for (i = 0; i < colorLen; i++) {
-  const color = baseColors[i].clone().desaturate(60).lighten(5).toString()
+  var color = baseColors[i].clone().desaturate(60).lighten(5).toString()
   allColors.push(color)
 }
 
 for (i = 0; i < colorLen; i++) {
-  const color = baseColors[i].clone().desaturate(70).lighten(5).toString()
+  var color = baseColors[i].clone().desaturate(70).lighten(5).toString()
   allColors.push(color)
 }
 
-const futureColors = []
+var futureColors = []
 for (i = 0; i < colorLen; i++) {
-  const color = baseColors[i].clone().desaturate(70).lighten(10).toString()
+  var color = baseColors[i].clone().desaturate(70).lighten(10).toString()
   allColors.push(color)
 }
 
 
-const prefersDarkSystem = window.matchMedia("(prefers-color-scheme: dark)");
+var prefersDarkSystem = window.matchMedia("(prefers-color-scheme: dark)");
 
 
-let prefersDark = $("html").attr("data-bs-theme") == "dark" ? true : false;
+var prefersDark = $("html").attr("data-bs-theme") == "dark" ? true : false;
 
 
-const bounds = [
+var bounds = [
     [-124.77, 24.52], // Southwest coordinates
     [-66.95, 49.38]  // Northeast coordinates
 ];
 
-let mapAttr = {
+var mapAttr = {
   container: "map", // container ID
   style: {
     version: 8,
@@ -96,7 +96,7 @@ function getOSMStyle() {
 
 
 function applyTheme(target, theme) {
-  let dark = prefersDark;
+  var dark = prefersDark;
   if (theme !== undefined){
       if (theme !== "dark"){
         dark = false;
@@ -104,21 +104,21 @@ function applyTheme(target, theme) {
         dark = true;
       }
   }
-  console.log(dark);
+  console.log("Applied!", target);
   
   target.setLayoutProperty("osmLightLayer", "visibility", dark ? "none" : "visible");
   target.setLayoutProperty("osmDarkLayer", "visibility", dark ? "visible" : "none");
 }
 
-let mapTripIndices = {};
+var mapTripIndices = {};
 var totalTripCount = 0;
 
 function loadMultipleJsons(ids, jsons, opacity){
     if (jsons.length == 0){
         return;
     }
-    let id_array = ids.split(",");
-    let main_target = id_array[0];
+    var id_array = ids.split(",");
+    var main_target = id_array[0];
     map_color[id_array[0]] = totalTripCount;
     id_array = [...new Set(id_array)];
     id_array.forEach(element => {
@@ -135,9 +135,9 @@ function createLazyMap(
   mapOptions,
   onMapReady,
 ) {
-  let map = null;
+  var map = null;
 
-  const observer = new IntersectionObserver(
+  var observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
         if (!map) {
@@ -155,7 +155,7 @@ function createLazyMap(
       }
     },
     {
-      root: null,
+      root: document,
       threshold: 0.01,
     }
   );
@@ -163,6 +163,9 @@ function createLazyMap(
   observer.observe(document.getElementById(container));
 
   return {
+    getMap() {
+      return map;        // may be null
+    },
     destroy() {
       observer.disconnect();
       if (map) {
@@ -176,7 +179,7 @@ function createLazyMap(
 
 
 function loadJson(map, jsons, count, original_map_id, opacity){
-    const files = [jsons.split(",")];
+    var files = [jsons.split(",")];
     map.on('load', () => {
         files.forEach((trip, tripIndex) => {
             trip.forEach((element, index) => {
@@ -220,15 +223,15 @@ function loadJson(map, jsons, count, original_map_id, opacity){
 }
 
 
-const htmlEl = document.documentElement;
+var htmlEl = document.documentElement;
 
-const mutObserver = new MutationObserver((mutations) => {
-  for (const m of mutations) {
+var mutObserver = new MutationObserver((mutations) => {
+  for (var m of mutations) {
     if (
       m.type === "attributes" &&
       m.attributeName === "data-bs-theme"
     ) {
-      const newTheme = htmlEl.getAttribute("data-bs-theme");
+      var newTheme = htmlEl.getAttribute("data-bs-theme");
       onThemeChanged(newTheme);
     }
   }
@@ -240,13 +243,22 @@ mutObserver.observe(htmlEl, {
 });
 
 function onThemeChanged(theme) {
-    for (const val of Object.values(map_template)) {
+    for (var val of Object.values(map_template)) {
         applyTheme(val, theme);
     }
 }
 
 
+var previousUrl = '';
+var observer = new MutationObserver(function (mutations) {
+    if (location.href !== previousUrl) {
+        previousUrl = location.href;
+        map_template = {};
+    }
+});
 
+var config = {attributes: true, childList: true, subtree: true};
+observer.observe(document, config);
 
 
 

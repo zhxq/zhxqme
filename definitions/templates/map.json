@@ -20,7 +20,7 @@
         {
             "name": "script",
             "content": [
-                "let mapAttr_", "$_map_template_id$", " = mapAttr;",
+                "var mapAttr_", "$_map_template_id$", " = mapAttr;",
                 "mapAttr_", "$_map_template_id$", "['container'] = 'map_template_", "$_map_template_id$", "';",
                 
                 "map_template[\"", "$_map_template_id$","\"] = new maplibregl.Map(mapAttr_", "$_map_template_id$", ");",
