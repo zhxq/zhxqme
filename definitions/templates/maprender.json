@@ -1,0 +1,24 @@
+{
+    "name": "maprender",
+    "type": "template",
+    "content": [
+        {
+            "name": "map",
+            "vars": {
+                "_map_template_id": "$_map_render_template_id$"
+            }
+        },
+        {
+            "name": "script",
+            "content": [
+                "loadMultipleJsons(\"", "$_map_render_template_id$", ",", "$_map_render_extra_targets$", "\", \"", "$_map_render_jsons$", "\", ", "$_map_render_opacity$", ")"
+            ]
+        }
+    ],
+    "vars": {
+        "_map_render_template_id": "",
+        "_map_render_jsons": "",
+        "_map_render_extra_targets": "",
+        "_map_render_opacity": "0.9"
+    }
+}

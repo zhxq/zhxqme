@@ -1,0 +1,36 @@
+{
+    "name": "map",
+    "type": "template",
+    "css": ["https://unpkg.com/maplibre-gl@3.5.2/dist/maplibre-gl.css"],
+    "js": ["./js/tinycolor.js", "https://unpkg.com/maplibre-gl@3.5.2/dist/maplibre-gl.js", "./js/map.js"],
+    "content": [
+        {
+            "name": "div",
+            "content": [
+                "<div style=\"overflow: visible; height: 100%; width: 100%;\" class=\"map_template\" id=\"map_template_", "$_map_template_id$" ,"\"></div>"
+            ],
+            "attr": {
+                "style": {
+                    "width": "$_map_template_width$",
+                    "height": "400px",
+                    "margin": "0 auto"
+                }
+            }
+        },
+        {
+            "name": "script",
+            "content": [
+                "let mapAttr_", "$_map_template_id$", " = mapAttr;",
+                "mapAttr_", "$_map_template_id$", "['container'] = 'map_template_", "$_map_template_id$", "';",
+                
+                "map_template[\"", "$_map_template_id$","\"] = new maplibregl.Map(mapAttr_", "$_map_template_id$", ");",
+
+                "map_template[\"", "$_map_template_id$", "\"].on(\"load\", function(){applyTheme(map_template[\"", "$_map_template_id$", "\"]);});"
+            ]
+        }
+    ],
+    "vars": {
+        "_map_template_id": "",
+        "_map_template_width": "100%"
+    }
+}

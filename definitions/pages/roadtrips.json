@@ -1,0 +1,163 @@
+{
+    "name": "roadtrips",
+    "type": "page",
+    "content":[
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "all_trips_map",
+                "_road_trip_title": "Prelude",
+                "_road_trip_description": "The map above shows all road trips I have done since 2018, where each color represents a different trip. To this day, I have roamed around 47 out of 48 lower states with my reliable 2018 Honda CR-V (for those who are interested, the only state left is North Dakota). <br>While I try my best to obtain original GPS traces when possible, some of the paths are reconstructed using my memory and thus may be slightly inaccurate. After all, who would have thought of making a map like this today so many years ago?"
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2025NYTX",
+                "_road_trip_jsons": "./geojson/2025-NY-TX-day1.geojson,./geojson/2025-Louisville-Missing-1.geojson,./geojson/2025-Louisville-Missing-2.geojson,./geojson/2025-Louisville-Missing-3.geojson,./geojson/2025-Louisville-Missing-4.geojson,./geojson/2025-NY-TX-day3.geojson,./geojson/2025-NY-TX-day4.geojson,./geojson/2025-NY-TX-day5.geojson,./geojson/2025-NY-TX-day6.geojson,./geojson/2025-NY-TX-day7.geojson,./geojson/2025-NY-TX-day8.geojson,./geojson/2025-NY-TX-day9.geojson,./geojson/2025-NY-TX-day10.geojson,./geojson/2025-NY-TX-day11.geojson,./geojson/2025-NY-TX-day12.geojson,./geojson/2025-NY-TX-day13.geojson,./geojson/2025-NY-TX-day15.geojson",
+                "_road_trip_title": "Southeastern US Trip (Dec 2025/Jan 2026)",
+                "_road_trip_description": "A long anticipated trip. I have been living in and exploring so many different places in the United States, but "
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2025SYRBOS",
+                "_road_trip_jsons": "./geojson/2025-Dec-SYR-BOS-day1.geojson,./geojson/2025-Dec-SYR-BOS-day2.geojson,./geojson/2025-I-90-Remaining-new.geojson",
+                "_road_trip_title": "Syracuse - Boston (Apr/Dec 2025)",
+                "_road_trip_description": "These trips complete my journey of every mile of I-90, and also "
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "SJCSYR",
+                "_road_trip_jsons": "./geojson/2025-SJC-SYR-day1.geojson,./geojson/2025-SJC-SYR-day2.geojson,./geojson/2025-SJC-SYR-day3.geojson,./geojson/2025-SJC-SYR-day4.geojson,./geojson/2025-SJC-SYR-day5.geojson",
+                "_road_trip_title": "San Jose - Syracuse (Aug 2025, US-66)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2025Yosemite",
+                "_road_trip_jsons": "./geojson/2025-Yosemite-P1.geojson,./geojson/2025-Yosemite-P3.geojson,./geojson/2025-Yosemite-P5.geojson",
+                "_road_trip_title": "Yosemite (Jul 2025)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2025Tahoe",
+                "_road_trip_jsons": "./geojson/2025-LakeTahoe.geojson",
+                "_road_trip_title": "Lake Tahoe (Jul 2025)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2025SYRSJC",
+                "_road_trip_jsons": "./geojson/2025-SYR-SJC-day1.geojson,./geojson/2025-SYR-SJC-day2.geojson,./geojson/2025-SYR-SJC-day3.geojson,./geojson/2025-SYR-SJC-day4.geojson,./geojson/2025-SYR-SJC-day5.geojson",
+                "_road_trip_title": "Syracuse - San Jose (May 2025, I-80)",
+                "_road_trip_description": "A trip from Syracuse to San Jose"
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024Winter",
+                "_road_trip_jsons": "./geojson/2024-Winterbreak.geojson",
+                "_road_trip_title": "Syracuse - New York City - Philadelphia - Baltimore (Dec 2024)",
+                "_road_trip_description": ""
+            }
+        },
+        
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024SJCSYR",
+                "_road_trip_jsons": "./geojson/2024-SJC-NYC-day1.geojson,./geojson/2024-SJC-NYC-day2.geojson,./geojson/2024-YellowStone-day1.geojson,./geojson/2024-YellowStone-day2.geojson,./geojson/2024-SJC-NYC-day3.geojson,./geojson/2024-SJC-NYC-day4.geojson,./geojson/2024-SJC-NYC-day5.geojson,./geojson/2024-SJC-NYC-day6.geojson",
+                "_road_trip_title": "San Jose - Syracuse (Aug 2024, I-5/I-90)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024SJCSAN",
+                "_road_trip_jsons": "./geojson/2024-SJC-SAN.geojson,./geojson/2024-SAN-SJC.geojson",
+                "_road_trip_title": "San Jose - San Diego - San Ysidro (Aug 2024, I-5)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024YosemiteTahoe",
+                "_road_trip_jsons": "./geojson/2024-Yosemite-Tahoe.geojson",
+                "_road_trip_title": "Syracuse - San Jose (May 2025, I-80)",
+                "_road_trip_description": "A trip from Syracuse to San Jose"
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024NYCSJC",
+                "_road_trip_jsons": "./geojson/2024-NYC-SJC-day1.geojson,./geojson/2024-NYC-SJC-day2-1.geojson,./geojson/2024-NYC-SJC-day2-2.geojson,./geojson/2024-NYC-SJC-day3.geojson,./geojson/2024-NYC-SJC-day4.geojson,./geojson/2024-NYC-SJC-day5.geojson",
+                "_road_trip_title": "New York City - San Jose (May 2024, I-80)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024OldForge",
+                "_road_trip_jsons": "./geojson/2024-Utica-OldForge-LakePlacid.geojson",
+                "_road_trip_title": "Syracuse - Old Forge - Lake Placid (May 2024)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024CorningBuffalo",
+                "_road_trip_jsons": "./geojson/2024-Corning-Buffalo.geojson",
+                "_road_trip_title": "Syracuse - Corning - Buffalo (Apr 2024)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2024Eclipse",
+                "_road_trip_jsons": "./geojson/2024-Eclipse-1.geojson,./geojson/2024-Eclipse-2.geojson",
+                "_road_trip_title": "Syracuse - Newport, VT (Apr 2024 Eclipse)",
+                "_road_trip_description": ""
+            }
+        },
+        
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2023Winter",
+                "_road_trip_jsons": "./geojson/2023-SYR-MIA-day1.geojson,./geojson/2023-SYR-MIA-day2.geojson,./geojson/2023-SYR-MIA-day3.geojson,./geojson/2023-SYR-MIA-day4.geojson",
+                "_road_trip_title": "Syracuse - Boone NC - Miami (Dec 2023)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2023LakePlacid",
+                "_road_trip_jsons": "./geojson/2023-LakePlacid.geojson",
+                "_road_trip_title": "New York City - Lake Placid - Syracuse (Dec 2023)",
+                "_road_trip_description": ""
+            }
+        }
+        
+
+        
+    ]
+}
