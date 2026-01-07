@@ -3,6 +3,8 @@ var map_color = {};
 var shared_path_by_all = [];
 var map_jsons = {};
 var map_counter = 0;
+var parsed_trips = {};
+maplibregl.workerCount = 1;
 var rawBaseColors = ["#F05E84","#D57B00","#BDAA00","#47D600","#00D688","#00B1BF","#009CF1","#AF73F8","#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28","#009E50", "#84C6E4", "#6EB0C9", "#F2C62F","#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
 
 var baseColors = [];
@@ -53,6 +55,24 @@ var bounds = [
 ];
 
 
+function fitMapToBounds(map) {
+  const padding = { top: 20, bottom: 20, left: 20, right: 20 };
+
+  // Compute the camera that would fit the bounds
+  const camera = map.cameraForBounds(bounds, {
+    padding,
+    bearing: map.getBearing(),
+    pitch: map.getPitch()
+  });
+  if (!camera) return;
+  map.easeTo({
+    center: camera.center,
+    zoom: camera.zoom,
+    bearing: camera.bearing,
+    duration: 0
+  });
+}
+
 function buildMapOptions(containerId) {
     return {
         container: containerId, // container ID
@@ -80,9 +100,8 @@ function buildMapOptions(containerId) {
         
         //   center: [-98.583333, 39.833333],
         zoom: 2.75,
-        maxBounds: bounds,
         maxZoom: 12,
-        minZoom: 2.5,
+        minZoom: 1,
         dragRotate: false,
         touchZoomRotate: false,
         pitchWithRotate: false,
@@ -138,6 +157,33 @@ function waitForVisibleSize(el, cb) {
   ro.observe(el);
 }
 
+function drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip_color_id){
+    Object.entries(trip).forEach((element, index) => {
+        const fn = element[0];
+        const data = element[1];
+        if (!map.getSource(fn)){
+            map.addSource(fn, { type: "geojson", data: data });
+            map.addLayer(
+                {
+                    id: fn, 
+                    type:"line", 
+                    source: fn,
+                    'layout': {
+                        'line-join': 'round',
+                        'line-cap': 'round'
+                    },
+                    'paint': {
+                        'line-color': allColors[tripIndex],
+                        'line-width': 2.5,
+                        "line-opacity": trip_color_id == tripIndex ? main_opacity : others_opacity
+                    }
+                }
+            );
+        }
+        
+    });
+}
+
 
 function drawPath(trips, map, main_opacity, others_opacity, alternate_opacity, trip_color_id){
     if (trips.length == 0) return;
@@ -146,33 +192,11 @@ function drawPath(trips, map, main_opacity, others_opacity, alternate_opacity, t
     if (trips[trip_color_id][0] == ''){
         others_opacity = alternate_opacity;
     }
-    trips.forEach((trip, tripIndex) => {
+
+    Object.values(parsed_trips).forEach((trip, tripIndex) => {
         if (trip.length == 0) return;
-        trip.forEach((element, index) => {
-            if (element == "") return;
-            fetch(element)
-                .then(r => r.json())
-                .then(route => {
-                    map.addSource(element, { type: "geojson", data: route });
-                    map.addLayer(
-                        {
-                            id: element, 
-                            type:"line", 
-                            source: element,
-                            'layout': {
-                                'line-join': 'round',
-                                'line-cap': 'round'
-                            },
-                            'paint': {
-                                'line-color': allColors[tripIndex],
-                                'line-width': 2.5,
-                                "line-opacity": trip_color_id == tripIndex ? main_opacity : others_opacity
-                            }
-                        }
-                    );
-                });
-        });
-});
+        drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip_color_id);
+    });
 }
 
 function createLazyMap(
@@ -204,6 +228,13 @@ function createLazyMap(
                     drawPath(shared_path_by_all, map, main_opacity, others_opacity, alternate_opacity, original_map_count);
                     
                 });
+                map.on("resize", () => {
+                    map.fitBounds(bounds, {
+                        padding: 20, // Optional: add some padding around the bounds in pixels
+                        maxZoom: 16,  // Optional: prevent zooming past this level
+                        duration: 0
+                    });
+                })
                 
             });
         }
@@ -289,4 +320,27 @@ function splitJson(fileString, map_counter){
     if (files.length == 0) return;
     shared_path_by_all.push(files);
     map_jsons[map_counter] = files;
+    parsed_trips[map_counter] = {};
+    files.forEach((element, index) => {
+        if (element == "") return;
+        fetch(element)
+            .then(r => r.json())
+            .then(route => {
+                parsed_trips[map_counter][element] = route;
+            })
+            .then(() => {
+                for (var val of Object.values(map_template)) {
+                    if (val){
+                        const items = Object.entries(parsed_trips[map_counter]);
+                        let real_i = 0;
+                        for (let i = 0; i < items.length; i++){
+                            if (items[i][0] == element){
+                                real_i = i;
+                            }
+                        }
+                        drawSinglePath(items[real_i], map_counter, val, 0.99, 0.1, map_counter);
+                    }
+                }
+            });
+    });
 }
