@@ -155,6 +155,33 @@
                 "_road_trip_title": "New York City - Lake Placid - Syracuse (Dec 2023)",
                 "_road_trip_description": ""
             }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2018SANNYC",
+                "_road_trip_jsons": "./geojson/2018-SAN-NYC-day1.geojson,./geojson/2018-SAN-NYC-day2.geojson,./geojson/2018-SAN-NYC-day3.geojson,./geojson/2018-SAN-NYC-day4.geojson,./geojson/2018-SAN-NYC-day5.geojson,./geojson/2018-SAN-NYC-day6.geojson,./geojson/2018-SAN-NYC-day7.geojson",
+                "_road_trip_title": "San Diego - New York City (Aug 2018)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2018YVRSAN",
+                "_road_trip_jsons": "./geojson/2018-YVR-SAN-day1.geojson,./geojson/2018-YVR-SAN-day2.geojson,./geojson/2018-YVR-SAN-day3.geojson,./geojson/2018-YVR-SAN-day4.geojson",
+                "_road_trip_title": "Vancouver - San Diego (Jun 2018)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2018SANYVR",
+                "_road_trip_jsons": "./geojson/2018-SAN-YVR-day1.geojson,./geojson/2018-SAN-YVR-day2.geojson,./geojson/2018-SAN-YVR-day3.geojson,./geojson/2018-SAN-YVR-day4.geojson,./geojson/2018-SAN-YVR-day5.geojson",
+                "_road_trip_title": "San Diego - Vancouver (Apr/Jun 2018)",
+                "_road_trip_description": ""
+            }
         }
         
 

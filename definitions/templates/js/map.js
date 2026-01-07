@@ -1,5 +1,8 @@
 var map_template = {};
 var map_color = {};
+var shared_path_by_all = [];
+var map_jsons = {};
+var map_counter = 0;
 var rawBaseColors = ["#F05E84","#D57B00","#BDAA00","#47D600","#00D688","#00B1BF","#009CF1","#AF73F8","#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28","#009E50", "#84C6E4", "#6EB0C9", "#F2C62F","#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
 
 var baseColors = [];
@@ -49,43 +52,48 @@ var bounds = [
     [-66.95, 49.38]  // Northeast coordinates
 ];
 
-var mapAttr = {
-  container: "map", // container ID
-  style: {
-    version: 8,
-    sources: {
-      osmLight: {
-        type: "raster",
-        tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-        tileSize: 256,
-        attribution:
-          'Map tiles by <a target="_top" rel="noopener" href="https://tile.openstreetmap.org/">OpenStreetMap tile servers</a>, under the <a target="_top" rel="noopener" href="https://operations.osmfoundation.org/policies/tiles/">tile usage policy</a>. Data by <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>'
-      },
-      osmDark: {
-        type: "raster",
-        tiles: ["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"],
-        tileSize: 256
-      }
-    },
-    layers: [
-      { id: "osmLightLayer", type: "raster", source: "osmLight", layout: { visibility: "none" } },
-      { id: "osmDarkLayer", type: "raster", source: "osmDark", layout: { visibility: "none" } }
-    ]
-  },
-  
-//   center: [-98.583333, 39.833333],
-  zoom: 2.75,
-  maxBounds: bounds,
-  maxZoom: 15,
-  minZoom: 2.5,
-  dragRotate: false,
-  touchZoomRotate: false,
-  pitchWithRotate: false,
-  touchPitch: false,
-  logoPosition: 'bottom-right',
-  attributionControl: false,
-  renderWorldCopies: false,
+
+function buildMapOptions(containerId) {
+    return {
+        container: containerId, // container ID
+        style: {
+            version: 8,
+            sources: {
+            osmLight: {
+                type: "raster",
+                tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+                tileSize: 256,
+                attribution:
+                'Map tiles by <a target="_top" rel="noopener" href="https://tile.openstreetmap.org/">OpenStreetMap tile servers</a>, under the <a target="_top" rel="noopener" href="https://operations.osmfoundation.org/policies/tiles/">tile usage policy</a>. Data by <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>'
+            },
+            osmDark: {
+                type: "raster",
+                tiles: ["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"],
+                tileSize: 256
+            }
+            },
+            layers: [
+                { id: "osmLightLayer", type: "raster", source: "osmLight", layout: { visibility: "none" } },
+                { id: "osmDarkLayer", type: "raster", source: "osmDark", layout: { visibility: "none" } }
+            ]
+        },
+        
+        //   center: [-98.583333, 39.833333],
+        zoom: 2.75,
+        maxBounds: bounds,
+        maxZoom: 12,
+        minZoom: 2.5,
+        dragRotate: false,
+        touchZoomRotate: false,
+        pitchWithRotate: false,
+        touchPitch: false,
+        logoPosition: 'bottom-right',
+        attributionControl: false,
+        renderWorldCopies: false,
+        maxTileCacheSize: 16
+    }
 }
+
 
 
 function getOSMStyle() {
@@ -113,54 +121,110 @@ function applyTheme(target, theme) {
 var mapTripIndices = {};
 var totalTripCount = 0;
 
-function loadMultipleJsons(ids, jsons, opacity){
-    if (jsons.length == 0){
-        return;
+
+function waitForVisibleSize(el, cb) {
+  if (el.clientWidth > 0 && el.clientHeight > 0) {
+    cb();
+    return;
+  }
+
+  const ro = new ResizeObserver(() => {
+    if (el.clientWidth > 0 && el.clientHeight > 0) {
+      ro.disconnect();
+      cb();
     }
-    var id_array = ids.split(",");
-    var main_target = id_array[0];
-    map_color[id_array[0]] = totalTripCount;
-    id_array = [...new Set(id_array)];
-    id_array.forEach(element => {
-        if (element === "") return;
-        loadJson(map_template[element], jsons, totalTripCount, main_target, opacity);
-        totalTripCount += 1;
-    });
+  });
+
+  ro.observe(el);
 }
 
 
+function drawPath(trips, map, main_opacity, others_opacity, alternate_opacity, trip_color_id){
+    if (trips.length == 0) return;
+    console.log(trips[trip_color_id]);
+    console.log(trips);
+    if (trips[trip_color_id][0] == ''){
+        others_opacity = alternate_opacity;
+    }
+    trips.forEach((trip, tripIndex) => {
+        if (trip.length == 0) return;
+        trip.forEach((element, index) => {
+            if (element == "") return;
+            fetch(element)
+                .then(r => r.json())
+                .then(route => {
+                    map.addSource(element, { type: "geojson", data: route });
+                    map.addLayer(
+                        {
+                            id: element, 
+                            type:"line", 
+                            source: element,
+                            'layout': {
+                                'line-join': 'round',
+                                'line-cap': 'round'
+                            },
+                            'paint': {
+                                'line-color': allColors[tripIndex],
+                                'line-width': 2.5,
+                                "line-opacity": trip_color_id == tripIndex ? main_opacity : others_opacity
+                            }
+                        }
+                    );
+                });
+        });
+});
+}
 
 function createLazyMap(
-  container,
   mapOptions,
   onMapReady,
+  original_map_count,
+  main_opacity,
+  others_opacity
 ) {
+  var container = mapOptions["container"];
   var map = null;
+  var containerElement = document.getElementById(container);
+  const alternate_opacity = 0.75;
+  console.log("original_map_count:" + original_map_count);
 
   var observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
         if (!map) {
-          map = new maplibregl.Map(mapOptions);
+            
+            waitForVisibleSize(entry.target, () => {
+                map = new maplibregl.Map(mapOptions);
+                map_template[original_map_count] = map;
+                map.once("load", () => {
+                    map.resize(); // 🔑 fixes top-left bug
+                    applyTheme(map);
+                    onMapReady?.(map);
 
-          map.once("load", () => {
-            onMapReady?.(map);
-          });
+                    drawPath(shared_path_by_all, map, main_opacity, others_opacity, alternate_opacity, original_map_count);
+                    
+                });
+                
+            });
         }
       } else {
         if (map) {
-          map.remove();        // 🔥 releases WebGL context
-          map = null;
+            delete map_template[original_map_count];
+            map.off();     // remove all listeners
+            map.stop();
+            map.remove();        // 🔥 releases WebGL context
+            console.log("Map removed");
+            map = null;
         }
       }
     },
     {
-      root: document,
-      threshold: 0.01,
+      root: null,
+      threshold: 0.1,
     }
   );
-  console.log(document.getElementById(container))
-  observer.observe(document.getElementById(container));
+  console.log(containerElement);
+  observer.observe(containerElement);
 
   return {
     getMap() {
@@ -171,55 +235,10 @@ function createLazyMap(
       if (map) {
         map.remove();
         map = null;
+        console.log("Map removed");
       }
     },
   };
-}
-
-
-
-function loadJson(map, jsons, count, original_map_id, opacity){
-    var files = [jsons.split(",")];
-    map.on('load', () => {
-        files.forEach((trip, tripIndex) => {
-            trip.forEach((element, index) => {
-                fetch(element)
-                    .then(r => r.json())
-                    .then(route => {
-                        console.log(opacity);
-                        map.addSource(element, { type: "geojson", data: route });
-                        map.addLayer(
-                            {
-                                id: element, 
-                                type:"line", 
-                                source: element,
-                                'layout': {
-                                    'line-join': 'round',
-                                    'line-cap': 'round'
-                                },
-                                'paint': {
-                                    'line-color': allColors[map_color[original_map_id]],
-                                    'line-width': 2.5,
-                                    "line-opacity": opacity
-                                }
-                            }
-                        );
-                    });
-            });
-        });
-        // Call fitBounds() on the map instance
-        map.fitBounds(bounds, {
-            padding: 20, // Optional: add some padding around the bounds in pixels
-            maxZoom: 16  // Optional: prevent zooming past this level
-        });
-    });
-    map.on("resize", () => {
-        map.fitBounds(bounds, {
-            padding: 20, // Optional: add some padding around the bounds in pixels
-            maxZoom: 16  // Optional: prevent zooming past this level
-        });
-    })
-    
 }
 
 
@@ -243,8 +262,11 @@ mutObserver.observe(htmlEl, {
 });
 
 function onThemeChanged(theme) {
+    console.log("theme changed!");
     for (var val of Object.values(map_template)) {
-        applyTheme(val, theme);
+        if (val){
+            applyTheme(val, theme);
+        }
     }
 }
 
@@ -262,3 +284,9 @@ observer.observe(document, config);
 
 
 
+function splitJson(fileString, map_counter){
+    var files = fileString.split(",");
+    if (files.length == 0) return;
+    shared_path_by_all.push(files);
+    map_jsons[map_counter] = files;
+}
