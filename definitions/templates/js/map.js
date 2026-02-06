@@ -4,6 +4,7 @@ var shared_path_by_all = [];
 var map_jsons = {};
 var map_counter = 0;
 var parsed_trips = {};
+var savedCameraState = {};
 maplibregl.workerCount = 1;
 var rawBaseColors = ["#F05E84", "#D57B00", "#BDAA00", "#47D600", "#00D688", "#00B1BF", "#009CF1", "#AF73F8", "#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28", "#009E50", "#84C6E4", "#6EB0C9", "#F2C62F", "#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
 
@@ -124,6 +125,26 @@ function buildMapOptions(containerId) {
         renderWorldCopies: false,
         maxTileCacheSize: 16
     }
+}
+
+function getCameraState(map) {
+  return {
+    center: map.getCenter(),
+    zoom: map.getZoom(),
+    bearing: map.getBearing(),
+    pitch: map.getPitch(),
+  };
+}
+
+function restoreCameraState(map, state) {
+  if (!state) return;
+
+  map.jumpTo({
+    center: state.center,
+    zoom: state.zoom,
+    bearing: state.bearing,
+    pitch: state.pitch,
+  });
 }
 
 
@@ -262,6 +283,10 @@ function createLazyMap(
                         map_template[original_map_count] = map;
                         map.once("load", () => {
                             map.resize(); // 🔑 fixes top-left bug
+                            if (savedCameraState[original_map_count]){
+                                restoreCameraState(map, savedCameraState[original_map_count]);
+                            }
+                            
                             applyTheme(map);
                             onMapReady?.(map);
 
@@ -295,6 +320,7 @@ function createLazyMap(
                 }
             } else {
                 if (map) {
+                    savedCameraState[original_map_count] = getCameraState(map);
                     delete map_template[original_map_count];
                     map.off(); // remove all listeners
                     map.stop();
