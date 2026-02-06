@@ -1,0 +1,80 @@
+{
+    "name": "roadtrip",
+    "type": "block",
+    "content": [
+        ["<div style='align-items: center;'>"],
+        ["<div class=\"container-fluid\" style=\"max-width: ", "$_road_trip_maxwidth$","; margin: 0 auto; text-align: ", "$_road_trip_align$",";\">"],
+        {
+            "name": "div",
+            "attr": {
+                "style": {
+                    "text-align": "$_road_trip_align$",
+                    "max-width": "$_road_trip_maxwidth$",
+                    "display": "inline-block",
+                    "margin": "6px"
+                }
+            },
+            "content": [
+                {
+                    "name": "$_road_trip_title_type$",
+                    "content": ["$_road_trip_title$"]
+                }
+            ]
+        },
+        {
+            "name": "div",
+            "attr": {
+                "style": {
+                    "text-align": "$_road_trip_align$",
+                    "max-width": "100%",
+                    "display": "block",
+                    "margin": "6px"
+                }
+            },
+            "content":[
+                {
+                    "name": "maprender",
+                    "vars": {
+                        "_map_render_template_id": "$_road_trip_name$",
+                        "_map_render_extra_targets": "$_road_trip_extra_targets$",
+                        "_map_render_jsons": "$_road_trip_jsons$",
+                        "_map_render_opacity": "$_road_trip_opacity$"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "div",
+            "attr": {
+                "style": {
+                    "text-align": "$_road_trip_align$",
+                    "max-width": "$_road_trip_maxwidth$",
+                    "display": "inline-block",
+                    "margin": "6px"
+                }
+            },
+            "content":[
+                {
+                    "name": "cpara",
+                    "vars": {
+                        "_cpara_template_content": ["$_road_trip_description$"],
+                        "_cpara_template_maxwidth": "$_road_trip_maxwidth$"
+                    }
+                }
+            ]
+        },
+        ["</div>"],
+        ["</div>"]
+    ],
+    "vars": {
+        "_road_trip_name": "",
+        "_road_trip_jsons": "",
+        "_road_trip_extra_targets": "all_trips_map",
+        "_road_trip_title": "",
+        "_road_trip_description": "",
+        "_road_trip_maxwidth": "800px",
+        "_road_trip_title_type": "h3",
+        "_road_trip_align": "left",
+        "_road_trip_opacity": "0.75"
+    }
+}

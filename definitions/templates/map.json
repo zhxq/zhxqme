@@ -1,0 +1,33 @@
+{
+    "name": "map",
+    "type": "template",
+    "css": ["https://unpkg.com/maplibre-gl@5.15.0/dist/maplibre-gl.css"],
+    "js": ["./js/tinycolor.js", "https://unpkg.com/maplibre-gl@5.15.0/dist/maplibre-gl.js", "./js/map.js"],
+    "content": [
+        {
+            "name": "div",
+            "content": [
+                "<div style=\"overflow: visible; height: 100%; width: 100%; position: relative;\" class=\"map_template\" id=\"map_template_", "$_map_template_id$" ,"\"></div>"
+            ],
+            "attr": {
+                "style": {
+                    "width": "$_map_template_width$",
+                    "aspect-ratio": "2/1",
+                    "margin": "0 auto",
+                    "position": "relative",
+                    "touch-action": "auto"
+                }
+            }
+        },
+        {
+            "name": "script",
+            "content": [
+                "var mapAttr_", "$_map_template_id$", " = buildMapOptions('map_template_", "$_map_template_id$", "');"
+            ]
+        }
+    ],
+    "vars": {
+        "_map_template_id": "",
+        "_map_template_width": "100%"
+    }
+}

@@ -188,6 +188,7 @@
         "yorkshiredescription": "一只参展AKC Meet The Breeds 2025活动的约克夏㹴犬。",
         "toshititle": "Toshi",
         "toshidescription": "Toshi（汉字名未知）曾参演过Shark牌吸尘器的广告。照片摄于AKC Meet The Breeds 2025。",
+        "roadtrips": "自驾游记",
         "teaching": "教学",
         "foreword": "前言",
         "teachingforewordcontent": [
@@ -233,6 +234,8 @@
                 "content": ["链接"]
             },
             "来查看本站的源码。"
-        ]
+        ],
+        "prelude": "序",
+        "all_trips_map_description": "这个地图展示了我自从2018年开始在美国的所有自驾旅途。我已经自驾过了美国下48州当中的47个州（如果你好奇是哪个州没去过的话——是北达科他州）。<br>虽然我尽力会使用GPS轨迹去还原我的旅途，但是因为年代久远，部分GPS轨迹无法找回，所以有一小部分旅途是通过记忆还原的，也因此可能会有微小的不准确处；毕竟当年谁能想到会有一天走遍这么多地方并制作这么个地图呢？<br>目前下面的（几乎）所有旅途都没有介绍——我会慢慢加上介绍的。"
     }
 }

@@ -21,6 +21,10 @@
         "photos": {
             "readable": "$photographyworks$",
             "right": false
+        },
+        "roadtrips": {
+            "readable": "$roadtrips$",
+            "right": false
         }
     },
     "defaultlang": "en",

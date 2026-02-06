@@ -189,6 +189,7 @@
         "yorkshiredescription": "A Yorkshire terrier at AKC Meet The Breeds 2025.",
         "toshititle": "Toshi",
         "toshidescription": "Toshi, an Akita Inu featured in a Shark Vacuum commercial. Photo taken at AKC Meet The Breeds 2025.",
+        "roadtrips": "Road Trips",
         "teaching": "Teaching",
         "foreword": "Foreword",
         "teachingforewordcontent": [
@@ -234,6 +235,8 @@
                 "content": ["here"]
             },
             "."
-        ]
+        ],
+        "prelude": "Prelude",
+        "all_trips_map_description": "The map above shows all road trips I have done since 2018, where each color represents a different trip. To this day, I have roamed around 47 out of 48 lower states with my reliable 2018 Honda CR-V (for those who are interested, the only state left is North Dakota). <br>While I try my best to obtain original GPS traces when possible, some of the paths are reconstructed using my memory and thus may be slightly inaccurate. After all, who would have thought of making a map like this today so many years ago?<br>For now, the descriptions for most (if not all) of the trips below are empty. I will add them over time."
     }
 }

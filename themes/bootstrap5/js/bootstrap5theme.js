@@ -118,11 +118,10 @@ function getWebpage(str) {
 			if (data['data']['js'].length > 0){
 				
 				// https://stackoverflow.com/questions/14783046/using-getscript-synchronously
-				/*
+				
 				var deferred = new $.Deferred();
 				var promise = deferred.promise();
 				data['data']['js'].forEach(element => {
-					console.log(element);
 					promise = promise.then(function() {
 						return loadScript(element);
 					});
@@ -133,17 +132,9 @@ function getWebpage(str) {
 				});
 				
 				// Resolve the deferred object and trigger the callbacks
-				deferred.resolve();*/
+				deferred.resolve();
 
 				// https://stackoverflow.com/questions/5627284/pass-in-an-array-of-deferreds-to-when
-				data['data']['js'].forEach(element => {
-					deflist.push(loadScript(element));
-				});
-				$.when.apply($, deflist).done(
-					function(){
-						$('#mainArea').html(data['data']['html']);
-					}
-				);
 			}else{
 				$('#mainArea').html(data['data']['html']);
 			}
