@@ -11,9 +11,8 @@
         {
             "name": "script",
             "content": [
-                "console.log('", "$_map_render_jsons$","', '", "$_map_render_template_id$","');",
                 "splitJson('", "$_map_render_jsons$", "', map_counter);",
-                "var mapHandle_", "$_map_render_template_id$", " = createLazyMap(mapAttr_", "$_map_render_template_id$", " ,(map) => {console.log(\"", "$_map_render_template_id$", " Map created\");",
+                "var mapHandle_", "$_map_render_template_id$", " = createLazyMap(mapAttr_", "$_map_render_template_id$", " ,(map) => {",
                 "},map_counter++, 0.99, 0.1);"
             ]
         }

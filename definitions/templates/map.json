@@ -12,9 +12,10 @@
             "attr": {
                 "style": {
                     "width": "$_map_template_width$",
-                    "height": "400px",
+                    "aspect-ratio": "2/1",
                     "margin": "0 auto",
-                    "position": "relative"
+                    "position": "relative",
+                    "touch-action": "auto"
                 }
             }
         },
