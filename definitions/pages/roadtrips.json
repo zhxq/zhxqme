@@ -159,6 +159,15 @@
         {
             "name": "roadtrip", 
             "vars": {
+                "_road_trip_name": "2023Summer",
+                "_road_trip_jsons": "./geojson/2023-Summer.geojson",
+                "_road_trip_title": "New York and Pennsylvania Summer Trip (Aug 2023)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
                 "_road_trip_name": "2018SANNYC",
                 "_road_trip_jsons": "./geojson/2018-SAN-NYC-day1.geojson,./geojson/2018-SAN-NYC-day2.geojson,./geojson/2018-SAN-NYC-day3.geojson,./geojson/2018-SAN-NYC-day4.geojson,./geojson/2018-SAN-NYC-day5.geojson,./geojson/2018-SAN-NYC-day6.geojson,./geojson/2018-SAN-NYC-day7.geojson",
                 "_road_trip_title": "San Diego - New York City (Aug 2018)",
