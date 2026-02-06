@@ -8,6 +8,18 @@ var savedCameraState = {};
 maplibregl.workerCount = 1;
 var rawBaseColors = ["#F05E84", "#D57B00", "#BDAA00", "#47D600", "#00D688", "#00B1BF", "#009CF1", "#AF73F8", "#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28", "#009E50", "#84C6E4", "#6EB0C9", "#F2C62F", "#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
 
+function enableIOSPinchZoom(container) {
+  ["gesturestart", "gesturechange", "gestureend"].forEach(type => {
+    container.addEventListener(
+      type,
+      e => {
+        // Do NOT prevent default — just allow it
+      },
+      { passive: true }
+    );
+  });
+}
+
 var baseColors = [];
 var allColors = [];
 
@@ -282,6 +294,8 @@ function createLazyMap(
                         map = new maplibregl.Map(mapOptions);
                         map_template[original_map_count] = map;
                         map.once("load", () => {
+
+                            enableIOSPinchZoom(map.getContainer());
                             map.resize(); // 🔑 fixes top-left bug
                             if (savedCameraState[original_map_count]){
                                 restoreCameraState(map, savedCameraState[original_map_count]);
@@ -305,8 +319,7 @@ function createLazyMap(
                                     drawPath(shared_path_by_all, map, main_opacity, others_opacity, alternate_opacity, original_map_count);
                                 }, 100);
                             });
-
-
+                            map.touchZoomRotate.enable({ around: "center" });
                         });
                         map.on("resize", () => {
                             map.fitBounds(bounds, {
@@ -422,3 +435,4 @@ function splitJson(fileString, map_counter) {
             });
     });
 }
+
