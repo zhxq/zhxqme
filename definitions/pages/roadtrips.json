@@ -68,7 +68,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024Winter",
-                "_road_trip_jsons": "./geojson/2024-Winterbreak.geojson",
+                "_road_trip_jsons": "./geojson/2024-WinterBreak.geojson",
                 "_road_trip_title": "Syracuse - New York City - Philadelphia - Baltimore (Dec 2024)",
                 "_road_trip_description": ""
             }
