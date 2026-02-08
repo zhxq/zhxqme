@@ -42,7 +42,8 @@ function handleHash(){
 	}
 	
 	if (typeof history.replaceState === "function") {
-        history.replaceState(null, "", window.location.pathname + window.location.search + hash);
+        var fullUrl = window.location.origin + window.location.pathname + window.location.search + hash;
+		history.replaceState({ page: page }, "", fullUrl);
     }
 
 	$('#lastHash').val($('#currentHash').val());
