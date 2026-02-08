@@ -41,6 +41,10 @@ function handleHash(){
 		hash = "#!" + data['index'];
 	}
 	
+	if (typeof history.replaceState === "function") {
+        history.replaceState(null, "", window.location.pathname + window.location.search + hash);
+    }
+
 	$('#lastHash').val($('#currentHash').val());
 	$('#currentHash').val(hash);
 	lastHash = getLastHash();
