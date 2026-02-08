@@ -14,7 +14,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2025NYTX",
-                "_road_trip_jsons": "./geojson/2025-NY-TX-day1.geojson,./geojson/2025-Louisville-Missing-1.geojson,./geojson/2025-Louisville-Missing-2.geojson,./geojson/2025-Louisville-Missing-3.geojson,./geojson/2025-Louisville-Missing-4.geojson,./geojson/2025-NY-TX-day3.geojson,./geojson/2025-NY-TX-day4.geojson,./geojson/2025-NY-TX-day5.geojson,./geojson/2025-NY-TX-day6.geojson,./geojson/2025-NY-TX-day7.geojson,./geojson/2025-NY-TX-day8.geojson,./geojson/2025-NY-TX-day9.geojson,./geojson/2025-NY-TX-day10.geojson,./geojson/2025-NY-TX-day11.geojson,./geojson/2025-NY-TX-day12.geojson,./geojson/2025-NY-TX-day13.geojson,./geojson/2025-NY-TX-day15.geojson",
+                "_road_trip_jsons": "./pmtiles/2025-NY-TX.pmtiles",
                 "_road_trip_title": "Southeastern US Trip (Dec 2025/Jan 2026)",
                 "_road_trip_description": ""
             }
@@ -23,7 +23,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2025SYRBOS",
-                "_road_trip_jsons": "./geojson/2025-Dec-SYR-BOS-day1.geojson,./geojson/2025-Dec-SYR-BOS-day2.geojson,./geojson/2025-I-90-Remaining-new.geojson",
+                "_road_trip_jsons": "./pmtiles/2025-Dec-SYR-BOS.pmtiles",
                 "_road_trip_title": "Syracuse - Boston (Apr/Dec 2025)",
                 "_road_trip_description": ""
             }
@@ -31,8 +31,8 @@
         {
             "name": "roadtrip", 
             "vars": {
-                "_road_trip_name": "SJCSYR",
-                "_road_trip_jsons": "./geojson/2025-SJC-SYR-day1.geojson,./geojson/2025-SJC-SYR-day2.geojson,./geojson/2025-SJC-SYR-day3.geojson,./geojson/2025-SJC-SYR-day4.geojson,./geojson/2025-SJC-SYR-day5.geojson",
+                "_road_trip_name": "2025SJCSYR",
+                "_road_trip_jsons": "./pmtiles/2025-SJC-SYR.pmtiles",
                 "_road_trip_title": "San Jose - Syracuse (Aug 2025, US-66)",
                 "_road_trip_description": ""
             }
@@ -41,7 +41,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2025Yosemite",
-                "_road_trip_jsons": "./geojson/2025-Yosemite-P1.geojson,./geojson/2025-Yosemite-P3.geojson,./geojson/2025-Yosemite-P5.geojson",
+                "_road_trip_jsons": "./pmtiles/2025-Yosemite.pmtiles",
                 "_road_trip_title": "Yosemite (Jul 2025)",
                 "_road_trip_description": ""
             }
@@ -50,7 +50,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2025Tahoe",
-                "_road_trip_jsons": "./geojson/2025-LakeTahoe.geojson",
+                "_road_trip_jsons": "./pmtiles/2025-LakeTahoe.pmtiles",
                 "_road_trip_title": "Lake Tahoe (Jul 2025)",
                 "_road_trip_description": ""
             }
@@ -59,7 +59,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2025SYRSJC",
-                "_road_trip_jsons": "./geojson/2025-SYR-SJC-day1.geojson,./geojson/2025-SYR-SJC-day2.geojson,./geojson/2025-SYR-SJC-day3.geojson,./geojson/2025-SYR-SJC-day4.geojson,./geojson/2025-SYR-SJC-day5.geojson",
+                "_road_trip_jsons": "./pmtiles/2025-SYR-SJC.pmtiles",
                 "_road_trip_title": "Syracuse - San Jose (May 2025, I-80)",
                 "_road_trip_description": ""
             }
@@ -68,7 +68,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024Winter",
-                "_road_trip_jsons": "./geojson/2024-WinterBreak.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-WinterBreak.pmtiles",
                 "_road_trip_title": "Syracuse - New York City - Philadelphia - Baltimore (Dec 2024)",
                 "_road_trip_description": ""
             }
@@ -78,7 +78,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024SJCSYR",
-                "_road_trip_jsons": "./geojson/2024-SJC-NYC-day1.geojson,./geojson/2024-SJC-NYC-day2.geojson,./geojson/2024-YellowStone-day1.geojson,./geojson/2024-YellowStone-day2.geojson,./geojson/2024-SJC-NYC-day3.geojson,./geojson/2024-SJC-NYC-day4.geojson,./geojson/2024-SJC-NYC-day5.geojson,./geojson/2024-SJC-NYC-day6.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-SJC-SYR.pmtiles",
                 "_road_trip_title": "San Jose - Syracuse (Aug 2024, I-5/I-90)",
                 "_road_trip_description": ""
             }
@@ -87,7 +87,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024SJCSAN",
-                "_road_trip_jsons": "./geojson/2024-SJC-SAN.geojson,./geojson/2024-SAN-SJC.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-SJC-SAN.pmtiles",
                 "_road_trip_title": "San Jose - San Diego - San Ysidro (Aug 2024, I-5)",
                 "_road_trip_description": ""
             }
@@ -96,7 +96,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024YosemiteTahoe",
-                "_road_trip_jsons": "./geojson/2024-Yosemite-Tahoe.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-Yosemite-Tahoe.pmtiles",
                 "_road_trip_title": "San Jose - Yosemite - Lake Tahoe (Jun 2024)",
                 "_road_trip_description": ""
             }
@@ -105,7 +105,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024NYCSJC",
-                "_road_trip_jsons": "./geojson/2024-NYC-SJC-day1.geojson,./geojson/2024-NYC-SJC-day2-1.geojson,./geojson/2024-NYC-SJC-day2-2.geojson,./geojson/2024-NYC-SJC-day3.geojson,./geojson/2024-NYC-SJC-day4.geojson,./geojson/2024-NYC-SJC-day5.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-NYC-SJC.pmtiles",
                 "_road_trip_title": "New York City - San Jose (May 2024, I-80)",
                 "_road_trip_description": ""
             }
@@ -114,7 +114,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024OldForge",
-                "_road_trip_jsons": "./geojson/2024-Utica-OldForge-LakePlacid.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-Utica-OldForge-LakePlacid.pmtiles",
                 "_road_trip_title": "Syracuse - Old Forge - Lake Placid (May 2024)",
                 "_road_trip_description": ""
             }
@@ -123,7 +123,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024CorningBuffalo",
-                "_road_trip_jsons": "./geojson/2024-Corning-Buffalo.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-Corning-Buffalo.pmtiles",
                 "_road_trip_title": "Syracuse - Corning - Buffalo (Apr 2024)",
                 "_road_trip_description": ""
             }
@@ -132,7 +132,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2024Eclipse",
-                "_road_trip_jsons": "./geojson/2024-Eclipse-1.geojson,./geojson/2024-Eclipse-2.geojson",
+                "_road_trip_jsons": "./pmtiles/2024-Eclipse.pmtiles",
                 "_road_trip_title": "Syracuse - Newport, VT (Apr 2024 Eclipse)",
                 "_road_trip_description": ""
             }
@@ -142,7 +142,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2023Winter",
-                "_road_trip_jsons": "./geojson/2023-SYR-MIA-day1.geojson,./geojson/2023-SYR-MIA-day2.geojson,./geojson/2023-SYR-MIA-day3.geojson,./geojson/2023-SYR-MIA-day4.geojson",
+                "_road_trip_jsons": "./pmtiles/2023-SYR-MIA.pmtiles",
                 "_road_trip_title": "Syracuse - Boone NC - Miami (Dec 2023)",
                 "_road_trip_description": ""
             }
@@ -151,7 +151,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2023LakePlacid",
-                "_road_trip_jsons": "./geojson/2023-LakePlacid.geojson",
+                "_road_trip_jsons": "./pmtiles/2023-LakePlacid.pmtiles",
                 "_road_trip_title": "New York City - Lake Placid - Syracuse (Dec 2023)",
                 "_road_trip_description": ""
             }
@@ -160,7 +160,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2023Summer",
-                "_road_trip_jsons": "./geojson/2023-Summer.geojson",
+                "_road_trip_jsons": "./pmtiles/2023-Summer.pmtiles",
                 "_road_trip_title": "New York and Pennsylvania Summer Trip (Aug 2023)",
                 "_road_trip_description": ""
             }
@@ -169,7 +169,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2018SANNYC",
-                "_road_trip_jsons": "./geojson/2018-SAN-NYC-day1.geojson,./geojson/2018-SAN-NYC-day2.geojson,./geojson/2018-SAN-NYC-day3.geojson,./geojson/2018-SAN-NYC-day4.geojson,./geojson/2018-SAN-NYC-day5.geojson,./geojson/2018-SAN-NYC-day6.geojson,./geojson/2018-SAN-NYC-day7.geojson",
+                "_road_trip_jsons": "./pmtiles/2018-SAN-NYC.pmtiles",
                 "_road_trip_title": "San Diego - New York City (Aug 2018)",
                 "_road_trip_description": ""
             }
@@ -178,7 +178,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2018YVRSAN",
-                "_road_trip_jsons": "./geojson/2018-YVR-SAN-day1.geojson,./geojson/2018-YVR-SAN-day2.geojson,./geojson/2018-YVR-SAN-day3.geojson,./geojson/2018-YVR-SAN-day4.geojson",
+                "_road_trip_jsons": "./pmtiles/2018-YVR-SAN.pmtiles",
                 "_road_trip_title": "Vancouver - San Diego (Jun 2018)",
                 "_road_trip_description": ""
             }
@@ -187,7 +187,7 @@
             "name": "roadtrip", 
             "vars": {
                 "_road_trip_name": "2018SANYVR",
-                "_road_trip_jsons": "./geojson/2018-SAN-YVR-day1.geojson,./geojson/2018-SAN-YVR-day2.geojson,./geojson/2018-SAN-YVR-day3.geojson,./geojson/2018-SAN-YVR-day4.geojson,./geojson/2018-SAN-YVR-day5.geojson",
+                "_road_trip_jsons": "./pmtiles/2018-SAN-YVR.pmtiles",
                 "_road_trip_title": "San Diego - Vancouver (Apr/Jun 2018)",
                 "_road_trip_description": ""
             }

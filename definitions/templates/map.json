@@ -1,8 +1,8 @@
 {
     "name": "map",
     "type": "template",
-    "css": ["https://unpkg.com/maplibre-gl@5.15.0/dist/maplibre-gl.css"],
-    "js": ["./js/tinycolor.js", "https://unpkg.com/maplibre-gl@5.15.0/dist/maplibre-gl.js", "./js/map.js"],
+    "css": ["./css/maplibre-gl.css"],
+    "js": ["./js/pbf.js", "./js/pmtiles.js", "./js/geobuf.js", "./js/tinycolor.js", "./js/maplibre-gl.js", "./js/map.js"],
     "content": [
         {
             "name": "div",

@@ -1,3 +1,6 @@
+const protocol = new pmtiles.Protocol();
+maplibregl.addProtocol("pmtiles", protocol.tile);
+
 var map_template = {};
 var map_color = {};
 var shared_path_by_all = [];
@@ -5,6 +8,7 @@ var map_jsons = {};
 var map_counter = 0;
 var parsed_trips = {};
 var savedCameraState = {};
+var queriedPMTiles = {};
 var rawBaseColors = ["#F05E84", "#D57B00", "#BDAA00", "#47D600", "#00D688", "#00B1BF", "#009CF1", "#AF73F8", "#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28", "#009E50", "#84C6E4", "#6EB0C9", "#F2C62F", "#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
 
 function enableIOSPinchZoom(container) {
@@ -208,26 +212,68 @@ function drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip
         const fn = element[0];
         const data = element[1];
         if (map && map.getSource && !map.getSource(fn)) {
-            map.addSource(fn, {
-                type: "geojson",
-                data: data
-            });
-            if (!map.getLayer(fn)) {
-                map.addLayer({
-                    id: fn,
-                    type: "line",
-                    source: fn,
-                    'layout': {
-                        'line-join': 'round',
-                        'line-cap': 'round'
-                    },
-                    'paint': {
-                        'line-color': allColors[tripIndex],
-                        'line-width': 2.5,
-                        "line-opacity": trip_color_id == tripIndex ? main_opacity : others_opacity
-                    }
+            if (fn.slice(-8) == ".pmtiles"){
+                if (queriedPMTiles[trip_color_id][fn]){
+                    return;
+                }
+                queriedPMTiles[trip_color_id][fn] = true;
+                const p = new pmtiles.PMTiles(fn);
+                // 1. Get the metadata from the PMTiles file
+                p.getMetadata().then(meta => {
+                    // 2. MapLibre Source
+                    map.addSource(fn, {
+                        type: "vector",
+                        url: `pmtiles://${fn}`
+                    });
+                    
+                    meta.vector_layers.forEach(layer => {
+                        if (!map.getLayer(`layer-${fn}-${layer.id}`)) {
+                            map.addLayer({
+                                "id": `layer-${fn}-${layer.id}`,
+                                "source": fn,
+                                "source-layer": layer.id,
+                                "type": "line",
+                                'layout': {
+                                    'line-join': 'round',
+                                    'line-cap': 'round'
+                                },
+                                'paint': {
+                                    'line-color': allColors[tripIndex],
+                                    'line-width': 2.5,
+                                    "line-opacity": trip_color_id == tripIndex ? main_opacity : others_opacity
+                                }
+                            });
+                            
+                        }
+                    });
+                    
+
                 });
+
+            }else{
+                map.addSource(fn, {
+                    type: "geojson",
+                    data: data
+                });
+                if (!map.getLayer(fn)) {
+                    map.addLayer({
+                        id: fn,
+                        type: "line",
+                        source: fn,
+                        'layout': {
+                            'line-join': 'round',
+                            'line-cap': 'round'
+                        },
+                        'paint': {
+                            'line-color': allColors[tripIndex],
+                            'line-width': 2.5,
+                            "line-opacity": trip_color_id == tripIndex ? main_opacity : others_opacity
+                        }
+                    });
+                }
             }
+            
+            
         }
     });
 }
@@ -299,13 +345,10 @@ function createLazyMap(
                             if (savedCameraState[original_map_count]){
                                 restoreCameraState(map, savedCameraState[original_map_count]);
                             }
+                            queriedPMTiles[original_map_count] = {};
                             
                             applyTheme(map);
                             onMapReady?.(map);
-
-                            // TODO: occasionally only one path shows up
-                            // TODO: first map shows a path twice
-                            // Something related to drawPath/drawSinglePath
 
                             drawPath(shared_path_by_all, map, main_opacity, others_opacity, alternate_opacity, original_map_count);
 
@@ -334,6 +377,7 @@ function createLazyMap(
                 if (map) {
                     savedCameraState[original_map_count] = getCameraState(map);
                     delete map_template[original_map_count];
+                    delete queriedPMTiles[original_map_count];
                     map.off(); // remove all listeners
                     map.stop();
                     map.remove(); // 🔥 releases WebGL context
@@ -414,10 +458,25 @@ function splitJson(fileString, map_counter) {
     parsed_trips[map_counter] = {};
     files.forEach((element, index) => {
         if (element == "") return;
+        if (element.slice(-8) == ".pmtiles"){
+            parsed_trips[map_counter][element] = element;
+            return;
+        }
+        // Single PBF files are likely geobufs
         fetch(element)
-            .then(r => r.json())
+            .then(r => {
+                if (element.slice(-4) == ".pbf" || element.slice(-7) == ".geobuf"){
+                    return r.arrayBuffer();
+                }else{
+                    return r.json();
+                }
+            })
             .then(route => {
-                parsed_trips[map_counter][element] = route;
+                if (element.slice(-4) == ".pbf" || element.slice(-7) == ".geobuf"){
+                    parsed_trips[map_counter][element] = geobuf.decode(new Pbf(route));
+                }else{
+                    parsed_trips[map_counter][element] = route;
+                }
             })
             .then(() => {
                 for (var val of Object.values(map_template)) {
