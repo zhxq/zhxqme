@@ -115,26 +115,16 @@ function getWebpage(str) {
 		},
 		success: function(data){
 			var deflist = [];
-			if (data['data']['js'].length > 0){
-				
-				// https://stackoverflow.com/questions/14783046/using-getscript-synchronously
-				
-				var deferred = new $.Deferred();
-				var promise = deferred.promise();
-				data['data']['js'].forEach(element => {
-					promise = promise.then(function() {
-						return loadScript(element);
+			if (data['data']['js'] && data['data']['js'].length > 0) {
+				var sequence = $.Deferred().resolve().promise();
+				data['data']['js'].forEach(function(element) {
+					sequence = sequence.then(function() {
+						return loadScript(element); 
 					});
 				});
-				promise.done(function() {
-					// optional: Do something after all scripts have been loaded
+				sequence.done(function() {
 					$('#mainArea').html(data['data']['html']);
 				});
-				
-				// Resolve the deferred object and trigger the callbacks
-				deferred.resolve();
-
-				// https://stackoverflow.com/questions/5627284/pass-in-an-array-of-deferreds-to-when
 			}else{
 				$('#mainArea').html(data['data']['html']);
 			}
