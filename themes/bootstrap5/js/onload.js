@@ -42,8 +42,13 @@ function handleHash(){
 	}
 	
 	if (typeof history.replaceState === "function") {
-        var fullUrl = window.location.origin + window.location.pathname + window.location.search + hash;
-		history.replaceState({ page: page }, "", fullUrl);
+		var page = hash.substr(2);
+        var trackingPath = window.location.pathname + "hashbang/" + page;
+		history.pushState({ tracking: true }, "", trackingPath);
+		// 2. Immediately swap it back to your real hashbang URL.
+		// replaceState won't trigger a new "pageview" in most trackers, 
+		// but it fixes the URL for the user and for "Refresh" compatibility.
+		history.replaceState(null, "", window.location.pathname + window.location.search + hash);
     }
 
 	$('#lastHash').val($('#currentHash').val());
