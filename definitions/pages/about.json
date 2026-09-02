@@ -57,6 +57,8 @@
             "vars": {
                 "_explist_template_title": "$publicationstitle$",
                 "_explist_template_macros": [
+                    "$opencis$",
+                    "$raum$",
                     "$fillinginmissingpiece$",
                     "$ssdabstractions$", 
                     "$designCVSSD$", 

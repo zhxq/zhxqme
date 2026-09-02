@@ -97,13 +97,12 @@ function buildMapOptions(containerId) {
             sources: {
                 osmLight: {
                     type: "raster",
-                    tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-                    tileSize: 256,
-                    attribution: 'Map tiles by <a target="_top" rel="noopener" href="https://tile.openstreetmap.org/">OpenStreetMap tile servers</a>, under the <a target="_top" rel="noopener" href="https://operations.osmfoundation.org/policies/tiles/">tile usage policy</a>. Data by <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>'
+                    tiles: ["https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_2i19_1_6819db27a876adfea038d0d3"],
+                    tileSize: 256
                 },
                 osmDark: {
                     type: "raster",
-                    tiles: ["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"],
+                    tiles: ["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png?key=cb1_2i19_1_6819db27a876adfea038d0d3"],
                     tileSize: 256
                 }
             },

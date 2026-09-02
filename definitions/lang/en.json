@@ -92,6 +92,36 @@
                 }
             }
         ],
+        "raum": [
+            {
+                "name": "publications",
+                "vars": {
+                    "_pub_template_authors": "<i>Xiangqun Zhang</i>, Bryan S. Kim",
+                    "_pub_template_title": "Revisiting Block-Interface ZNS RAID Systems with Dynamically-Sized RAID (DS-RAID) and Random Accessible Unified Memory (RAUM)",
+                    "_pub_template_pubon": "SYSTOR",
+                    "_pub_template_year": "2026",
+                    "_pub_template_align": "",
+                    "_pub_template_paper_link": "https://doi.org/10.1145/3793230.3839383",
+                    "_pub_template_bibtex": "@inproceedings{10.1145/3793230.3839383,\nauthor = {Zhang, Xiangqun and Kim, Bryan S.},\ntitle = {Revisiting Block-Interface ZNS RAID Systems with Dynamically-Sized RAID (DS-RAID) and Random Accessible Unified Memory (RAUM)},\nyear = {2026},\nisbn = {9798400724732},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3793230.3839383},\ndoi = {10.1145/3793230.3839383},\nabstract = {Block-interface RAID systems built on ZNS SSDs allow applications and filesystems to access ZNS drives through a conventional block interface, but existing designs face two major limitations: (1) Fixed-size small RAID chunks fragment large I/O requests, and (2) ZRWA-based partial parity updates disable Zone Append, forcing a tradeoff between low write amplification and high write throughput.This paper revisits block-interface ZNS RAID through a cross-layer host/device co-design. On the host side, we introduce dynamically-sized RAID (DS-RAID), which forms RAID stripes with different chunk sizes according to request size. DS-RAID reduces request fragmentation, which enables larger and faster sequential writes and reads to the underlying devices. On the device side, we propose Random Accessible Unified Memory (RAUM), a unified random-writable non-volatile region that replaces per-zone ZRWAs. RAUM supports in-place updates for small data and partial parity while keeping Zone Append compatibility, allowing the host to issue asynchronous writes at higher queue depths. Our approach improves FIO performance by up to 33{\texttimes} for direct reads and 37.9{\texttimes} for direct writes, respectively. It also improves TPC-C over MySQL performance by 27.6% and db_bench throughput by up to 5.1{\texttimes}.},\nbooktitle = {Proceedings of the 19th ACM International Systems and Storage Conference},\npages = {141–154},\nnumpages = {14},\nkeywords = {ZNS, SSD, RAID},\nlocation = {Virtual Event, Virtual Event, Israel},\nseries = {SYSTOR '26}\n}",
+                    "_pub_template_code_link": "https://github.com/zhxq/raum"
+                }
+            }
+        ],
+        "opencis": [
+            {
+                "name": "publications",
+                "vars": {
+                    "_pub_template_authors": "<i>Xiangqun Zhang</i>, Juhyung Park, Seonggyun Oh, Kyeyoon Park, Jinki Han, Eunji Lee, Sungjin Lee, Yeseong Kim, and Bryan S. Kim",
+                    "_pub_template_title": "Packet-Level CXL.cache Analysis with OpenCIS",
+                    "_pub_template_pubon": "IEEE CAL",
+                    "_pub_template_year": "2026",
+                    "_pub_template_align": "",
+                    "_pub_template_paper_link": "https://doi.org/10.1109/LCA.2026.3728300",
+                    "_pub_template_bibtex": "@ARTICLE{OpenCIS,\n  author={Zhang, Xiangqun and Park, Juhyung and Oh, Seonggyun and Park, Kyeyoon and Han, Jinki and Lee, Eunji and Lee, Sungjin and Kim, Yeseong and Kim, Bryan S.},\n  journal={IEEE Computer Architecture Letters}, \n  title={Packet-Level CXL.cache Analysis with OpenCIS}, \n  year={2026},\n  volume={},\n  number={},\n  pages={1-4},\n  keywords={TCP;Memory;Modeling;IP networks;TCPIP;Sharding;Arrays;Optimization;Electronic mail;Protocols;Compute Express Link;Simulation},\n  doi={10.1109/LCA.2026.3728300},\n  url={https://doi.org/10.1109/LCA.2026.3728300},\n  series={IEEE CAL '26}}",
+                    "_pub_template_code_link": "https://github.com/opencis"
+                }
+            }
+        ],
         "hobbies": "Hobbies",
         "photographyworks": "Photography Works",
         "urbanlifeandlandscape": "Beauty of City",

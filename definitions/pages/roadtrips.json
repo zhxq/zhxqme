@@ -13,6 +13,24 @@
         {
             "name": "roadtrip", 
             "vars": {
+                "_road_trip_name": "2026Hartford",
+                "_road_trip_jsons": "./pmtiles/2026-Hartford.pmtiles",
+                "_road_trip_title": "Hartford (2026)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2026UpstateNY",
+                "_road_trip_jsons": "./pmtiles/2026-UpstateNY.pmtiles",
+                "_road_trip_title": "Upstate New York (2026)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
                 "_road_trip_name": "2025NYTX",
                 "_road_trip_jsons": "./pmtiles/2025-NY-TX.pmtiles",
                 "_road_trip_title": "Southeastern US Trip (Dec 2025/Jan 2026)",
@@ -162,6 +180,15 @@
                 "_road_trip_name": "2023Summer",
                 "_road_trip_jsons": "./pmtiles/2023-Summer.pmtiles",
                 "_road_trip_title": "New York and Pennsylvania Summer Trip (Aug 2023)",
+                "_road_trip_description": ""
+            }
+        },
+        {
+            "name": "roadtrip", 
+            "vars": {
+                "_road_trip_name": "2020sNYCSYR",
+                "_road_trip_jsons": "./pmtiles/2020s-NYC-SYR.pmtiles",
+                "_road_trip_title": "New York - Syracuse (2020s)",
                 "_road_trip_description": ""
             }
         },
