@@ -28,4 +28,4 @@ lang:
     file: en.yaml
   zh-cn:
     name: 中文
-    file: zhcn.json
+    file: zhcn.yaml
