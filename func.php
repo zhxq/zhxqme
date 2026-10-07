@@ -3,9 +3,11 @@
 ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 # error_reporting(E_ALL);
+require_once('Spyc.php');
 
+$supported_exts = ['.yaml', '.yml', '.json'];
 
-$resumate_version = "0.0.3";
+$resumate_version = "0.0.4";
 $currentLang = currentLang();
 
 function dieVars($confirmed, $success, $message, $extra=null){
@@ -48,12 +50,24 @@ function checkAbsPath($path){
 }
 
 function loadSettings($dir='./', $target='resumate_settings'){
+    global $supported_exts;
     if (!array_key_exists($target, $GLOBALS)){
-        $data = loadfile([$dir], "settings.json", $dir);
-        if ($data === false){
+        $get_success = false;
+        foreach ($supported_exts as $ext){
+            $data = loadfile([$dir], "settings$ext", $dir);
+            if ($data !== false){
+                if ($ext == ".json"){
+                    $GLOBALS[$target] = json_decode($data, true);
+                }else{
+                    $GLOBALS[$target] = spyc_load($data);
+                }
+                $get_success = true;
+                break;
+            }
+        }
+        if (!$get_success){
             return false;
         }
-        $GLOBALS[$target] = json_decode($data, true);
     }
     return $GLOBALS[$target];
 }
@@ -75,7 +89,13 @@ function getLocalizedSetting($key){
 
 function getLangFile($lang){
     $langFile = getSetting('lang')[$lang]['file'];
-    $lang = json_decode(file_get_contents('./definitions/lang/' . $langFile), true);
+    $lang = [];
+    if (substr($langFile, -5) == ".json"){
+        $lang = json_decode(file_get_contents('./definitions/lang/' . $langFile), true);
+    }else{
+        $lang = spyc_load_file('./definitions/lang/' . $langFile);
+    }
+    
     if ($lang['type'] == ''){
         die("File $langFile error: Unable to parse JSON, or failed to open file.");
     }
@@ -157,4 +177,15 @@ function currentLang(){
     }
 }
 
+function array_merge_recursive_distinct(array &$array1, array &$array2){
+    $merged = $array1;
+    foreach ($array2 as $key => &$value){
+        if (is_array($value) && isset($merged[$key]) && is_array($merged [$key])){
+            $merged[$key] = array_merge_recursive_distinct($merged[$key], $value);
+        }else{
+            $merged[$key] = $value;
+        }
+    }
+    return $merged;
+}
 ?>

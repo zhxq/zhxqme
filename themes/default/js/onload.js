@@ -1,30 +1,59 @@
 settings = {};
 window.onload = function(){
-	setTimeout(scrollTo,0,0,0);
 	var getWebpageAsync = true;
 	if (arguments[1] == false){
 		getWebpageAsync = false;
 	}
-	$.ajax({
-		type: "GET",
-		dataType: "json",
-		async: getWebpageAsync,
-		url: "settings.json",
-		success: function(data){
-			settings = data;
-			if (window.location.hash == ""){
-				setHash(data['index']);
-			}else{
-				handleHash();
-				if (!getIfLastNonFloatHashExists() && getIfFloatIsOnStage()){
-					getWebpage(data['index']);
-				}
-			}
-		},
-		error: function (XMLHttpRequest, textStatus, errorThrown) { 
-			alert(errorThrown); 
-		} 
-	});
+		var files = ["settings.yaml", "settings.yml", "settings.json"];
+
+    function loadSettings(index) {
+        var isYaml = index < 2;
+
+        $.ajax({
+            type: "GET",
+            dataType: isYaml ? "text" : "json",
+            async: getWebpageAsync,
+            url: files[index],
+
+            success: function (data) {
+                if (isYaml) {
+                    try {
+                        data = jsyaml.load(data);
+                    } catch (error) {
+                        alert("Failed to parse " + files[index] + ": " + error.message);
+                        return;
+                    }
+                }
+
+                settings = data;
+
+                if (window.location.hash == "") {
+                    setHash(data["index"]);
+                } else {
+                    handleHash();
+
+                    if (!getIfLastNonFloatHashExists() && getIfFloatIsOnStage()) {
+                        getWebpage(data["index"]);
+                    }
+                }
+            },
+
+            error: function (xhr, textStatus, errorThrown) {
+                // Try the next file only when this one does not exist.
+                if (xhr.status === 404 && index < files.length - 1) {
+                    loadSettings(index + 1);
+                    return;
+                }
+
+                alert(
+                    "Failed to load " + files[index] + ": " +
+                    (errorThrown || textStatus)
+                );
+            }
+        });
+    }
+
+    loadSettings(0);
 }
 
 window.onhashchange = function(){

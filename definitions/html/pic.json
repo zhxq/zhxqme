@@ -13,14 +13,7 @@
         "class": []
     },
     "attr": {
-        "src": "$src$", 
-        "style": {
-            "width": "$width$", 
-            "height": "$height$", 
-            "margin": "$margin$", 
-            "padding": "$padding$"
-        },
-        "class": ["$class$"]
+        
     },
     "content": [""]
 }

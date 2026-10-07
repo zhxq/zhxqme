@@ -111,7 +111,7 @@ function getWebpage(str) {
 		async: true,
 		url: 'render.php',
 		data: {
-			"filename": str + '.json'
+			"filename": str
 		},
 		success: function(data){
 			var deflist = [];
@@ -124,9 +124,15 @@ function getWebpage(str) {
 				});
 				sequence.done(function() {
 					$('#mainArea').html(data['data']['html']);
+					setTimeout(() => {
+						window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+					}, 0);
 				});
 			}else{
 				$('#mainArea').html(data['data']['html']);
+				setTimeout(() => {
+					window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+				}, 0);
 			}
 			
 			

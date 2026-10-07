@@ -38,9 +38,7 @@
                                 "loading": "$_pwexif_template_extra_loading$",
                                 "id": ["$_pwexif_template_id$", "_pic"],
                                 "onload": ["picwithexif_call('", "$_pwexif_template_id$", "');"],
-                                "class": ["picwithexifsinglepic"]
-                            },
-                            "vars": {
+                                "class": ["picwithexifsinglepic"],
                                 "src": "$_pwexif_template_src$"
                             }
                         },

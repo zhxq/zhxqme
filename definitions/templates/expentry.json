@@ -1,0 +1,23 @@
+{
+    "name": "expentry",
+    "type": "template",
+    "css": ["./css/explist.css"],
+    "content": [
+        {
+            "name": "li",
+            "content": "$_expentry_content$",
+            "style": {
+                "text-align": "$_expentry_template_internal_text_align$"
+            },
+            "attr": {
+                "style": {
+                    "max-width": "$_expentry_template_maxwidth$"
+                }
+            }
+        }
+    ],
+    "vars": {
+        "_expentry_template_maxwidth": "800px",
+        "_expentry_template_internal_text_align": "left"
+    }
+}

@@ -21,21 +21,30 @@
                     "name": "ul",
                     "content": [
                         {
-                            "name": "h5",
-                            "content": ["$_edu_template_phd$"]
+                            "name": "li",
+                            "content": {
+                                "name": "h5",
+                                "content": ["$_edu_template_phd$"]
+                            }
                         },
                         {
-                            "name": "h5",
-                            "content": ["$_edu_template_master$"]
+                            "name": "li",
+                            "content": {
+                                "name": "h5",
+                                "content": ["$_edu_template_master$"]
+                            }
                         },
                         {
-                            "name": "h5",
-                            "attr": {
-                                "style": {
-                                    "margin-bottom": "30px"
-                                }
-                            },
-                            "content": ["$_edu_template_bachelor$"]
+                            "name": "li",
+                            "content": {
+                                "name": "h5",
+                                "attr": {
+                                    "style": {
+                                        "margin-bottom": "30px"
+                                    }
+                                },
+                                "content": ["$_edu_template_bachelor$"]
+                            }
                         }
                     ]
                 },

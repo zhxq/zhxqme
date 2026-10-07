@@ -8,6 +8,7 @@ require_once('func.php');
 <link href="/themes/<?=getLocalizedSetting('theme')?>/css/styles.css" rel="stylesheet">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/js-yaml.min.js"></script>
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/defaulttheme.js"></script>
 <script type="text/javascript" src="/themes/<?=getSetting('theme')?>/js/onload.js"></script>
 <title><?=getLocalizedSetting('title')?></title>

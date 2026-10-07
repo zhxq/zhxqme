@@ -71,6 +71,8 @@
     ],
     "vars": {
         "_ib_template_title": "PLACEHOLDER",
+        "_ib_template_width": "",
+        "_ib_template_height": "",
         "_ib_template_picwidth": "225px",
         "_ib_template_picheight": "225px",
         "_ib_template_line1": "This is the line for line 1.",

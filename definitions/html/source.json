@@ -9,6 +9,6 @@
         },
         "class": []
     },
-    "attr": {"srcset": "$srcset$", "media": "$media$", "type": "$type$", "class": ["$class$"]},
+    "attr": {},
     "content": [""]
 }

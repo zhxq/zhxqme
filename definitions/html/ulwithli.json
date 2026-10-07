@@ -1,8 +1,8 @@
 {
     "type": "def",
-    "name": "ul",
+    "name": "ulwithli",
     "html": "ul",
     "close": true,
     "attr": {},
-    "content": ["$content$"]
+    "content": ["<li>", "$content$", "</li>"]
 }

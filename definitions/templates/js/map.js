@@ -1,4 +1,4 @@
-const protocol = new pmtiles.Protocol();
+var protocol = new pmtiles.Protocol();
 maplibregl.addProtocol("pmtiles", protocol.tile);
 
 var map_template = {};

@@ -1,0 +1,213 @@
+name: zh_cn
+type: lang
+vars:
+  aboutmetitle: 关于我
+  factstitle: 小细节
+  xiangqunzhang: 张祥群
+  phdstudent: Incoming Research Scientist
+  syracuseuniversity: Meta Platforms
+  personalinformation: 个人信息
+  personalinformationline: >-
+    欢迎来到我的个人主页！我即将在Meta担任Research Scientist。我的主要研究方向是固态硬盘 (SSD) 优化、Compute
+    Express Link (CXL) 与计算机科学教育 (CSE)。
+  educationexp: 教育经历
+  educationphdstart: 2020-2026 雪城大学 计算机与信息科学和工程专业 博士 导师：
+  bsk: Bryan S. Kim
+  educationphdend: ''
+  educationms: 2018-2019 纽约大学 坦顿工程学院 计算机专业 硕士
+  educationbachelor: 2014-2018 加州大学圣地亚哥分校 德国研究专业 文学士；数学—计算机专业 理学士
+  educationdescription: 在计算机科学领域外，我对历史和语言等（尤其是日耳曼和东亚历史和语言）感兴趣。我会中、英、德三语。
+  cv: 简历
+  publicationstitle: 出品论文
+  publicationsline: 作为新入学的博士生，我目前没有已发布的论文。敬请持续关注！
+  teachingtitle: 教学有关
+  fall2022teaching:
+    - 'Fall 2022: 雪城大学 CIS 341 (Computer Organization & Programming Systems) 助教'
+  spring2023teaching:
+    - 'Spring 2023: 雪城大学 CIS 600 (Social Media and Data Mining) 助教'
+  fall2023teaching:
+    - 'Fall 2023: 雪城大学 CIS 341 (Computer Organization & Programming Systems) 助教'
+  excessiveparallelism:
+    - name: publications
+      vars:
+        _pub_template_authors: <i>Xiangqun Zhang</i>, Shuyi Pei, Jongmoo Choi, Bryan S. Kim
+        _pub_template_title: Excessive SSD-Internal Parallelism Considered Harmful
+        _pub_template_pubon: HotStorage
+        _pub_template_year: "2023"
+        _pub_template_align: ""
+        _pub_template_paper_link: https://dl.acm.org/doi/10.1145/3599691.3603412
+        _pub_template_bibtex: "@inproceedings{10.1145/3599691.3603412,\nauthor = {Zhang, Xiangqun and Pei, Shuyi and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Excessive SSD-Internal Parallelism Considered Harmful},\nyear = {2023},\nisbn = {9798400702242},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3599691.3603412},\ndoi = {10.1145/3599691.3603412},\nabstract = {Modern SSDs achieve high throughput by utilizing multiple independent channels and chips in parallel. However, we find that excessive parallelism inadvertently amplifies the garbage collection (GC) overhead due to the larger unit of space reclamation. Based on this observation, we design PLAN, a novel SSD parallelism management and data placement scheme that allocates different levels of parallelism to different workloads with different needs to minimize the GC overhead. We demonstrate the effectiveness of PLAN by evaluating it against other state-of-the-art designs across various real-world workloads. PLAN reduces write amplification with comparable or better performance to the other designs that are always at full parallelism.},\nbooktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Storage and File Systems},\npages = {65–72},\nnumpages = {8},\nkeywords = {write amplification, solid state drive, garbage collection},\nlocation = {Boston, MA, USA},\nseries = {HotStorage '23}\n}"
+        _pub_template_slides_link: https://www.hotstorage.org/2023/slides/excessive-ssd-internal-parallelism.pdf
+        _pub_template_video_link: ""
+        _pub_template_code_link: https://github.com/zhxq/snap/tree/reduced_overhead
+  designCVSSD:
+    - name: publications
+      vars:
+        _pub_template_authors: Ziyang Jiao, <i>Xiangqun Zhang</i>, Hojin Shin, Jongmoo Choi, Bryan S. Kim
+        _pub_template_title: The Design and Implementation of a Capacity-Variant Storage System
+        _pub_template_pubon: FAST
+        _pub_template_year: "2024"
+        _pub_template_align: ""
+        _pub_template_paper_link: https://www.usenix.org/conference/fast24/presentation/jiao
+        _pub_template_bibtex: "@inproceedings {294793,\nauthor = {Ziyang Jiao and Xiangqun Zhang and Hojin Shin and Jongmoo Choi and Bryan S. Kim},\ntitle = {The Design and Implementation of a {Capacity-Variant} Storage System},\nbooktitle = {22nd USENIX Conference on File and Storage Technologies},\nyear = {2024},\nisbn = {978-1-939133-38-0},\naddress = {Santa Clara, CA},\npages = {159--176},\nurl = {https://www.usenix.org/conference/fast24/presentation/jiao},\npublisher = {USENIX Association},\nmonth = {02},\nseries = {FAST '24}\n}"
+        _pub_template_slides_link: https://www.usenix.org/system/files/fast24_slides-jiao_0.pdf
+        _pub_template_video_link: https://youtu.be/mVv_Dgk_H7w
+        _pub_template_code_link: https://github.com/ZiyangJiao/FAST24_CVSS_FEMU
+  ssdabstractions:
+    - name: publications
+      vars:
+        _pub_template_authors: <i>Xiangqun Zhang</i>, Janki Bhimani, Shuyi Pei, Eunji Lee, Sungjin Lee, Yoon Jae Seong, et al
+        _pub_template_title: "Storage Abstractions for SSDs: The Past, Present, and Future"
+        _pub_template_pubon: ACM ToS
+        _pub_template_year: "2025"
+        _pub_template_align: ""
+        _pub_template_paper_link: https://dl.acm.org/doi/10.1145/3708992
+        _pub_template_bibtex: "@article{10.1145/3708992,\nauthor = {Zhang, Xiangqun and Bhimani, Janki and Pei, Shuyi and Lee, Eunji and Lee, Sungjin and Seong, Yoon Jae and Kim, Eui Jin and Choi, Changho and Nam, Eyee Hyun and Choi, Jongmoo and Kim, Bryan S.},\ntitle = {Storage Abstractions for SSDs: The Past, Present, and Future},\nyear = {2025},\nissue_date = {February 2025},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {21},\nnumber = {1},\nissn = {1553-3077},\nurl = {https://doi.org/10.1145/3708992},\ndoi = {10.1145/3708992},\nabstract = {This article traces the evolution of SSD (solid-state drive) interfaces, examining the transition from the block storage paradigm inherited from hard disk drives to SSD-specific standards customized to flash memory. Early SSDs conformed to the block abstraction for compatibility with the existing software storage stack, but studies and deployments show that this limits the performance potential for SSDs. As a result, new SSD-specific interface standards emerged to not only capitalize on the low latency and abundant internal parallelism of SSDs, but also include new command sets that diverge from the longstanding block abstraction.We first describe flash memory technology in the context of the block storage abstraction and the components within an SSD that provide the block storage illusion. We then describe the genealogy and relationships among academic research and industry standardization efforts for SSDs, along with some of their rise and fall in popularity. We classify these works into four evolving branches: (1) extending block abstraction with host-SSD hints/directives; (2) enhancing host-level control over SSDs; (3) offloading host-level management to SSDs; and (4) making SSDs byte-addressable. By dissecting these trajectories, the article also sheds light on the emerging challenges and opportunities, providing a roadmap for future research and development in SSD technologies.},\njournal = {ACM Trans. Storage},\nmonth = jan,\narticleno = {2},\nnumpages = {44},\nkeywords = {SSD, garbage collection, flash translation layer, data placement scheme, zoned namespace, multi-stream, flexible data placement, computational storage, byte-addressable SSD}\n}"
+  fillinginmissingpiece:
+    - name: publications
+      vars:
+        _pub_template_authors: <i>Xiangqun Zhang</i>, Ziyang Jiao, Farzana Rahman, Bryan S. Kim
+        _pub_template_title: "Filling in the Missing Piece:  Integrating Storage into CompOrg Courses"
+        _pub_template_pubon: ASEE Annual Conference
+        _pub_template_year: "2025"
+        _pub_template_align: ""
+        _pub_template_paper_link: https://peer.asee.org/filling-in-the-missing-piece-integrating-storage-into-comporg-courses
+        _pub_template_bibtex: "@INPROCEEDINGS{FillingInMissingPiece,\nauthor = {Xiangqun Zhang and Ziyang Jiao and Farzana Rahman and Bryan S. Kim},\ntitle = {Filling in the Missing Piece: Integrating Storage into CompOrg Courses},\nbooktitle = {Proceedings of the 2025 ASEE Annual Conference \\& Exposition},\nyear = {2025},\nmonth = {June},\naddress = {Montreal, QC, Canada},\npublisher = {ASEE Conferences},\nseries = {ASEE '25},\nurl = {https://peer.asee.org/filling-in-the-missing-piece-integrating-storage-into-comporg-courses},\ndoi = {10.18260/1-2--56571}\n}"
+        _pub_template_code_link: https://github.com/zhxq/SSDLab
+  raum:
+    - name: publications
+      vars:
+        _pub_template_authors: <i>Xiangqun Zhang</i>, Bryan S. Kim
+        _pub_template_title: Revisiting Block-Interface ZNS RAID Systems with Dynamically-Sized RAID (DS-RAID) and Random Accessible Unified Memory (RAUM)
+        _pub_template_pubon: SYSTOR
+        _pub_template_year: "2026"
+        _pub_template_align: ""
+        _pub_template_paper_link: https://doi.org/10.1145/3793230.3839383
+        _pub_template_bibtex: "@inproceedings{10.1145/3793230.3839383,\nauthor = {Zhang, Xiangqun and Kim, Bryan S.},\ntitle = {Revisiting Block-Interface ZNS RAID Systems with Dynamically-Sized RAID (DS-RAID) and Random Accessible Unified Memory (RAUM)},\nyear = {2026},\nisbn = {9798400724732},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3793230.3839383},\ndoi = {10.1145/3793230.3839383},\nabstract = {Block-interface RAID systems built on ZNS SSDs allow applications and filesystems to access ZNS drives through a conventional block interface, but existing designs face two major limitations: (1) Fixed-size small RAID chunks fragment large I/O requests, and (2) ZRWA-based partial parity updates disable Zone Append, forcing a tradeoff between low write amplification and high write throughput.This paper revisits block-interface ZNS RAID through a cross-layer host/device co-design. On the host side, we introduce dynamically-sized RAID (DS-RAID), which forms RAID stripes with different chunk sizes according to request size. DS-RAID reduces request fragmentation, which enables larger and faster sequential writes and reads to the underlying devices. On the device side, we propose Random Accessible Unified Memory (RAUM), a unified random-writable non-volatile region that replaces per-zone ZRWAs. RAUM supports in-place updates for small data and partial parity while keeping Zone Append compatibility, allowing the host to issue asynchronous writes at higher queue depths. Our approach improves FIO performance by up to 33{\texttimes} for direct reads and 37.9{\texttimes} for direct writes, respectively. It also improves TPC-C over MySQL performance by 27.6% and db_bench throughput by up to 5.1{\texttimes}.},\nbooktitle = {Proceedings of the 19th ACM International Systems and Storage Conference},\npages = {141–154},\nnumpages = {14},\nkeywords = {ZNS, SSD, RAID},\nlocation = {Virtual Event, Virtual Event, Israel},\nseries = {SYSTOR '26}\n}"
+        _pub_template_code_link: https://github.com/zhxq/raum
+  opencis:
+    - name: publications
+      vars:
+        _pub_template_authors: <i>Xiangqun Zhang</i>, Juhyung Park, Seonggyun Oh, Kyeyoon Park, Jinki Han, Eunji Lee, Sungjin Lee, Yeseong Kim, and Bryan S. Kim
+        _pub_template_title: Packet-Level CXL.cache Analysis with OpenCIS
+        _pub_template_pubon: IEEE CAL
+        _pub_template_year: "2026"
+        _pub_template_align: ""
+        _pub_template_paper_link: https://doi.org/10.1109/LCA.2026.3728300
+        _pub_template_bibtex: "@ARTICLE{11668657,\n  author={Zhang, Xiangqun and Park, Juhyung and Oh, Seonggyun and Park, Kyeyoon and Han, Jinki and Lee, Eunji and Lee, Sungjin and Kim, Yeseong and Kim, Bryan S.},\n  journal={IEEE Computer Architecture Letters}, \n  title={Packet-Level CXL.cache Analysis With OpenCIS}, \n  year={2026},\n  volume={25},\n  number={2},\n  pages={351-354},\n  keywords={TCP;Memory;Modeling;IP networks;TCPIP;Sharding;Arrays;Optimization;Electronic mail;Protocols;Compute express link;simulation},\n  doi={10.1109/LCA.2026.3728300}}"
+        _pub_template_code_link: https://github.com/opencis
+  hobbies: 兴趣
+  photographyworks: 摄影作品
+  urbanlifeandlandscape: 城市之美
+  foodphotos: 美食
+  travelphotos: 旅行
+  planespotting: 飞机
+  photoscopyright: © 张祥群，保留所有权利。禁止未经授权的商业使用。
+  hdrnotice: 部分图片已开启HDR。请使用支持的浏览器（如Chrome）和屏幕（如Apple XDR Display）进行浏览以获得最佳效果。
+  N24927-1title: N24927
+  N24927-1description: 一架B-24A“解放者”型轰炸机在雪城机场低空通场飞行。
+  N174UP-1title: N174UP
+  N174UP-1description: 一架UPS的空客A300型货机执行SDF-SYR的5X1054航班。
+  stairwaytothegalaxytitle: 银河阶梯
+  stairwaytothegalaxydescription: 660秒曝光的银河，显示它那美轮美奂的颜色。摄于宾州Cherry Springs State Park.
+  greenlakebonfiretitle: 绿湖篝火
+  greenlakebonfiredescription: 雪城绿湖(Green Lakes)野营时，那令人放松的那一束篝火。
+  greenlakestars1title: 绿湖星空 - 1
+  greenlakestars1description: 雪城绿湖(Green Lakes)野营时拍摄的星空一瞥。
+  greenlakestars2title: 绿湖星空
+  greenlakestars2description: 雪城绿湖(Green Lakes)野营时拍摄星空，恰逢一直升机飞过。
+  cherryspringsskies1title: 樱桃泉星空 - 1
+  cherryspringsskies1description: 在美国东岸最黑暗的地方之一观赏最明亮的星空。
+  cherryspringsskies2title: 樱桃泉星空 - 2
+  cherryspringsskies2description: 明亮星空前面的黑暗剪影。
+  prominence202404title: 2024北美日全食 - 日珥
+  prominence202404description: 全食状态的太阳露出了它很难直接被肉眼观测到的日珥。
+  totality202404title: 2024北美日全食 - 日冕
+  totality202404description: 使用多张不同曝光时间照片叠加而成的日冕。
+  midautumneclipse202409title: 2024中秋月偏食
+  midautumneclipse202409description: 才摄春日太阳痣，又逢秋月天狗蚀。虽无亲友同赏景，原野三两对促织。
+  tannenbaumtitle: 圣诞树
+  tannenbaumdescription: '无论冬夏，无论雨雪，杉树永保长青。摄于Lake Placid, NY.'
+  cloudygrandprismaticspringtitle: 大棱镜温泉
+  cloudygrandprismaticspringdescription: 大棱镜温泉与动人心魄的天气。摄于黄石国家公园。
+  yellowstonesunsettitle: 黄石日落
+  yellowstonesunsetdescription: 落日躲在云后。摄于黄石国家公园。
+  unaginigirititle: 手握鳗鱼寿司
+  unaginigiridescription: 纽约伊势(Ise)饭店的一对手握鳗鱼寿司。
+  oysterspearlstitle: 牡蛎与珍珠
+  oysterspearlsdescription: '“萨芭雍珍珠奶茶”——使用Island Creek牌牡蛎与Regiis Ova牌鱼子酱。@ Per Se, NYC.'
+  veloutetitle: 焦化葱头白酱西多士
+  veloutedescription: '苹果西多士、压制过的密脆苹果配粽黄油。@ Per Se, NYC.'
+  raviolotitle: 缅因龙虾意式饺子
+  raviolodescription: '北海道海胆、蒜香梅尔巴薄脆、小龙蒿草配意式奶酪胡椒酱。@ Per Se, NYC.'
+  squabtitle: 星尘农场醉鸽
+  squabdescription: '东京萝卜、水焯青江菜、芥末花配勃艮第黑松露。@ Per Se, NYC.'
+  scallopcaviartitle: 扇贝鱼籽酱
+  scallopcaviardescription: '热扇贝塔塔配奥塞特拉鱼籽酱，以Marinière酱调味。@ Le Bernardin, NYC.'
+  langoustinetitle: 海螯虾
+  langoustinedescription: '煎炒海螯虾配Petite Mâche沙拉，以松露荷兰酱和陈年意大利油醋汁调味。@ Le Bernardin, NYC.'
+  doversoletitle: 多佛龙利鱼
+  doversoledescription: '平底锅煎多佛龙利鱼，上配绿橄榄核烤杏仁，以雪莉酒酱膏调味。@ Le Bernardin, NYC.'
+  zhajiangmiantitle: 炸酱面
+  zhajiangmiandescription: '搅拌中的北京风味炸酱面，上下翻飞。@ Chai (柴院), NYC.'
+  boiledslicedbeeftitle: 水煮肉片
+  boiledslicedbeefdescription: '四川风味水煮肉片，热油与蒜的交融提供了那独特的味道。 @ Chai (柴院), NYC.'
+  shaanshisantitle: 陕十三冰淇淋
+  shaanshisandescription: 西安市的陕十三冰淇淋。他们最著名的应该莫过于红油冰淇淋吧。
+  timessquaretitle: 时代广场
+  timessquaredescription: 世界上最繁忙地方之一的普通一天。
+  cortlandtstmtatitle: 静以待动
+  cortlandtstmtadescription: 一位乘客安静地看着手机，等待他的列车到来后开动。
+  xiansoutheastcornerbuildingtitle: 西安城墙东南角楼
+  xiansoutheastcornerbuildingdescription: 西安城墙的东南角楼。一栋百千年历史的楼在流光中闪耀出它的魅力。
+  xiansouthwalltitle: 西安城墙南
+  xiansouthwalldescription: 悬挂的灯笼、走动的人群、拍摄中的我。
+  shenglisquaretitle: 鸟瞰鞍山胜利广场
+  shenglisquaredescription: 胜利广场，位于鞍山市中心。其特别的八方向路网设计是由日本殖民者建立的，广场时名“大正广场”，以大正天皇命名。
+  ewrsunrisetitle: 纽瓦克日出
+  ewrsunrisedescription: 在纽瓦克机场偶然见到的日出，一扫长途旅行的疲惫。远处可见纽约市的天际线。
+  zurzukunfttitle: Zur Zukunft
+  zurzukunftdescription: '"向未来"。一辆德累斯顿公交公司的电车在市博物馆前行驶。'
+  redarrowlinestitle: 红箭
+  redarrowlinesdescription: 宾州Scranton市游览线的有轨电车，曾服役于费城郊县公共交通公司。
+  fireworkflowertitle: 火树银花 - 1
+  fireworkflowerdescription: 连续几发焰火共同渲染出了一朵花。于纽约州Taughannock瀑布州立公园拍摄。
+  20240704fireworkstitle: 火树银花 - 2
+  20240704fireworksdescription: 再拍烟花。于2024年美国独立日摄于加州圣何塞。
+  portraits: 竖版
+  mistyredwoodstitle: 雾中红杉
+  mistyredwoodsdescription: 映于蒸汽机车雾气中的加州红杉林。
+  fifthavetitle: 第五大道
+  fifthavedescription: 这条繁华的大街以其多元性和光影著称。
+  emeraldbaytitle: 绿宝石湾
+  emeraldbaydescription: 蓝天蓝水与雪山。大部分人不会想象到的加州六月景色。
+  apeektitle: 一瞥
+  apeekdescription: 从优胜美地国家公园的Big Oak Flat Road眺向El Portal Road。
+  olmstedpointtitle: 奥尔姆斯特角
+  olmstedpointdescription: 奥尔姆斯特角的一棵树。无人知晓为什么它在这里，但是它就在这里。
+  olmstedpointgalaxy1title: 奥尔姆斯特角银河 - 横版
+  olmstedpointgalaxy1description: 专为拍摄银河而计划的旅行，一切都很值得。
+  olmstedpointgalaxy2title: 奥尔姆斯特角银河 - 纵版
+  olmstedpointgalaxy2description: 特别的角度以便显示尽可能多的银河。
+  yorkshiretitle: 约克夏梗
+  yorkshiredescription: 一只参展AKC Meet The Breeds 2025活动的约克夏㹴犬。
+  toshititle: Toshi
+  toshidescription: Toshi（汉字名未知）曾参演过Shark牌吸尘器的广告。照片摄于AKC Meet The Breeds 2025。
+  roadtrips: 自驾游记
+  resumateack:
+    - 本页面使用
+    - name: a
+      attr:
+        href: 'https://resumate.io/'
+      content:
+        - Resumate
+    - 生成。这是我制作的一个可以通过JSON定义的网页组件模板生成网页的模板引擎。<br>您也可以通过这个
+    - name: a
+      attr:
+        href: 'https://github.com/zhxq/zhxqme'
+      content:
+        - 链接
+    - 来查看本站的源码。
+  prelude: 序
+  all_trips_map_description: >-
+    这个地图展示了我自从2018年开始在美国的所有自驾旅途。我已经自驾过了美国下48州当中的47个州（如果你好奇是哪个州没去过的话——是北达科他州）。<br>虽然我尽力会使用GPS轨迹去还原我的旅途，但是因为年代久远，部分GPS轨迹无法找回，所以有一小部分旅途是通过记忆还原的，也因此可能会有微小的不准确处；毕竟当年谁能想到会有一天走遍这么多地方并制作这么个地图呢？<br>目前下面的（几乎）所有旅途都没有介绍——我会慢慢加上介绍的。

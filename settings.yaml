@@ -1,0 +1,31 @@
+type: settings
+theme: bootstrap5
+title: $xiangqunzhang$
+keywords: Xiangqun Zhang
+description: Xiangqun Zhang at Syracuse University
+content: About Xiangqun Zhang
+index: about
+menutitle: $xiangqunzhang$
+menu:
+  about:
+    readable: $aboutmetitle$
+    right: false
+  cv:
+    readable: $cv$
+    right: false
+    link: cv.pdf
+    target: _blank
+  photos:
+    readable: $photographyworks$
+    right: false
+  roadtrips:
+    readable: $roadtrips$
+    right: false
+defaultlang: en
+lang:
+  en:
+    name: English
+    file: en.yaml
+  zh-cn:
+    name: 中文
+    file: zhcn.json
