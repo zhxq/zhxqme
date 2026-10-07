@@ -38,26 +38,14 @@ for (i = 0; i < colorLen; i++) {
 }
 
 for (i = 0; i < colorLen; i++) {
-    var color = baseColors[i].clone().desaturate(40).toString()
+    var color = baseColors[i].clone().desaturate(25).toString()
     allColors.push(color)
 }
 
-for (i = 0; i < colorLen; i++) {
-    var color = baseColors[i].clone().desaturate(60).lighten(5).toString()
-    allColors.push(color)
-}
 
-for (i = 0; i < colorLen; i++) {
-    var color = baseColors[i].clone().desaturate(70).lighten(5).toString()
-    allColors.push(color)
-}
 
-var futureColors = []
-for (i = 0; i < colorLen; i++) {
-    var color = baseColors[i].clone().desaturate(70).lighten(10).toString()
-    allColors.push(color)
-}
 
+allColors = allColors.toReversed();
 var prefersDarkSystem = window.matchMedia("(prefers-color-scheme: dark)");
 
 var bounds = [
@@ -206,7 +194,10 @@ function waitForVisibleSize(el, cb) {
     ro.observe(el);
 }
 
-function drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip_color_id) {
+function drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip_color_id, file_color_id) {
+    while (file_color_id < 0){
+        file_color_id += allColors.length;
+    }
     Object.entries(trip).forEach((element, index) => {
         const fn = element[0];
         const data = element[1];
@@ -237,7 +228,7 @@ function drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip
                                     'line-cap': 'round'
                                 },
                                 'paint': {
-                                    'line-color': allColors[tripIndex],
+                                    'line-color': allColors[file_color_id % allColors.length],
                                     'line-width': 2.5,
                                     "line-opacity": trip_color_id == tripIndex ? main_opacity : others_opacity
                                 }
@@ -286,7 +277,8 @@ function drawPath(trips, map, main_opacity, others_opacity, alternate_opacity, t
 
     Object.values(parsed_trips).forEach((trip, tripIndex) => {
         if (trip.length == 0) return;
-        drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip_color_id);
+        let file_color_id = allColors.length - (total_map_count - tripIndex) - 1;
+        drawSinglePath(trip, tripIndex, map, main_opacity, others_opacity, trip_color_id, file_color_id);
     });
 }
 
