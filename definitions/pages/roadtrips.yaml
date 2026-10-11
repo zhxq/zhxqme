@@ -14,9 +14,9 @@ content:
       _road_trip_description: ''
   - name: roadtrip
     vars:
-      _road_trip_name: 2026CTLI
-      _road_trip_jsons: ./pmtiles/2026-CT-LI.pmtiles
-      _road_trip_title: Conn. and Long Island (2026)
+      _road_trip_name: 2026LowerNewEnglandLI
+      _road_trip_jsons: ./pmtiles/2026-LowerNewEngland-LI.pmtiles
+      _road_trip_title: Lower New England and Long Island (2026)
       _road_trip_description: ''
   - name: roadtrip
     vars:
