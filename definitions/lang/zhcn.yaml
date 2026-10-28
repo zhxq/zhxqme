@@ -8,12 +8,9 @@ vars:
   syracuseuniversity: Meta Platforms
   personalinformation: 个人信息
   personalinformationline: >-
-    欢迎来到我的个人主页！我即将在Meta担任Research Scientist。我的主要研究方向是固态硬盘 (SSD) 优化、Compute
-    Express Link (CXL) 与计算机科学教育 (CSE)。
+    欢迎来到我的个人主页！我在Meta担任Research Scientist。我的研究方向包括固态硬盘（SSD）优化、Compute Express Link（CXL）与计算机科学教育（CSE）。
   educationexp: 教育经历
-  educationphdstart: 2020-2026 雪城大学 计算机与信息科学和工程专业 博士 导师：
-  bsk: Bryan S. Kim
-  educationphdend: ''
+  educationphd: "2020-2026 雪城大学 计算机与信息科学和工程专业 博士 导师：[Bryan S. Kim](https://web.ecs.syr.edu/~bkim01/)"
   educationms: 2018-2019 纽约大学 坦顿工程学院 计算机专业 硕士
   educationbachelor: 2014-2018 加州大学圣地亚哥分校 德国研究专业 文学士；数学—计算机专业 理学士
   educationdescription: 在计算机科学领域外，我对历史和语言等（尤其是日耳曼和东亚历史和语言）感兴趣。我会中、英、德三语。
@@ -211,3 +208,57 @@ vars:
   prelude: 序
   all_trips_map_description: >-
     这个地图展示了我自从2018年开始在美国的所有自驾旅途。我已经自驾过了美国下48州当中的47个州（如果你好奇是哪个州没去过的话——是北达科他州）。<br>虽然我尽力会使用GPS轨迹去还原我的旅途，但是因为年代久远，部分GPS轨迹无法找回，所以有一小部分旅途是通过记忆还原的，也因此可能会有微小的不准确处；毕竟当年谁能想到会有一天走遍这么多地方并制作这么个地图呢？<br>目前下面的（几乎）所有旅途都没有介绍——我会慢慢加上介绍的。
+  
+  mileagetoprovincetowntitle: Bishop -- Provincetown 里程标
+  mileagetoprovincetowndescription: 加州内陆到东岸新英格兰，3205英里（5158公里）。
+
+  nv375title: NV-375 星际公路
+  nv375description: 贴满了游客贴纸的“星际公路”标识。
+
+  2026_cross_continental_desc: 
+    - |
+      生活总是充满巧合。虽然我详细地计划了整个旅程，我还是遇到了不少在开始旅途前没有想到的惊喜。
+
+      2026年是美国建国250周年，同时是艾森豪威尔总统签署《1956年联邦高速公路法案》70周年，于是遇上了I-70上的好几个州在高速公路上布置了[新的纪念牌匾](https://highways.dot.gov/newsroom/trumps-transportation-department-celebrates-70-years-of-american-interstates)。巧合的是，I-70也路过艾森豪威尔在堪萨斯的老家；只可惜因为带着两只小猫的缘故，没办法仔细去看看——希望下次能有机会吧。
+
+      I-70同时拥有着美国州际高速系统的最高点：艾森豪威尔隧道（海拔3401米）。这可能是我在陆地上去过的最高点，也让我第一次感受到了高原反应。我清楚觉得自己的脑袋和肺部在膨胀。虽然有这样的感受，但总体来说不虚此行。从丹佛到内华达的这一部分是我自驾游走过的最美的路段，有机会的话肯定还会再走一次。
+
+    - name: picmultiver
+      vars:
+        _pmv_template_id: nv375
+        _pmv_template_float: left
+        _pmv_template_hdr_srcset: ''
+        _pmv_template_fallback: ''
+
+    - |
+      虽然这次旅途当中大部分都是在州际高速上，但是这次有一条路——NV-375号州道——在荒郊野岭之中不和任何州际高速连接。1996年的时候内华达州州政府授予了其“[星际公路](https://travelnevada.com/road-trips/extraterrestrial-highway/)”的称号，因其从著名的Area 51（51区）外经过。这条路几乎毫无手机信号，除了中间一个叫做Rachel的孤独小镇。镇上的旅游业也完全基于附近目睹外星生命的故事，我也终于能把这条路从我的待办项目中划去了。我原本的计划是在内华达州的Ely镇而不是Tonopah镇过夜，但是因为想让之后的最后一天稍微轻松一点，我在旅途前最后一刻改成了Tonopah过夜。也幸亏是这次改动让我能够拜访这个遥远小镇。
+    
+    - name: picmultiver
+      vars:
+        _pmv_template_id: mileagetoprovincetown
+        _pmv_template_float: right
+        _pmv_template_hdr_srcset: ''
+        _pmv_template_fallback: ''
+
+    - |
+      最后，US-6这条全美第二长的国道也在我的清单上放了很久。它曾经是最长的国道，但是后来被缩短到现在的样子——从加州海边的长滩缩短到了内华达山脉以东的Bishop市。我在旅途前五天还在US-6位于马萨诸塞州Provincetown的东端，然后我就突然出现在了加州这边的最西端。看到Bishop边上写着距离Provincetown 3205英里的里程表也是很不可思议。
+
+      在去了US-6西部位于Bishop的终点后，我开始了我去往圣何塞的最后一段旅途。我当时需要穿过优胜美地国家公园的CA-120州道。我原本的计划是走它北边的CA-108，但是其由于天气原因关闭了。当我到达公园入口的时候，负责售票的Park Ranger听说我从康涅狄格搬家过来的时候告诉我说他来自罗德岛州（同为新英格兰地区且接壤——注）。我跟他讲了我刚去过Provincetown和Bishop，然后他立刻明白我说的是什么意思了。我同时也很幸运赶在下午五点前穿过了CA-120，因为其也会因天气原因于当日下午五点关闭。要是没能这么走的话，我就需要绕一大圈：要么往北穿I-80的Donner Pass或者往南去Bakersfield，也算是一个幸运的巧合了。
+
+
+  lincolnmemorialtitle: 林肯纪念堂
+  lincolnmemorialdescription: 世上最著名纪念堂之一在阳光下熠熠生辉。
+
+  2026_ieee_cluster_desc: 
+    - |
+      这次旅途始于从Hartford回到雪城的路途。终于到了期待已久的那一刻：六年的工作浓缩至一小时的演讲。答辩之后我就立刻又踏上了去位于Virginia Tech Potomac校区举办的IEEE Cluster的旅程。这段旅程给了我一些机会探索一些I-95平行部分当中我没走过的路，另外我遇到了一辆似乎是上世纪二三十年代产的福特A型车（至少ChatGPT是这么告诉我的）跑在特拉华纪念大桥上。这车在高速上还能跟上车流这件事也是挺有意思的。
+
+    - name: picmultiver
+      vars:
+        _pmv_template_id: lincolnmemorial
+        _pmv_template_float: left
+        _pmv_template_hdr_srcset: ''
+        _pmv_template_fallback: ''
+
+    - |
+       我已经有一段时间没有来过DC周边了，所以我在会后的休息时间稍微来转了转。距离我上次专程来林肯纪念堂已经是十几年了。天气很不错，而且日落令纪念堂熠熠生辉。只可惜我没有带我的相机来，也只好将就用手机拍了几张——无论如何，至少我能够亲眼见到这样的景色。上次来的时候我还是个高中生，而这次再来我关注到了更多细节，尤其是在墙上的葛底斯堡演说（从来没能背下来过）和林肯的第二次总统就职演讲。它们距今已经过去了一个多世纪，但是我们还是能从里面学到很多东西。人可以和而不同——虽然说起来有些乌托邦，我还是希望所有人类能够有一天和谐相处。

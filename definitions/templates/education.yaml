@@ -1,0 +1,49 @@
+name: education
+type: template
+css: 
+  - ./css/education.css
+content:
+  - '<div class="container-fluid" style="max-width: $_edu_template_maxwidth$; margin: 0 auto; text-align: $_edu_template_align$;">'
+  - name: div
+    attr:
+      class:
+        - education-template
+      style:
+        text-align: $_edu_template_align$
+        max-width: $_edu_template_maxwidth$
+        display: inline-block
+    content:
+      - name: h3
+        content:
+          - $_edu_template_title$
+      - name: ul
+        content:
+          - name: li
+            content:
+              - name: pmd
+                vars: 
+                  _pmd_content: $_edu_template_phd$
+          - name: li
+            content:
+              - name: pmd
+                vars: 
+                  _pmd_content: $_edu_template_master$
+          - name: li
+            content:
+              - name: pmd
+                vars: 
+                  _pmd_content: $_edu_template_bachelor$
+  - name: cpara
+    vars:
+      _cpara_template_content:
+        - $_edu_template_comment$
+      _cpara_template_maxwidth: 800px
+  - - </div>
+vars:
+  _edu_template_title: Education
+  _edu_template_phd: 'Insert your PhD experience, if any'
+  _edu_template_master: 'Insert your Master experience, if any'
+  _edu_template_bachelor: 'Insert your Bachelor experience, if any'
+  _edu_template_comment: 'Explain and elaborate something more about your education experience here :)'
+  _edu_template_align: left
+  _edu_template_maxwidth: 800px

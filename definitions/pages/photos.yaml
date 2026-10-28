@@ -1,7 +1,5 @@
 name: photos
 type: page
-css:
-  - ./css/photos.css
 content:
   - name: titlewpara
     vars:

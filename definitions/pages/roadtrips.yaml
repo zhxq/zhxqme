@@ -8,10 +8,19 @@ content:
       _road_trip_description: $all_trips_map_description$
   - name: roadtrip
     vars:
+      _road_trip_name: 2026CrossContinental
+      _road_trip_jsons: ./pmtiles/2026-Hartford-SJC.pmtiles
+      _road_trip_title: Hartford - Baltimore - San Jose (Oct 2026, I-70, NV-375)
+      _road_trip_description: $2026_cross_continental_desc$
+        
+
+
+  - name: roadtrip
+    vars:
       _road_trip_name: 2026IEEECLUSTER
       _road_trip_jsons: ./pmtiles/2026-CLUSTER.pmtiles
-      _road_trip_title: IEEE CLUSTER (2026)
-      _road_trip_description: ''
+      _road_trip_title: Dissertation Defense and IEEE CLUSTER (Sept 2026)
+      _road_trip_description: $2026_ieee_cluster_desc$
   - name: roadtrip
     vars:
       _road_trip_name: 2026LowerNewEnglandLI
@@ -44,39 +53,21 @@ content:
       _road_trip_description: ''
   - name: roadtrip
     vars:
-      _road_trip_name: 2025SJCSYR
-      _road_trip_jsons: ./pmtiles/2025-SJC-SYR.pmtiles
-      _road_trip_title: San Jose - Syracuse (Aug 2025, US-66)
-      _road_trip_description: ''
-  - name: roadtrip
-    vars:
-      _road_trip_name: 2025Yosemite
-      _road_trip_jsons: ./pmtiles/2025-Yosemite.pmtiles
-      _road_trip_title: Yosemite (Jul 2025)
-      _road_trip_description: ''
-  - name: roadtrip
-    vars:
       _road_trip_name: 2025Tahoe
-      _road_trip_jsons: ./pmtiles/2025-LakeTahoe.pmtiles
-      _road_trip_title: Lake Tahoe (Jul 2025)
+      _road_trip_jsons: ./pmtiles/2025-LakeTahoe.pmtiles,./pmtiles/2025-Yosemite.pmtiles
+      _road_trip_title: Lake Tahoe and Yosemite (Jul 2025)
       _road_trip_description: ''
   - name: roadtrip
     vars:
       _road_trip_name: 2025SYRSJC
-      _road_trip_jsons: ./pmtiles/2025-SYR-SJC.pmtiles
-      _road_trip_title: Syracuse - San Jose (May 2025, I-80)
+      _road_trip_jsons: ./pmtiles/2025-SYR-SJC.pmtiles,./pmtiles/2025-SJC-SYR.pmtiles
+      _road_trip_title: Syracuse - San Jose - Syracuse (May/Aug 2025, I-80/US-66)
       _road_trip_description: ''
   - name: roadtrip
     vars:
       _road_trip_name: 2024Winter
       _road_trip_jsons: ./pmtiles/2024-WinterBreak.pmtiles
       _road_trip_title: Syracuse - New York City - Philadelphia - Baltimore (Dec 2024)
-      _road_trip_description: ''
-  - name: roadtrip
-    vars:
-      _road_trip_name: 2024SJCSYR
-      _road_trip_jsons: ./pmtiles/2024-SJC-SYR.pmtiles
-      _road_trip_title: San Jose - Syracuse (Aug 2024, I-5/I-90)
       _road_trip_description: ''
   - name: roadtrip
     vars:
@@ -93,8 +84,8 @@ content:
   - name: roadtrip
     vars:
       _road_trip_name: 2024NYCSJC
-      _road_trip_jsons: ./pmtiles/2024-NYC-SJC.pmtiles
-      _road_trip_title: New York City - San Jose (May 2024, I-80)
+      _road_trip_jsons: ./pmtiles/2024-NYC-SJC.pmtiles,./pmtiles/2024-SJC-SYR.pmtiles
+      _road_trip_title: New York City - San Jose - Syracuse (May/Aug 2024, I-80/I-5/I-90)
       _road_trip_description: ''
   - name: roadtrip
     vars:
@@ -146,13 +137,7 @@ content:
       _road_trip_description: ''
   - name: roadtrip
     vars:
-      _road_trip_name: 2018YVRSAN
-      _road_trip_jsons: ./pmtiles/2018-YVR-SAN.pmtiles
-      _road_trip_title: Vancouver - San Diego (Jun 2018)
-      _road_trip_description: ''
-  - name: roadtrip
-    vars:
-      _road_trip_name: 2018SANYVR
-      _road_trip_jsons: ./pmtiles/2018-SAN-YVR.pmtiles
-      _road_trip_title: San Diego - Vancouver (Apr/Jun 2018)
+      _road_trip_name: 2018SANYVRSAN
+      _road_trip_jsons: ./pmtiles/2018-SAN-YVR.pmtiles,./pmtiles/2018-YVR-SAN.pmtiles
+      _road_trip_title: San Diego - Vancouver - San Diego (Apr/Jun 2018)
       _road_trip_description: ''

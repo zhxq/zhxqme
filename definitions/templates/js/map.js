@@ -9,7 +9,7 @@ var map_counter = 0;
 var parsed_trips = {};
 var savedCameraState = {};
 var queriedPMTiles = {};
-var rawBaseColors = ["#F05E84", "#D57B00", "#BDAA00", "#47D600", "#00D688", "#00B1BF", "#009CF1", "#AF73F8", "#EB51CF", "#C4372D", "#0066B3", "#007C65", "#A64F93", "#B4A76C", "#E37D28", "#009E50", "#84C6E4", "#6EB0C9", "#F2C62F", "#D9A6C2", "#6E276C", "#006633", "#9B5D25", "#F6BA00", "#D12D48", "#C6A05D", "#D9C755", "#0072BD", "#F36C21", "#E23A2E", "#A8CF38", "#B4D44E"];
+var rawBaseColors = ['#EB51CF', '#0072BD', '#A600FF', '#D12D48', '#298BA3', '#009CF1', '#F05E84', '#DB0DFF', '#5E4DFF', '#3C931F', '#84C6E4', '#E37D28', '#C65370', '#7566CC', '#A64F93', '#E23A2E', '#D9A6C2', '#2B9475', '#007C65', '#86702D', '#C75C05', '#9B5D25', '#F6BA00', '#00D688', '#C9675C', '#B4D44E', '#47D600', '#AF73F8', '#86862D', '#BDAA00', '#30738F', '#E00689', '#6675FF', '#00B1BF', '#AC7713', '#BF00BF', '#C6A05D'];
 
 function enableIOSPinchZoom(container) {
   ["gesturestart", "gesturechange", "gestureend"].forEach(type => {
@@ -37,10 +37,10 @@ for (i = 0; i < colorLen; i++) {
     allColors.push(color)
 }
 
-for (i = 0; i < colorLen; i++) {
-    var color = baseColors[i].clone().desaturate(25).toString()
-    allColors.push(color)
-}
+// for (i = 0; i < colorLen; i++) {
+//     var color = baseColors[i].clone().desaturate(25).toString()
+//     allColors.push(color)
+// }
 
 
 

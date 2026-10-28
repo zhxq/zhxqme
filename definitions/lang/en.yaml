@@ -4,18 +4,16 @@ vars:
   aboutmetitle: About Me
   factstitle: Facts
   xiangqunzhang: Xiangqun Zhang
-  phdstudent: Incoming Research Scientist
-  syracuseuniversity: Meta Platforms
+  phdstudent: Research Scientist
+  syracuseuniversity: Meta Platforms, Inc.
   personalinformation: Personal Information
   personalinformationline: >
-    Welcome to my personal page! I am an incoming Research
-    Scientist at Meta. My main research topics are Solid State Drive (SSD)
+    Welcome to my personal page! I am a Research
+    Scientist at Meta. My main research topics include solid state drive (SSD)
     optimization, Compute Express Link (CXL), and computer science education
     (CSE). 
   educationexp: Education
-  educationphdstart: "Ph.D. (Advisor: "
-  bsk: Bryan S. Kim
-  educationphdend: ) in Computer and Information Science and Engineering at Syracuse University (2020-2026)
+  educationphd: "Ph.D. (Advisor: [Bryan S. Kim](https://web.ecs.syr.edu/~bkim01/)) in Computer and Information Science and Engineering at Syracuse University (2020-2026)"
   educationms: M.S. in Computer Science at New York University Tandon School of Engineering (2018-2019)
   educationbachelor: B.A. in German Studies (w. Honors)/B.S. in Mathematics Computer Science at University of California, San Diego (2014-2018)
   educationdescription: >
@@ -228,3 +226,55 @@ vars:
     inaccurate. After all, who would have thought of making a map like this
     today so many years ago?<br>For now, the descriptions for most (if not all)
     of the trips below are empty. I will add them over time.
+  
+  mileagetoprovincetowntitle: Bishop -- Provincetown Mileage Sign
+  mileagetoprovincetowndescription: 3205 miles (5158 kilometers) from Inner California all the way to New England.
+
+  nv375title: NV-375 Extraterrestrial Highway
+  nv375description: The sign with numerous stickers from visitors. 
+  2026_cross_continental_desc: 
+    - |
+      Life is always full of coincidences. While this is a well-planned trip, there were so many surprises that I haven't anticipated before the trip.
+
+      2026 marks the 250th year of the United States of America. It's also the 70th anniversary for the Federal-Aid Highway Act of 1956, signed by President Eisenhower. Several states have also [put up commemorative signs](https://highways.dot.gov/newsroom/trumps-transportation-department-celebrates-70-years-of-american-interstates) along the I-70. Coincidentally, I-70 passes by his boyhood house in Kansas. I really should have paid a visit, but I got two kitties with me that I cannot leave for a long time in my car. Oh well, maybe next time.
+    
+      I-70 also has the highest elevation in the whole interstate system at the westbound Eisenhower Tunnel in Colorado. With an elevation of 3401 meters, it is likely the highest place I have ever been when I am on land. This is also my first time having an altitude sickness (or more of a reaction rather than sickness, in my case). I can feel myself expanding, especially for my lungs and my head. Nevertheless, it was worth it for the scenaries during the trip. The segment from Denver, CO to Nevada has the most gorgeous view among all my road trips before, and I am all set for a future revisit.
+
+    - name: picmultiver
+      vars:
+        _pmv_template_id: nv375
+        _pmv_template_float: left
+        _pmv_template_hdr_srcset: ''
+        _pmv_template_fallback: ''
+        
+    - |
+      While most of this trip is travelled on interstates, one particular road I travelled this time, NV-375, is far from any interstate. It got its official moniker "[Extraterrestrial Highway](https://travelnevada.com/road-trips/extraterrestrial-highway/)" in 1996, as it passes by the world famous Area 51 -- where people had claimed extraterrestrial activities happening there. There is almost no cellular signal, except for Rachel, NV -- a small town in the middle of this lonely highway. Tourism in this town is based on the alleged alien stories, and I have finally crossed this route off my road trip bucket list. This is a coincidence, as I previously planned my night in Ely, NV instead of Tonopah, NV. I changed my plan last-minute because I hoped my last day from Nevada to San Jose would be shorter. Thankfully, the plan allowed me to visit this lovely road.
+
+    - name: picmultiver
+      vars:
+        _pmv_template_id: mileagetoprovincetown
+        _pmv_template_float: right
+        _pmv_template_hdr_srcset: ''
+        _pmv_template_fallback: ''
+
+    - |
+      Lastly, US-6, the second longest U.S. Route, was also on my radar for a long time. It was once the longest U.S. Route, but it was truncated from Long Beach, CA to Bishop, CA, a small city east of the Sierra Nevada mountains. The route goes from nowhere to nowhere, with some occasional cities. I happen to be at the eastern terminus of US-6 in Provincetown, MA just five days before this trip, and suddenly I am at the western terminus. It is so incredible to see the mileage sign telling me that I'm 3205 miles from Provincetown. 
+
+      After visiting Bishop for the western US-6 terminus, I was on my final leg for San Jose. I had to take the Tioga Pass Road (CA-120) and drive through the Yosemite State Park, although my original plan was taking the CA-108 to the north (which was closed due to inclement weather). When I got to the Tioga Pass Entrance, the park ranger who ticketed me said he was from Rhode Island after hearing that I am moving from Connecticut. I then told him I just visited both Provincetown and Bishop, and he immediately understood what I was talking about. I was also lucky enough to take CA-120 around noon, as it was set to close at 5 PM that day like other highways through the Sierra -- I would have to take a long detour by either going up north and use I-80 through the Donner Pass or going down south for Bakersfield. Another happy coincidence! 
+
+  lincolnmemorialtitle: Lincoln Memorial
+  lincolnmemorialdescription: One of the most famous memorials basking in the sun's glow during sunset.
+
+  2026_ieee_cluster_desc: 
+    - |
+       The trip first started with the drive from Hartford back to Syracuse. It was finally the moment: Six years of work is now condensed to a single hour. Right after the defense, I still had a long way to drive for the IEEE Cluster conference, which is held at Virginia Tech's Potomac campus. The trip took me to some roads I haven't been to, and I saw a classic Ford, likely a Ford Type A built in around 1920s and 1930s (as ChatGPT told me) running on the Delaware Memorial Bridge. It's pretty amazing that it can still catch up with the traffic on a freeway!
+
+    - name: picmultiver
+      vars:
+        _pmv_template_id: lincolnmemorial
+        _pmv_template_float: left
+        _pmv_template_hdr_srcset: ''
+        _pmv_template_fallback: ''
+
+    - |
+       I haven't been to the DC area for a while, so I took the liberty after hours to explore the place a bit. It has been more than a decade for my last visit to the Lincoln Memorial. The weather was great, and the sunset created a beautiful glow in the background. I did not bring my camera with me, and thus I could only capture this moment with my phone. It's a pity, but at least I was fortunate enough to see it in person. I was a highschooler during my previous visit, and I was not thinking much. This time, however, I had the mindset of observing and thinking about things, especially the Gettysburg address (which I was never able to recite) and his second inaugural address inscripted on the wall. It has been more than a century, but we can still learn from them. Being different does not affect people to unite. It might be utopian, but I still hope that all humans can live in harmony one day.

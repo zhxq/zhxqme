@@ -23,6 +23,10 @@ function appleVersion() {
     return [0, 0];
 }
 
+function roundToTwo(num){
+    return Number.parseFloat(num.toFixed(2));
+}
+
 function picwithexif_call(id){    
     var element = document.getElementById(id + '_pic');
     if (!navigator.userAgent.includes('Chrome') && navigator.userAgent.includes('Safari')) {
@@ -40,7 +44,7 @@ function picwithexif_call(id){
         if (model.startsWith(make)){
             make = '';
         }
-        var tags = make + ' ' + model + ' ' + exif.FocalLength + "mm " + picwithexif_getInvert(exif.ExposureTime) + 's f/' + exif.FNumber;
+        var tags = make + ' ' + model + ' ' + roundToTwo(exif.FocalLength) + "mm " + picwithexif_getInvert(exif.ExposureTime) + 's f/' + roundToTwo(exif.FNumber);
         $('#' + id + '_exif').html(tags);
     });
     var parentLink = element.parentElement.parentElement;

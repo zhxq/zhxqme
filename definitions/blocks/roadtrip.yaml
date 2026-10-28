@@ -33,13 +33,12 @@ content:
         text-align: $_road_trip_align$
         max-width: $_road_trip_maxwidth$
         display: inline-block
-        margin: 6px
+        margin: 10px
     content:
-      - name: cpara
+      - name: pmd
         vars:
-          _cpara_template_content:
-            - $_road_trip_description$
-          _cpara_template_maxwidth: $_road_trip_maxwidth$
+          _pmd_content: $_road_trip_description$
+          _pmd_maxwidth: $_road_trip_maxwidth$
   - </div></div>
 vars:
   _road_trip_name: ''

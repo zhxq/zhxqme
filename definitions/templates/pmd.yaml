@@ -1,0 +1,36 @@
+name: pmd
+type: template
+js: 
+  - ./js/pmd.js
+  - https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js
+content:
+  - name: div
+    content:
+      - name: cdiv
+        vars:
+          _cdiv_template_content:
+            - $_pmd_content$
+          _cdiv_template_maxwidth: $_pmd_maxwidth$
+    attr:
+      data-pmd-id: pmd_container
+  - name: div
+    content: $_pmd_content$
+    attr:
+      style:
+        display: none
+      data-pmd-id: pmd_content
+  - name: script
+    content: 
+      - "$("
+      - "$"
+      - ('[data-pmd-id="pmd_container"]')[pmd_counter]).html(
+      - marked.parse(
+      - $(
+      - $
+      - ('[data-pmd-id="pmd_content"]')[pmd_counter]).html()
+      - )
+      - );
+      - pmd_counter++;
+vars:
+  _pmd_content: ''
+  _pmd_maxwidth: ''

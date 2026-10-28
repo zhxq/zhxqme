@@ -24,14 +24,7 @@ content:
   - name: education
     vars:
       _edu_template_title: $educationexp$
-      _edu_template_phd:
-        - $educationphdstart$
-        - name: a
-          attr:
-            href: https://web.ecs.syr.edu/~bkim01/
-          content:
-            - $bsk$
-        - $educationphdend$
+      _edu_template_phd: $educationphd$
       _edu_template_master: $educationms$
       _edu_template_bachelor: $educationbachelor$
       _edu_template_comment: $educationdescription$
