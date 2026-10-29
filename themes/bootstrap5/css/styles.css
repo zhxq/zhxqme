@@ -140,3 +140,37 @@ h4, h5, h6 {
 [data-bs-theme="light"] .navbar-appearance-svg{
 	filter: invert(100%);
 }
+
+
+/* Match your navbar-expand-lg breakpoint */
+@media (max-width: 991.98px) {
+    #navigationBar > .container-fluid {
+        column-gap: 8px;
+    }
+
+    /* Give the name all space remaining beside the controls */
+    #navigationBar .navbar-header {
+        flex: 1 1 0;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    #navigationBar .navbar-brand {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    /* Keep the appearance switch and menu button together */
+    #navigationBar > .container-fluid > .d-flex {
+        flex: 0 0 auto;
+    }
+
+    /* Recover space from the existing 20px spacing */
+    #navigationBar .form-switch {
+        padding-right: 8px !important;
+    }
+
+    #navigationBar .navbar-toggler {
+        margin-right: 0;
+    }
+}

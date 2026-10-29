@@ -95,6 +95,52 @@ body { -webkit-text-size-adjust: 100%; }
 
 </div>
 
+<script>
+const nameContainer = document.querySelector(
+    "#navigationBar .navbar-header"
+);
+const nameLink = nameContainer.querySelector(".navbar-brand");
+const mobileNavbar = matchMedia("(max-width: 991.98px)");
+
+function fitNavbarName() {
+    // Restore the normal font size before measuring.
+    nameLink.style.fontSize = "";
+
+    if (!mobileNavbar.matches) return;
+
+    const availableWidth = nameContainer.clientWidth;
+    if (availableWidth <= 0) return;
+
+    let max = parseFloat(getComputedStyle(nameLink).fontSize);
+    let min = 0;
+
+    if (nameLink.getBoundingClientRect().width <= availableWidth) return;
+
+    // Find the largest size that fits, within 0.1px.
+    while (max - min > 0.1) {
+        const size = (min + max) / 2;
+        nameLink.style.fontSize = `${size}px`;
+
+        if (nameLink.getBoundingClientRect().width <= availableWidth) {
+            min = size;
+        } else {
+            max = size;
+        }
+    }
+
+    nameLink.style.fontSize = `${min}px`;
+
+    console.log(nameLink.style.fontSize);
+}
+
+new ResizeObserver(() => {
+    requestAnimationFrame(fitNavbarName);
+}).observe(nameContainer);
+
+mobileNavbar.addEventListener("change", fitNavbarName);
+document.fonts.ready.then(fitNavbarName);
+fitNavbarName();
+</script>
 
 </body>
 </html>
