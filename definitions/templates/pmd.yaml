@@ -27,8 +27,7 @@ content:
       - marked.parse(
       - $(
       - $
-      - ('[data-pmd-id="pmd_content"]')[pmd_counter]).html()
-      - )
+      - ('[data-pmd-id="pmd_content"]')[pmd_counter]).html())
       - );
       - pmd_counter++;
 vars:

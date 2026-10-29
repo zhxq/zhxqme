@@ -7,9 +7,6 @@ function setHash(theHash){
 	} else {
 	    window.location.href = window.location.href.substring(0, sharpIndex) + "#!" + theHash;
 	}
-	if ($("#mainArea").html().trim() == ""){
-		getWebpage(settings['index']);
-	}
 }
 
 

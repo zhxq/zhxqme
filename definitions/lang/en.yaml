@@ -8,10 +8,7 @@ vars:
   syracuseuniversity: Meta Platforms, Inc.
   personalinformation: Personal Information
   personalinformationline: >
-    Welcome to my personal page! I am a Research
-    Scientist at Meta. My main research topics include solid state drive (SSD)
-    optimization, Compute Express Link (CXL), and computer science education
-    (CSE). 
+    Welcome to my personal page! I am a Research Scientist at Meta. My main research topics include solid state drive (SSD) optimization, Compute Express Link (CXL), and computer science education (CSE). 
   educationexp: Education
   educationphd: "Ph.D. (Advisor: [Bryan S. Kim](https://web.ecs.syr.edu/~bkim01/)) in Computer and Information Science and Engineering at Syracuse University (2020-2026)"
   educationms: M.S. in Computer Science at New York University Tandon School of Engineering (2018-2019)
